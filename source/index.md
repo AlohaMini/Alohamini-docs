@@ -58,7 +58,7 @@
 
 ## 官方教程路线
 
-[官方使用手册](official-manual.md) 已整合语雀交付教程。收到整机可先看 [开箱与首次通电](unboxing.md)，有问题进入 [整机排错](support.md)。
+[官方使用手册](official-manual.md) 提供从开箱到训练的完整操作路线。收到整机可先看 [开箱与首次通电](unboxing.md)，有问题进入 [整机排错](support.md)。
 
 先进入 [AlohaMini 2](alohamini2.md) 或 [2 Pro](alohamini2pro.md) 教程。下面的专题解释每一步的具体操作；物料、打印和图文组装覆盖标准 2，Pro 先看 [硬件说明](hardware-pro.md)。
 
@@ -87,7 +87,7 @@
 
 ## 完整教程与进阶资料
 
-- [教程资料库](tutorial-library.md)：查阅 GitHub 完整教程及语雀官方手册。
+- [教程资料库](tutorial-library.md)：按主题查阅硬件、软件和开发教程。
 - [策略与训练](policies.md)：AM-ACT、SmolVLA、Pi0.5、GR00T 与其他策略。
 - [手机视频重建场景](video2sim.md) → [仿真数据转换](sim-data.md)：了解环境与数据接口。
 - [Docker](docker.md)、[开发与扩展](development.md)、[舵机与性能调试](debug-tools.md)。

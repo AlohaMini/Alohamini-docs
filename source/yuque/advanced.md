@@ -1,10 +1,6 @@
 # 进阶参考
 
-[官方使用手册](../official-manual.md) · [语雀来源](https://alohamini.yuque.com/lq44as/tiv9xs/kqoe86xa8ghhw9de) · 2026-09-28 整理
-
-```{note}
-本页保留语雀产品与教学资料的正文。参数、价格、赛事与课程安排按原文收录日期理解；实际套件配置以交付资料为准。
-```
+[返回官方使用手册](../official-manual.md)
 
 (yq-kqoe86xa8ghhw9de-IGlfQ)=
 

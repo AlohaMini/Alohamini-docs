@@ -1,10 +1,8 @@
 # 异常处理
 
-[官方使用手册](../official-manual.md) · [语雀来源](https://alohamini.yuque.com/lq44as/tiv9xs/phx3zdv7indeo98e) · 2026-09-28 整理
+[返回官方使用手册](../official-manual.md)
 
-```{note}
-已修正原文的 Host 模块名拼写。校准、串口和相机故障的完整排查顺序见 [整机排错](../support.md)。相机超时可能涉及供电、端口、占用或配置；单次读不到舵机也不足以直接判定控制板损坏。
-```
+按供电、接线、串口和配置顺序排查。完整流程见 [整机排错](../support.md)。
 
 (yq-phx3zdv7indeo98e-XabvX)=
 

@@ -1,6 +1,6 @@
 # AlohaMini演示视频合集
 
-[官方使用手册](../official-manual.md) · [语雀来源](https://alohamini.yuque.com/lq44as/tiv9xs/km9oz425a6h1307w) · 2026-09-28 整理
+[返回官方使用手册](../official-manual.md)
 
 (yq-km9oz425a6h1307w-WziHk)=
 

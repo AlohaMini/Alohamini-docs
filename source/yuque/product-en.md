@@ -1,10 +1,6 @@
 # AlohaMini Product Overview
 
-[官方使用手册](../official-manual.md) · [语雀来源](https://alohamini.yuque.com/lq44as/tiv9xs/yyac5sfw94onthd0) · 2026-09-28 整理
-
-```{note}
-本页保留语雀产品与教学资料的正文。参数、价格、赛事与课程安排按原文收录日期理解；实际套件配置以交付资料为准。
-```
+[返回官方使用手册](../official-manual.md)
 
 (yq-yyac5sfw94onthd0-i.-product-introduction)=
 
@@ -32,7 +28,7 @@ Deeply compatible with the open-source Hugging Face LeRobot v0.6 framework, cove
 
 - **Imitation learning:** ACT, Diffusion Policy, FastWAM
 
-- **VLAfoundation models for embodied AI:**Pi-0.5, SmolVLA, EO-1, VLA-JEPA, GR00T N1.7, EVO1
+- **VLAfoundation models for embodied AI:** Pi-0.5, SmolVLA, EO-1, VLA-JEPA, GR00T N1.7, EVO1
 
 (yq-yyac5sfw94onthd0-u612f4f74)=
 
@@ -44,19 +40,19 @@ Deeply compatible with the open-source Hugging Face LeRobot v0.6 framework, cove
 
 - **Open-source resources onGitHub:**
 
-- **Hardware:**[AlohaMini Hardware Repository](https://github.com/liyiteng/AlohaMini)
+- **Hardware:** [AlohaMini Hardware Repository](https://github.com/liyiteng/AlohaMini)
 
-- **Software:**[AlohaMini LeRobot Software Support](https://github.com/liyiteng/lerobot_alohamini)
+- **Software:** [AlohaMini LeRobot Software Support](https://github.com/liyiteng/lerobot_alohamini)
 
-- **Purchase link:**[Taobao](https://item.taobao.com/item.htm?id=1065716055984)
+- **Purchase link:** [Taobao](https://item.taobao.com/item.htm?id=1065716055984)
 
 - **Officialsocial mediaaccounts:**
 
-- **X (Twitter):**[https://x.com/liyitengx](https://x.com/liyitengx)
+- **X (Twitter):** [https://x.com/liyitengx](https://x.com/liyitengx)
 
-- **YouTube:**[https://www.youtube.com/@AlohaMini](https://www.youtube.com/@AlohaMini)
+- **YouTube:** [https://www.youtube.com/@AlohaMini](https://www.youtube.com/@AlohaMini)
 
-- **TikTok:**[https://www.tiktok.com/@alohamini2026](https://www.tiktok.com/@alohamini2026)
+- **TikTok:** [https://www.tiktok.com/@alohamini2026](https://www.tiktok.com/@alohamini2026)
 
 (yq-yyac5sfw94onthd0-ue3edd960)=
 
@@ -562,10 +558,10 @@ Co-founder of Physical Intelligence (π).
 
 If you are interested in purchasing a complete system, please add us on WeChat to learn more about AlohaMini’s fully assembled robots and available support services.
 
-- **GitHub:**[https://github.com/liyiteng/AlohaMini](https://github.com/liyiteng/AlohaMini)
+- **GitHub:** [https://github.com/liyiteng/AlohaMini](https://github.com/liyiteng/AlohaMini)
 
 - **WeChat:** alohamini2077
 
 - **Address:** Room 303, 3rd Floor, Building 15, Yard 3, Jinghai 5th Road, Beijing Economic-Technological Development Area (Tongzhou), Beijing, China
 
-- **Purchase link:**[Taobao](https://item.taobao.com/item.htm?id=1065716055984)
+- **Purchase link:** [Taobao](https://item.taobao.com/item.htm?id=1065716055984)

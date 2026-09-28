@@ -1,10 +1,6 @@
 # AlohaMini具身智能教育解决方案
 
-[官方使用手册](../official-manual.md) · [语雀来源](https://alohamini.yuque.com/lq44as/tiv9xs/us0tnge3dszgxb69) · 2026-09-28 整理
-
-```{note}
-本页保留语雀产品与教学资料的正文。参数、价格、赛事与课程安排按原文收录日期理解；实际套件配置以交付资料为准。
-```
+[返回官方使用手册](../official-manual.md)
 
 (yq-us0tnge3dszgxb69-425fcef4)=
 
@@ -18,13 +14,13 @@
 
 AlohaMini是一款面向具身智能学习的移动双臂机器人。
 
-- **硬件优势：**整机集成全向移动底盘、电动升降模组与 6+1 自由度的aloha机械臂，可适配低位地面拾取、桌面操作、双臂长轨迹协同等多种非结构化实操任务，场景覆盖能力强。
+- **硬件优势：** 整机集成全向移动底盘、电动升降模组与 6+1 自由度的aloha机械臂，可适配低位地面拾取、桌面操作、双臂长轨迹协同等多种非结构化实操任务，场景覆盖能力强。
 
-- **全栈生态适配：：**深度兼容 Hugging Face LeRobot v0.6 开源框架，打通遥操作数据集采集、模型训练、本地推理部署全链路；通信链路针对性高频优化，原生支持主流具身算法复现与微调：
+- **全栈生态适配：** 深度兼容 Hugging Face LeRobot v0.6 开源框架，打通遥操作数据集采集、模型训练、本地推理部署全链路；通信链路针对性高频优化，原生支持主流具身算法复现与微调：
 
-- **模仿学习：**ACT、Diffusion Policy、FastWAM
+- **模仿学习：** ACT、Diffusion Policy、FastWAM
 
-- **VLA具身大模型：**Pi-0.5、SmolVLA、EO-1、VLA-JEPA、GR00T N1.7、EVO1
+- **VLA具身大模型：** Pi-0.5、SmolVLA、EO-1、VLA-JEPA、GR00T N1.7、EVO1
 
 (yq-us0tnge3dszgxb69-u366e8c1b)=
 

@@ -26,7 +26,7 @@ DATA = set('annotation_pipeline lerobot-dataset-v3 porting_datasets_v3 using_dat
 DEV = set('adding_benchmarks bring_your_own_policies processors_robots_teleop debug_processor_pipeline implement_your_own_processor env_processor introduction_processors integrate_hardware backwardcomp contributing'.split())
 SIM = set('hilserl_sim libero_plus envhub libero robotwin robocasa metaworld vlabench envhub_leisaac robomme envhub_isaaclab_arena'.split())
 HARDWARE = set('earthrover_mini_plus rebot_b601 hope_jr openarm lekiwi feetech robocerebra phone_teleop koch damiao so100 so101 unitree_g1 hardware_guide omx reachy2 isaac_teleop cameras'.split())
-CATEGORIES = {'alohamini':'AlohaMini 原始教程','policies':'策略与模型','data':'数据集与编码','simulation':'仿真与基准','development':'开发与扩展','environment':'环境与训练工具','hardware':'其他硬件与遥操作'}
+CATEGORIES = {'alohamini':'AlohaMini 硬件与操作','policies':'策略与模型','data':'数据集与编码','simulation':'仿真与基准','development':'开发与扩展','environment':'环境与训练工具','hardware':'其他硬件与遥操作'}
 TITLES = {'README':'项目说明','AGENT_GUIDE':'LeRobot 使用指南','install':'软件安装','profiles':'硬件配置','alohamini':'整机工作流','am-arm200':'AM-ARM200 工作流','commands':'命令大全','BOM':'物料清单','hardware_assembly':'一代硬件装配','software_setup':'一代软件入口','assembly_guide':'二代硬件装配','print_guide':'二代打印指南'}
 
 def git(repo, *args):
@@ -111,12 +111,12 @@ def main():
         def convert(chunk):
             chunk=re.sub(r'<hfoption\b[^>]*\bid=["\']([^"\']+)["\'][^>]*>',lambda m:'\n\n**'+m[1]+'**\n\n',chunk,flags=re.I)
             chunk=re.sub(r'</?hfoptions?\b[^>]*>','\n',chunk,flags=re.I)
-            chunk=re.sub(r'<Tip\b[^>]*>','\n\n**原文提示**\n\n',chunk)
+            chunk=re.sub(r'<Tip\b[^>]*>','\n\n**提示**\n\n',chunk)
             chunk=re.sub(r'</Tip>','\n\n',chunk)
             chunk=re.sub(r'</?details\b[^>]*>','\n\n',chunk,flags=re.I)
             chunk=re.sub(r'<summary\b[^>]*>(.*?)</summary>',lambda m:'\n\n**'+re.sub('<[^>]+>','',m[1])+'**\n\n',chunk,flags=re.S|re.I)
             # Component widgets are expressed as links; no third-party scripts are imported.
-            chunk=re.sub(r'<Youtube\s+id="([A-Za-z0-9_-]+)"\s*/>', lambda m: "[观看原文视频](https://www.youtube.com/watch?v="+m[1]+")", chunk)
+            chunk=re.sub(r'<Youtube\s+id="([A-Za-z0-9_-]+)"\s*/>', lambda m: "[观看视频](https://www.youtube.com/watch?v="+m[1]+")", chunk)
             chunk=re.sub(r'<script\b.*?</script>','',chunk,flags=re.S|re.I)
             chunk=re.sub(r'\[\[autodoc\]\]\s+([^\n]+)',r'**API 参考：`\1`**（接口详情见原文和源码）',chunk)
             chunk=re.sub(r'(!?\[[^\]\n]*\]\()([^\s)]+)([^)\n]*\))',lambda m:m[1]+resolve(m[2],m[1].startswith('!'))+m[3],chunk)
@@ -176,16 +176,16 @@ def main():
                 line='#'*level+' '+hm[2]+'\n'
             formatted.append(line)
         converted=''.join(formatted)
-        scope='本文是 AlohaMini 项目资料，具体代际以原文路径和硬件配置为准。' if entry['category']=='alohamini' else '本文保留软件仓库的通用或进阶教程。示例中的机器人、数据集、路径和运行环境需按实际配置选择，不代表已经在 AlohaMini 2 / 2 Pro 上验证。'
+        scope='适用型号请结合本页硬件配置确认。' if entry['category']=='alohamini' else '本节介绍 LeRobot 的通用功能。请按目标机器人、数据集和运行环境配置示例；用于 AlohaMini 2 / 2 Pro 前，需要确认硬件与接口兼容性。'
         if 'pi0.5_openpi' in path: scope+=' 旧版部署接口与缺失启动脚本的说明见 [OpenPI 接入](../pi05.md)。'
-        if kind=='hardware' and path=='AlohaMini1/docs/BOM.md': scope+=' 原文 Host/Client 说明前后有混用；本站统一称 Pi 为机器人端、PC 为操作端，供电需按实物额定值确认。'
-        header=f'# {title}\n\n[← 教程资料库](../tutorial-library.md) · **{CATEGORIES[entry["category"]]} / 原文全文**\n\n{scope}\n\n来源：[{name} · `{path}`](https://github.com/{name}/blob/{rev}/{quote(path,safe="/")}) · 版本 `{rev[:8]}` · [下载未经改写的源文档]({rel(download)})\n\n本页保留原文语言及全部段落、表格和代码；仅调整标题层级、页面组件、代码围栏格式、相对链接和媒体路径。原文中的价格、性能和运行结果属于该版本记录。\n\n---\n\n'
+        if kind=='hardware' and path=='AlohaMini1/docs/BOM.md': scope+=' Pi 为机器人端，PC 为操作端；供电需按实物额定值确认。'
+        header=f'# {title}\n\n[← 教程资料库](../tutorial-library.md) · **{CATEGORIES[entry["category"]]}**\n\n{scope}\n\n[项目参考：{name}](https://github.com/{name}/blob/{rev}/{quote(path,safe="/")})\n\n---\n\n'
         dest.write_text(localize_images(header+converted, dest))
     manifest={'date':'2026-09-28','sources':entries,'aliases':[{'kind':k[0],'path':k[1],'target':v,'page':pages[k]} for k,v in sorted(aliases.items())],'excluded':exclusions}
     (ROOT/'upstream-manifest.json').write_text(json.dumps(manifest,ensure_ascii=False,indent=2)+'\n')
     for key,label in CATEGORIES.items():
         rows=[e for e in entries if e['category']==key]
-        page='# '+label+' · 原文资料\n\n以下页面已迁入本站，可在站内阅读和搜索。每篇保留固定版本来源与原始文件下载。\n\n[返回教程资料库](tutorial-library.md)\n\n```{toctree}\n:maxdepth: 1\n\n'
+        page='# '+label+'\n\n按主题查阅操作步骤、配置参数和进阶教程。\n\n[返回教程资料库](tutorial-library.md)\n\n```{toctree}\n:maxdepth: 1\n\n'
         for e in rows:
             label=e['title'].replace('<','').replace('>','').replace('\n',' ')
             page+=label+' <'+e['page'][:-3]+'>\n'

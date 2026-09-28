@@ -160,7 +160,7 @@ ping <Pi_IP>
 
 ## 交付教程中的相机命名差异
 
-语雀 Pro 快速入门使用过 `head_top`、`head_back`、`head_front`，本次 GitHub 版本使用 `forward`、`backward`、`chest`。这些名称不能在采集后随意互换。
+不同软件配置可能使用 `head_top`、`head_back`、`head_front`，或 `forward`、`backward`、`chest`。这些名称不能在采集后随意互换。
 
 1. 查看本机 `alohamini_cameras_config()` 的实际启用项。
 2. 核对设备路径与实际画面，再把相同配置同步到 Pi 和 PC。

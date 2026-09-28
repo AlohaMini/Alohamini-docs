@@ -1,10 +1,8 @@
 # 常见问题
 
-[官方使用手册](../official-manual.md) · [语雀来源](https://alohamini.yuque.com/lq44as/tiv9xs/cyrmk57grrm79vgo) · 2026-09-28 整理
+[返回官方使用手册](../official-manual.md)
 
-```{note}
-本页的代码更新步骤已改为先检查并保存本地改动，再尝试快进更新；原文 `git restore .` 会丢弃未提交的修改。代理地址仅为局域网示例，应替换为你自己的代理服务器。
-```
+更新软件前，请先保存本机配置和未提交的改动。网络代理地址应替换为自己的服务器地址。
 
 (yq-cyrmk57grrm79vgo-u2517d6ae)=
 

@@ -1,6 +1,6 @@
 # 仿真与模型可视化
 
-另有软件仓库的 [video2sim 场景重建](video2sim.md) 与 [仿真数据生成/转换](sim-data.md)。完整 [一代仿真原文](upstream/hardware--alohamini1-simulation-readme.md) 也已迁入本站。
+另有软件仓库的 [video2sim 场景重建](video2sim.md) 与 [仿真数据生成/转换](sim-data.md)。一代机器人的配置见 [一代仿真教程](upstream/hardware--alohamini1-simulation-readme.md)。
 
 硬件仓库的现有模型资源位于 **AlohaMini1/simulation**，对应一代机器人。本页以当前包实际采用的 **ROS 2 / ament_cmake / colcon** 构建方式为主。
 

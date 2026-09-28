@@ -1,6 +1,6 @@
 # 策略与训练教程
 
-本站已迁入软件仓库的策略教程全文。AlohaMini 初次训练仍可先沿 [ACT 主线](training.md) 验证数据和设备；其他策略按各自依赖、输入格式与运行接口配置。
+本页汇总可供学习和开发的策略与模型。AlohaMini 初次训练仍可先沿 [ACT 主线](training.md) 验证数据和设备；其他策略按各自依赖、输入格式与运行接口配置。
 
 ## 1. 选择阅读入口
 
@@ -22,7 +22,7 @@
 | LingBot-VA / Wall-OSS / XVLA | [LingBot-VA](upstream/software--docs-source-lingbot_va.md)、[Wall-OSS](upstream/software--docs-source-walloss.md)、[XVLA](upstream/software--docs-source-xvla.md) | 各模型专属数据和接口 |
 | TD-MPC / VQ-BeT / SARM | [TD-MPC](upstream/software--docs-source-policy_tdmpc_readme.md)、[VQ-BeT](upstream/software--docs-source-policy_vqbet_readme.md)、[SARM](upstream/software--docs-source-sarm.md) | 部分 README 为实现引用，详读对应正文与代码 |
 
-[查看全部策略原文与实现说明](library-policies.md)。收录某种策略不代表它已在 AlohaMini 整机上完成适配或效果验证。
+[查看全部策略原文与实现说明](library-policies.md)。使用其他策略前，请确认 AlohaMini 的输入、动作维度与推理接口，并完成真机验证。
 
 ## 2. 从 ACT 数据转向其他策略前
 

@@ -64,10 +64,10 @@ pre-commit run --all-files
 
 硬件测试、GPU 测试和集成测试可能需要额外设备、资产或依赖。记录实际执行范围，不能将跳过的测试算作通过的真机验证。
 
-## 5. 调整本站文档
+## 5. 改进文档
 
-本站与软件仓库分别维护。中文教程在本站 `source/`，原文资料页在 `source/upstream/`；原文文件下载位于 `source/_static/upstream-originals/`。
+文档使用 Markdown 编写，位于文档仓库的 `source/` 目录。修改时请注明适用型号，检查命令中的设备参数，并为新增页面添加导航入口。
 
-后续上游更新时，先核对固定版本与差异，再用本站 `tools/import_upstream_docs.py` 重新生成原文资料页；中文主线需要同步人工核对，不能把导入成功当作教程仍然正确。
+提交前在本地构建并预览，确认图片、视频和链接正常。涉及硬件操作的变更应同时记录验证设备与软件版本。
 
-[查看开发资料全文目录](library-development.md) · [查看来源与迁移清单](migration-status.md)
+[查看开发专题](library-development.md) · [参与文档贡献](community.md)

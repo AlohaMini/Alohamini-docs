@@ -1,10 +1,8 @@
 # AlohaMini 开发者手册_v1.3
 
-[官方使用手册](../official-manual.md) · [语雀来源](https://alohamini.yuque.com/lq44as/tiv9xs/wgx9twozktvwssu3) · 2026-09-28 整理
+[返回官方使用手册](../official-manual.md)
 
-```{note}
-本手册同时介绍 SO-ARM 与 AM-ARM。2 / 2 Pro 机械臂各含 1–7 号舵机；左侧总线还连接 8–10 号车轮和 11 号升降舵机。已修正仓库地址拼写、旧式遥操作参数和 Pro 两端型号不一致的问题。`wheels.py` / `axis.py` 属于旧版调试示例，2 / 2 Pro 请使用 [按机型调试的方法](../debug-tools.md)。文中的摄像头组合是使用建议，具体数量由模型配置和数据集决定。
-```
+本手册介绍 SO-ARM 与 AM-ARM。AlohaMini 2 / 2 Pro 的机械臂舵机编号为 1–7，底盘为 8–10，升降为 11。请先确认硬件型号，再选择对应的设备配置和 [调试方法](../debug-tools.md)。
 
 (yq-wgx9twozktvwssu3-PoM9d)=
 

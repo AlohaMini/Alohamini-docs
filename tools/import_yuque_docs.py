@@ -33,13 +33,12 @@ PAGES = {
 }
 ASSETS = json.loads((SNAP / 'assets.json').read_text())
 NOTES = {
-    'pro-quickstart': '本页适用于 2 Pro。已修正原文遥操作命令误填的 `alohamini2`，以及双臂校准命令缺少续行符的问题。原文的 `head_top` 相机命名与本次 GitHub 版本的 `forward` 不同；采集、数据转换和推理必须采用同一套实际特征名。AM-ACT 参数是特定采集任务示例，详见 [训练说明](../training.md)。示例 IP、设备序列号和检查点路径需要替换。出厂密码仅适用于对应交付镜像，以实际交付信息为准。',
-    'developer-manual': '本手册同时介绍 SO-ARM 与 AM-ARM。2 / 2 Pro 机械臂各含 1–7 号舵机；左侧总线还连接 8–10 号车轮和 11 号升降舵机。已修正仓库地址拼写、旧式遥操作参数和 Pro 两端型号不一致的问题。`wheels.py` / `axis.py` 属于旧版调试示例，2 / 2 Pro 请使用 [按机型调试的方法](../debug-tools.md)。文中的摄像头组合是使用建议，具体数量由模型配置和数据集决定。',
-    'faq': '本页的代码更新步骤已改为先检查并保存本地改动，再尝试快进更新；原文 `git restore .` 会丢弃未提交的修改。代理地址仅为局域网示例，应替换为你自己的代理服务器。',
-    'troubleshooting': '已修正原文的 Host 模块名拼写。校准、串口和相机故障的完整排查顺序见 [整机排错](../support.md)。相机超时可能涉及供电、端口、占用或配置；单次读不到舵机也不足以直接判定控制板损坏。',
-    'resources': '《模型Policy.pdf》下载需要语雀登录，本地保留附件入口；本页链接的仿真与 SLAM 项目仍为外部资料。',
-    'videos': '',
+    'pro-quickstart': '适用型号：AlohaMini 2 Pro。树莓派与 PC 均使用 `alohamini2pro`。相机名称以实际配置为准，采集、转换、训练与推理必须使用一致的数据特征名。IP、设备序列号和检查点路径需替换为本机值。AM-ACT 参数配置见 [训练说明](../training.md)。',
+    'developer-manual': '本手册介绍 SO-ARM 与 AM-ARM。AlohaMini 2 / 2 Pro 的机械臂舵机编号为 1–7，底盘为 8–10，升降为 11。请先确认硬件型号，再选择对应的设备配置和 [调试方法](../debug-tools.md)。',
+    'faq': '更新软件前，请先保存本机配置和未提交的改动。网络代理地址应替换为自己的服务器地址。',
+    'troubleshooting': '按供电、接线、串口和配置顺序排查。完整流程见 [整机排错](../support.md)。',
 }
+
 
 
 def link(url):
@@ -252,11 +251,16 @@ def render_page(slug):
     if name == 'troubleshooting':
         body = body.replace('lerobot.robots.alohamini.lekiwi host', 'lerobot.robots.alohamini.alohamini_host')
         edits.append('修正 Host 模块名拼写')
-    intro = NOTES.get(name, '本页保留语雀产品与教学资料的正文。参数、价格、赛事与课程安排按原文收录日期理解；实际套件配置以交付资料为准。')
+    body = body.replace('需登录语雀下载', '需登录下载')
+    # Separate punctuation-ending emphasis from Chinese text so MyST renders
+    # the labels as bold rather than displaying the Markdown asterisks.
+    body = re.sub(r'\*\*([^*\n]+[：:])\*\*(?=\S)', r'**\1** ', body)
+    body = body.replace('**全栈生态适配：：**', '**全栈生态适配：**')
+    intro = NOTES.get(name, '')
     page = SOURCE / 'yuque' / f'{name}.md'
     page.parent.mkdir(exist_ok=True)
-    note = f'```{{note}}\n{intro}\n```\n\n' if intro else ''
-    page.write_text(localize_images(f'# {data["title"]}\n\n[官方使用手册](../official-manual.md) · [语雀来源]({data["url"]}) · 2026-09-28 整理\n\n' + note + body, page))
+    note = f'{intro}\n\n' if intro else ''
+    page.write_text(localize_images(f'# {data["title"]}\n\n[返回官方使用手册](../official-manual.md)\n\n' + note + body, page))
     return {'title': data['title'], 'url': data['url'], 'page': f'yuque/{name}.md', 'images': image_count, 'code_blocks': code_count, 'corrections': edits, 'snapshot_sha256': hashlib.sha256((SNAP/f'{slug}.json').read_bytes()).hexdigest(), 'archive_sha256': hashlib.sha256(archive.read_bytes()).hexdigest()}
 
 

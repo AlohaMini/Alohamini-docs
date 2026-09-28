@@ -1,12 +1,10 @@
 # Pi-0.5 for Alohamini
 
-[← 教程资料库](../tutorial-library.md) · **AlohaMini 原始教程 / 原文全文**
+[← 教程资料库](../tutorial-library.md) · **AlohaMini 硬件与操作**
 
-本文是 AlohaMini 项目资料，具体代际以原文路径和硬件配置为准。 旧版部署接口与缺失启动脚本的说明见 [OpenPI 接入](../pi05.md)。
+适用型号请结合本页硬件配置确认。 旧版部署接口与缺失启动脚本的说明见 [OpenPI 接入](../pi05.md)。
 
-来源：[liyiteng/AlohaMini · `examples/pi0.5_openpi/README.md`](https://github.com/liyiteng/AlohaMini/blob/17c6a98d79881a45ab869c1f392ed89c0723a298/examples/pi0.5_openpi/README.md) · 版本 `17c6a98d` · [下载未经改写的源文档](../_static/upstream-originals/hardware/examples/pi0.5_openpi/README.md.txt)
-
-本页保留原文语言及全部段落、表格和代码；仅调整标题层级、页面组件、代码围栏格式、相对链接和媒体路径。原文中的价格、性能和运行结果属于该版本记录。
+[项目参考：liyiteng/AlohaMini](https://github.com/liyiteng/AlohaMini/blob/17c6a98d79881a45ab869c1f392ed89c0723a298/examples/pi0.5_openpi/README.md)
 
 ---
 

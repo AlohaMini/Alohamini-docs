@@ -1,10 +1,8 @@
 # AlohaMini2 Pro 快速入门指南（极简）
 
-[官方使用手册](../official-manual.md) · [语雀来源](https://alohamini.yuque.com/lq44as/tiv9xs/nyk0n5c9brbh2l4a) · 2026-09-28 整理
+[返回官方使用手册](../official-manual.md)
 
-```{note}
-本页适用于 2 Pro。已修正原文遥操作命令误填的 `alohamini2`，以及双臂校准命令缺少续行符的问题。原文的 `head_top` 相机命名与本次 GitHub 版本的 `forward` 不同；采集、数据转换和推理必须采用同一套实际特征名。AM-ACT 参数是特定采集任务示例，详见 [训练说明](../training.md)。示例 IP、设备序列号和检查点路径需要替换。出厂密码仅适用于对应交付镜像，以实际交付信息为准。
-```
+适用型号：AlohaMini 2 Pro。树莓派与 PC 均使用 `alohamini2pro`。相机名称以实际配置为准，采集、转换、训练与推理必须使用一致的数据特征名。IP、设备序列号和检查点路径需替换为本机值。AM-ACT 参数配置见 [训练说明](../training.md)。
 
 (yq-nyk0n5c9brbh2l4a-v7ZpE)=
 
@@ -329,7 +327,7 @@ python examples/alohamini/calibrate_bi.py \
 
 (yq-nyk0n5c9brbh2l4a-ucf38e747)=
 
-根据提示自行完成标定流程**(参考视频：**[**https://b23.tv/Dd1xFYz**](https://b23.tv/Dd1xFYz)**)**。
+根据提示自行完成标定流程**(参考视频：** [**https://b23.tv/Dd1xFYz**](https://b23.tv/Dd1xFYz)**)**。
 
 (yq-nyk0n5c9brbh2l4a-u2b763b9d)=
 

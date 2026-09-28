@@ -101,7 +101,7 @@ python3 -m video2sim.check_env \
 
 ## 6. 配方参数与排错
 
-完整参数表、参数原因、v10/v11 比较和故障处理已保留在 [video2sim 原文全文](upstream/software--alohamini_sim-video2sim-readme.md)。其中地面到天花板 2.4 m、手持高度 1.35 m 等尺度假设必须符合实际拍摄环境。
+完整参数表、参数原因、v10/v11 比较和故障处理已保留在 [video2sim 配置参考](upstream/software--alohamini_sim-video2sim-readme.md)。其中地面到天花板 2.4 m、手持高度 1.35 m 等尺度假设必须符合实际拍摄环境。
 
 | 现象 | 优先检查 |
 |---|---|
@@ -114,4 +114,4 @@ python3 -m video2sim.check_env \
 
 完成场景检查后再进入 [仿真数据生成与转换](sim-data.md)。场景可显示、轨迹可生成、数据可训练是三个独立检查点。
 
-来源：[原文全文](upstream/software--alohamini_sim-video2sim-readme.md)、[runner 源码](https://github.com/liyiteng/lerobot_alohamini/blob/7843e5888366eaa553630e2f9d5539505a62dddf/alohamini_sim/video2sim/video2sim/cli.py)。
+来源：[完整配置参考](upstream/software--alohamini_sim-video2sim-readme.md)、[runner 源码](https://github.com/liyiteng/lerobot_alohamini/blob/7843e5888366eaa553630e2f9d5539505a62dddf/alohamini_sim/video2sim/video2sim/cli.py)。

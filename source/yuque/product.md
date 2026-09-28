@@ -1,10 +1,6 @@
 # AlohaMini产品说明
 
-[官方使用手册](../official-manual.md) · [语雀来源](https://alohamini.yuque.com/lq44as/tiv9xs/rp5dnig43ng6uop7) · 2026-09-28 整理
-
-```{note}
-本页保留语雀产品与教学资料的正文。参数、价格、赛事与课程安排按原文收录日期理解；实际套件配置以交付资料为准。
-```
+[返回官方使用手册](../official-manual.md)
 
 (yq-rp5dnig43ng6uop7-iuJA2)=
 
@@ -18,13 +14,13 @@
 
 **AlohaMini**是新一代专为具身智能算法复现/教学打造的万元级可移动升降双臂机器人
 
-- **硬件优势：**整机集成全向移动底盘、电动升降模组与 6+1 自由度的aloha机械臂，可适配低位地面拾取、桌面操作、双臂长轨迹协同等多种非结构化实操任务，场景覆盖能力强。
+- **硬件优势：** 整机集成全向移动底盘、电动升降模组与 6+1 自由度的aloha机械臂，可适配低位地面拾取、桌面操作、双臂长轨迹协同等多种非结构化实操任务，场景覆盖能力强。
 
-- **全栈生态适配：：**深度兼容 Hugging Face LeRobot v0.6 开源框架，打通遥操作数据集采集、模型训练、本地推理部署全链路；通信链路针对性高频优化，原生支持主流具身算法复现与微调：
+- **全栈生态适配：** 深度兼容 Hugging Face LeRobot v0.6 开源框架，打通遥操作数据集采集、模型训练、本地推理部署全链路；通信链路针对性高频优化，原生支持主流具身算法复现与微调：
 
-- **模仿学习：**ACT、Diffusion Policy、FastWAM
+- **模仿学习：** ACT、Diffusion Policy、FastWAM
 
-- **VLA具身大模型：**Pi-0.5、SmolVLA、EO-1、VLA-JEPA、GR00T N1.7、EVO1
+- **VLA具身大模型：** Pi-0.5、SmolVLA、EO-1、VLA-JEPA、GR00T N1.7、EVO1
 
 (yq-rp5dnig43ng6uop7-ufeffb942)=
 
@@ -32,27 +28,27 @@
 
 ![AlohaMini产品说明 · 图 1](../_static/yuque-assets/d9351bcfccf74c1ec150.jpeg)
 
-- **产品说明PPT:**[**AlohaMini产品说明PPT**](https://bcnz96us0h7n.feishu.cn/wiki/Xj0swdZO8iiCF7kJyiMcm96Znmd?from=from_copylink)
+- **产品说明PPT:** [**AlohaMini产品说明PPT**](https://bcnz96us0h7n.feishu.cn/wiki/Xj0swdZO8iiCF7kJyiMcm96Znmd?from=from_copylink)
 
-- **官方网站：**[AlohaMini | 新一代具身智能算法孵化平台](https://www.alohamini.cn/)
+- **官方网站：** [AlohaMini | 新一代具身智能算法孵化平台](https://www.alohamini.cn/)
 
 - **GitHub开源资料：**
 
-- **硬件：**[GitHub - liyiteng/AlohaMini: Open-Source Dual-Arm Mobile Robot with Motorized Lift](https://github.com/liyiteng/AlohaMini)
+- **硬件：** [GitHub - liyiteng/AlohaMini: Open-Source Dual-Arm Mobile Robot with Motorized Lift](https://github.com/liyiteng/AlohaMini)
 
-- **软件：**[GitHub - liyiteng/lerobot_alohamini: Software support for AlohaMini robot.](https://github.com/liyiteng/lerobot_alohamini)
+- **软件：** [GitHub - liyiteng/lerobot_alohamini: Software support for AlohaMini robot.](https://github.com/liyiteng/lerobot_alohamini)
 
 - **购买方式**
 
-- **对公转账：**联系微信alohamini2077
+- **对公转账：** 联系微信alohamini2077
 
-- **淘宝下单：**[AlohaMini开源机器人淘宝店铺](https://item.taobao.com/item.htm?abbucket=11&id=1065716055984&mi_id=0000nnHoQcE4mmo1NxzZosD-RrwsPsIYvq5SNaBk67-Ezrw&ns=1&skuId=6115946961658&spm=a21n57.1.hoverItem.7&utparam=%7B%22aplus_abtest%22%3A%22d6b76167734b86a3482b9d7ab243ae29%22%7D&xxc=taobaoSearch)
+- **淘宝下单：** [AlohaMini开源机器人淘宝店铺](https://item.taobao.com/item.htm?abbucket=11&id=1065716055984&mi_id=0000nnHoQcE4mmo1NxzZosD-RrwsPsIYvq5SNaBk67-Ezrw&ns=1&skuId=6115946961658&spm=a21n57.1.hoverItem.7&utparam=%7B%22aplus_abtest%22%3A%22d6b76167734b86a3482b9d7ab243ae29%22%7D&xxc=taobaoSearch)
 
 - **官方账号：**
 
-- **公众号：**AlohaMini
+- **公众号：** AlohaMini
 
-- **视频号：**AlohaMini
+- **视频号：** AlohaMini
 
 - [**抖音：AlohaMini开源社区**](https://www.douyin.com/user/MS4wLjABAAAA22C6rFbHmOuzIqwOYJ3yKWq0lpOBZXgALR4_sgZZSUquXQU6r4vxTZpcGM_nfwfn?from_tab_name=main)
 
@@ -140,7 +136,7 @@
 
 - **定价：12,999 元**
 
-- **交付形式：**散件套装+社区开源文件+安装指导+关键零件保修一年+全套配件
+- **交付形式：** 散件套装+社区开源文件+安装指导+关键零件保修一年+全套配件
 
 - **核心特性：**
 
@@ -340,11 +336,11 @@
 
 ### 🤝5、售后服务
 
-- **售后退换：**本产品支持 7 天无理由退货，商品未拆箱、未激活、全套配件及包装完好，不影响二次销售的前提下可申请退货；一经拆箱、激活、刷机，则不再适用七天无理由退货。若产生退货，运费需由客户承担。
+- **售后退换：** 本产品支持 7 天无理由退货，商品未拆箱、未激活、全套配件及包装完好，不影响二次销售的前提下可申请退货；一经拆箱、激活、刷机，则不再适用七天无理由退货。若产生退货，运费需由客户承担。
 
-- **保修服务：**整机提供一年官方保修。
+- **保修服务：** 整机提供一年官方保修。
 
-- **远程技术支持：**远程协助支持客户训练出第一个 ACT / AM‑ACT 模型；不包含算法教学、二次开发指导服务。
+- **远程技术支持：** 远程协助支持客户训练出第一个 ACT / AM‑ACT 模型；不包含算法教学、二次开发指导服务。
 
 (yq-rp5dnig43ng6uop7-0bd9c004)=
 
