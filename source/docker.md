@@ -4,7 +4,7 @@ Docker 教程适合在独立容器中准备训练或开发环境。机器人端�
 
 ## 1. 选择镜像来源
 
-上游提供两种 Dockerfile：
+项目提供两种 Dockerfile：
 
 | 文件 | 基础环境 | 用途 |
 |---|---|---|
@@ -54,7 +54,7 @@ python -c "import torch; print(torch.cuda.is_available())"
 docker run -it --rm alohamini-cpu
 ```
 
-原文指定可见 GPU 的方式是传入 `CUDA_VISIBLE_DEVICES`：
+通过 `CUDA_VISIBLE_DEVICES` 指定可见 GPU：
 
 ```bash
 docker run -it --rm --gpus all --shm-size 16gb \
@@ -62,11 +62,11 @@ docker run -it --rm --gpus all --shm-size 16gb \
   alohamini-gpu
 ```
 
-两块 GPU 对容器可见，不代表训练自动采用多卡；启动方式与分布式训练参数见 [多 GPU 训练原文](upstream/software--docs-source-multi_gpu_training.md)。
+两块 GPU 对容器可见，不代表训练自动采用多卡；启动方式与分布式训练参数见 [多 GPU 训练](upstream/software--docs-source-multi_gpu_training.md)。
 
 ## 5. 串口、相机和网络
 
-原文提供把 `/dev` 整体映射到容器的例子，全文保留在 [Docker 原始教程](upstream/software--docker-readme.md)。实际使用应先记录具体设备，并确认用户权限、udev 别名在容器内可解析，以及容器可以访问 Pi 的 IP 和端口。
+映射设备前，先记录容器实际需要的设备，并确认用户权限、udev 别名在容器内可解析，以及容器可以访问 Pi 的 IP 和端口。
 
 用容器训练已保存的数据时不需要机器人 USB。确实要接入真机时，先在宿主机完成设备发现和校准检查，再逐一验证容器内串口、视频设备和网络，避免同时排查环境与硬件两类问题。
 
@@ -80,5 +80,3 @@ docker run -it --rm --gpus all --shm-size 16gb \
 | 输出目录无权限 | 挂载目录属主与容器用户写权限 |
 | 容器退出后文件消失 | 文件是否写进了持久挂载目录 |
 | 相机或串口打不开 | 设备映射、权限、别名和占用进程 |
-
-来源：[Docker 原文](upstream/software--docker-readme.md)、[Dockerfile.user](https://github.com/liyiteng/lerobot_alohamini/blob/7843e5888366eaa553630e2f9d5539505a62dddf/docker/Dockerfile.user)。

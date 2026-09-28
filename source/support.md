@@ -1,6 +1,6 @@
 # 整机排错
 
-适用：**AlohaMini 2 / 2 Pro**。按 E001–E004 及常见故障逐项排查。报错详情见 [异常处理](yuque/troubleshooting.md)。
+适用：**AlohaMini 2 / 2 Pro**。按 E001–E004 及常见故障逐项排查。
 
 ## 先确定故障发生在哪一端
 
@@ -99,5 +99,3 @@ curl -I https://github.com
 - 完整命令，替换私人目录等不需要公开的信息。
 - 报错末尾、左右设备别名、启用的相机名称、最近改动。
 - 故障能否在单臂或单相机下重现。
-
-继续阅读：[故障案例](yuque/troubleshooting.md) · [端口和校准文件](yuque/advanced.md) · [其他排错](troubleshooting.md)。

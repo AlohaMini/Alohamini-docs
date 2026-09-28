@@ -4,8 +4,6 @@
 
 适用型号请结合本页硬件配置确认。
 
-[项目参考：liyiteng/AlohaMini](https://github.com/liyiteng/AlohaMini/blob/17c6a98d79881a45ab869c1f392ed89c0723a298/AlohaMini1/docs/software_setup.md)
-
 ---
 
 
@@ -22,5 +20,3 @@ If you’re new to LeRobot and haven’t set it up before, it’s easier to clon
 👉 **https://github.com/liyiteng/lerobot_alohamini**
 
 This repository bundles **LeRobot + AlohaMini** together, so no manual copying or path configuration is required.
-
-

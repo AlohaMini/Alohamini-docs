@@ -4,8 +4,6 @@
 
 适用型号请结合本页硬件配置确认。
 
-[项目参考：liyiteng/lerobot_alohamini](https://github.com/liyiteng/lerobot_alohamini/blob/7843e5888366eaa553630e2f9d5539505a62dddf/examples/debug/README.md)
-
 ---
 
 ## View all motor states
@@ -77,4 +75,3 @@ python examples/debug/motors.py move_motors_by_script \
    --script_path action_scripts/test_dance.txt  \
    --port /dev/ttyACM0
 ```
-

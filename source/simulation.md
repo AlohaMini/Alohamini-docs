@@ -81,5 +81,3 @@ ros2 launch Aloha display.launch.py
 ## 二代适配需要核对
 
 二代更换了机械臂与升降结构，适配时至少需要检查：几何尺寸、关节链、关节限位、质量与惯量、碰撞几何、相机位置，以及与真机控制字段的对应关系。完成这些之前，不应使用一代模型推断二代的碰撞范围或运动能力。
-
-来源：[仿真目录](https://github.com/liyiteng/AlohaMini/tree/main/AlohaMini1/simulation)、[ROS 2 显示入口](https://github.com/liyiteng/AlohaMini/blob/main/AlohaMini1/simulation/src/Aloha/launch/display.launch.py)。

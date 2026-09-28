@@ -156,7 +156,6 @@ ping <Pi_IP>
 
 完成后进入 [机械臂校准](calibration.md)。
 
-来源：[硬件 Profiles](https://github.com/liyiteng/lerobot_alohamini/blob/main/docs/alohamini/profiles.md)、[当前配置文件](https://github.com/liyiteng/lerobot_alohamini/blob/main/src/lerobot/robots/alohamini/config_alohamini.py)、[端口配置指南](https://github.com/liyiteng/lerobot_alohamini/blob/main/docs/alohamini/commands.md)。
 
 ## 交付教程中的相机命名差异
 
@@ -166,5 +165,3 @@ ping <Pi_IP>
 2. 核对设备路径与实际画面，再把相同配置同步到 Pi 和 PC。
 3. 数据集中的 `observation.images.*`、训练输入和评估观测保持一致。
 4. 使用纯视觉转换脚本时，`--keep-camera` 也填写数据集中真实存在的名称。
-
-详见 [Pro 交付教程](yuque/pro-quickstart.md) 与 [开发者手册](yuque/developer-manual.md)。

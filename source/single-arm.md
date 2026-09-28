@@ -162,6 +162,4 @@ lerobot-rollout \
 
 这里的相机配置与本页录制示例对应；如果训练只用一只相机，评估也按相同名称配置。设备 ID 必须加载该从臂的真实校准，Pro 检查点必须由对应数据训练得到。
 
-完整参数与评估行为见 [推理原文](upstream/software--docs-source-inference.md)；原始单臂工作流、续录命令和参考说明见 [单臂全文](upstream/software--docs-alohamini-am-arm200.md)。
-
-来源：[AM-ARM200 完整工作流](https://github.com/liyiteng/lerobot_alohamini/blob/main/docs/alohamini/am-arm200.md)。
+完整参数与评估行为见 [推理配置](upstream/software--docs-source-inference.md)；单臂工作流、续录命令和参考说明见 [单臂操作教程](upstream/software--docs-alohamini-am-arm200.md)。

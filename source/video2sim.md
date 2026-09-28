@@ -4,7 +4,7 @@
 
 ## 1. 运行前准备
 
-原文记录的测试环境为 NVIDIA RTX 4060 8 GB、约 32 GB 内存和 Isaac Sim 5.x。这是上游特定场景的记录，不保证任意分辨率、视频时长都能在同样资源下完成。
+示例测试环境为 NVIDIA RTX 4060 8 GB、约 32 GB 内存和 Isaac Sim 5.x。这是特定场景下的测试配置，不保证任意分辨率、视频时长都能在同样资源下完成。
 
 | 环境 | 所需组件 |
 |---|---|
@@ -17,7 +17,7 @@
 
 ## 2. 设置本机路径
 
-原文中的 `/home/perelman/...` 是作者机器路径，直接复制无法在其他机器上使用。进入软件仓库里的模块目录：
+`/home/perelman/...` 是示例路径，直接复制无法在其他机器上使用。进入软件仓库里的模块目录：
 
 ```bash
 cd /path/to/lerobot_alohamini/alohamini_sim/video2sim
@@ -49,7 +49,7 @@ python3 -m video2sim.check_env \
   --model /path/to/lingbot-map-long.pt
 ```
 
-检查器在各自解释器中验证依赖，显示 PASS、WARN、FAIL。先处理失败项。8 GB 显存环境下，原文要求推理和训练时释放 GPU，避免同时开着 Isaac GUI 占用显存。
+检查器在各自解释器中验证依赖，显示 PASS、WARN、FAIL。先处理失败项。8 GB 显存环境下，推理和训练时需释放 GPU，避免同时开着 Isaac GUI 占用显存。
 
 ## 4. 执行重建
 
@@ -113,5 +113,3 @@ python3 -m video2sim.check_env \
 | 看不到 `scene.usd` | 是否显式运行 `--until scene`，资产是否齐全 |
 
 完成场景检查后再进入 [仿真数据生成与转换](sim-data.md)。场景可显示、轨迹可生成、数据可训练是三个独立检查点。
-
-来源：[完整配置参考](upstream/software--alohamini_sim-video2sim-readme.md)、[runner 源码](https://github.com/liyiteng/lerobot_alohamini/blob/7843e5888366eaa553630e2f9d5539505a62dddf/alohamini_sim/video2sim/video2sim/cli.py)。

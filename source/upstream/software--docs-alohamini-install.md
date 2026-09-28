@@ -4,8 +4,6 @@
 
 适用型号请结合本页硬件配置确认。
 
-[项目参考：liyiteng/lerobot_alohamini](https://github.com/liyiteng/lerobot_alohamini/blob/7843e5888366eaa553630e2f9d5539505a62dddf/docs/alohamini/install.md)
-
 ---
 
 

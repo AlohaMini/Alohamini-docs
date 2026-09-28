@@ -165,5 +165,3 @@ Host 同一时刻只接受一个控制客户端。开始录制或评估前，先
 ## 进入数据采集
 
 在以下条件满足后进入 [数据采集](learning.md)：左右机械臂对应正确、底盘和升降正常、启用相机画面正确、网络稳定，且能够重复完成计划采集的任务。
-
-来源：[整机工作流](https://github.com/liyiteng/lerobot_alohamini/blob/main/docs/alohamini/alohamini.md)、[按键与网络配置](https://github.com/liyiteng/lerobot_alohamini/blob/main/src/lerobot/robots/alohamini/config_alohamini.py)。

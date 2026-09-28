@@ -159,5 +159,3 @@ lerobot-dataset-viz \
 
 
 ## 教程依据
-
-机型配置和操作顺序依据 [GitHub 硬件 Profiles](https://github.com/liyiteng/lerobot_alohamini/blob/7843e5888366eaa553630e2f9d5539505a62dddf/docs/alohamini/profiles.md) 与 [整机工作流](https://github.com/liyiteng/lerobot_alohamini/blob/7843e5888366eaa553630e2f9d5539505a62dddf/docs/alohamini/alohamini.md) 整理。核对日期：2026-09-28。命令已按源码核对，尚未在实体机器人上完成验证。

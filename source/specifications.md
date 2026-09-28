@@ -65,5 +65,3 @@ AlohaMini 2 在一代的双臂移动架构上升级了机械臂、升降机构�
 标称负载描述项目设计能力，不代表每种材料、姿态和打印替代件都经过同样验证。自行搭建时记录材料、金属件替代情况和实际负载；带负载运行前先完成空载装配与运动检查。
 
 一代与二代的机械臂、升降传动和接口不同。已有一代用户不能只修改机型字符串就获得二代配置，也不能直接复用不同维度的训练检查点。
-
-软件配置来源：[Hardware Profiles](https://github.com/liyiteng/lerobot_alohamini/blob/main/docs/alohamini/profiles.md)、[整机型号定义](https://github.com/liyiteng/lerobot_alohamini/blob/main/src/lerobot/robots/alohamini/model_specs.py)。

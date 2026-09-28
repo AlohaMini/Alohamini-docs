@@ -4,8 +4,6 @@
 
 适用型号请结合本页硬件配置确认。 旧版部署接口与缺失启动脚本的说明见 [OpenPI 接入](../pi05.md)。
 
-[项目参考：liyiteng/AlohaMini](https://github.com/liyiteng/AlohaMini/blob/17c6a98d79881a45ab869c1f392ed89c0723a298/examples/pi0.5_openpi/README.md)
-
 ---
 
 <img src="../_static/external-images/beea06fbc43b7e6b6a04.gif" width="720">

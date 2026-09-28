@@ -78,5 +78,3 @@ python examples/alohamini/calibrate_bi.py \
 按照原始工作流，校准完成后对主臂和从臂断电重启。随后启动 Host，再以 [遥操作](teleoperation.md) 小范围检查左右臂对应关系、运动方向、夹爪和关节范围。
 
 校准成功不代表所有机构都已验证。底盘、升降、相机仍应按各自检查流程确认；策略评估应在手动遥操作正常后进行。
-
-来源：[AlohaMini 校准工作流](https://github.com/liyiteng/lerobot_alohamini/blob/main/docs/alohamini/alohamini.md)、[双主臂校准脚本](https://github.com/liyiteng/lerobot_alohamini/blob/main/examples/alohamini/calibrate_bi.py)。

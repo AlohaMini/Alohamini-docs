@@ -179,7 +179,7 @@ def main():
         scope='适用型号请结合本页硬件配置确认。' if entry['category']=='alohamini' else '本节介绍 LeRobot 的通用功能。请按目标机器人、数据集和运行环境配置示例；用于 AlohaMini 2 / 2 Pro 前，需要确认硬件与接口兼容性。'
         if 'pi0.5_openpi' in path: scope+=' 旧版部署接口与缺失启动脚本的说明见 [OpenPI 接入](../pi05.md)。'
         if kind=='hardware' and path=='AlohaMini1/docs/BOM.md': scope+=' Pi 为机器人端，PC 为操作端；供电需按实物额定值确认。'
-        header=f'# {title}\n\n[← 教程资料库](../tutorial-library.md) · **{CATEGORIES[entry["category"]]}**\n\n{scope}\n\n[项目参考：{name}](https://github.com/{name}/blob/{rev}/{quote(path,safe="/")})\n\n---\n\n'
+        header=f'# {title}\n\n[← 教程资料库](../tutorial-library.md) · **{CATEGORIES[entry["category"]]}**\n\n{scope}\n\n---\n\n'
         dest.write_text(localize_images(header+converted, dest))
     manifest={'date':'2026-09-28','sources':entries,'aliases':[{'kind':k[0],'path':k[1],'target':v,'page':pages[k]} for k,v in sorted(aliases.items())],'excluded':exclusions}
     (ROOT/'upstream-manifest.json').write_text(json.dumps(manifest,ensure_ascii=False,indent=2)+'\n')

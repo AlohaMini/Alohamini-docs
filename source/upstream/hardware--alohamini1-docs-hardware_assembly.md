@@ -4,8 +4,6 @@
 
 适用型号请结合本页硬件配置确认。
 
-[项目参考：liyiteng/AlohaMini](https://github.com/liyiteng/AlohaMini/blob/17c6a98d79881a45ab869c1f392ed89c0723a298/AlohaMini1/docs/hardware_assembly.md)
-
 ---
 
 
@@ -147,4 +145,3 @@ For the assembly of Leader arms and Follower arms, please refer to the tutorial:
 
 7. Assembly fully complete!
    <img src="../_static/upstream-assets/hardware/AlohaMini1/docs/media/assembled2.png" >
-

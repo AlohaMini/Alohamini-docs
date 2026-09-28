@@ -256,5 +256,3 @@ python examples/alohamini/replay_bi.py \
 ## 下一步
 
 数据回看通过后进入 [ACT 策略训练](training.md)，训练结果再用 [真机评估](evaluation.md) 验证。
-
-来源：[采集工作流](https://github.com/liyiteng/lerobot_alohamini/blob/main/docs/alohamini/alohamini.md)、[多频采集说明](https://github.com/liyiteng/lerobot_alohamini/blob/main/docs/alohamini/commands.md)。

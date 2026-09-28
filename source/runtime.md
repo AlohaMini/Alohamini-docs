@@ -79,5 +79,3 @@ PC 发送命令前，需要完整反馈来自最近 **250 ms** 内发出的请�
 ## 排查顺序
 
 发生动作暂停时，先确定：Host 是否仍在线 → 控制权是否属于当前客户端 → 反馈是否新鲜 → 是否触发关节保护 → 相机是否满足录制要求。具体检查命令见 [调试与排错](troubleshooting.md)。
-
-来源：[运行与保护说明](https://github.com/liyiteng/lerobot_alohamini/blob/main/docs/alohamini/alohamini.md)、[Host 与客户端配置](https://github.com/liyiteng/lerobot_alohamini/blob/main/src/lerobot/robots/alohamini/config_alohamini.py)。

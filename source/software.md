@@ -125,5 +125,3 @@ export HF_USER="your-hf-username"
 ## 下一步
 
 进入 [设备配置](configuration.md)，固定左右臂端口、确认相机视角，然后 [校准](calibration.md)。PC 与 Host 应使用彼此兼容的同版软件，尤其是控制会话和反馈协议更新后。
-
-来源：[安装指南](https://github.com/liyiteng/lerobot_alohamini/blob/main/docs/alohamini/install.md)、[命令速查](https://github.com/liyiteng/lerobot_alohamini/blob/main/docs/alohamini/commands.md)。

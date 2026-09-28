@@ -111,5 +111,3 @@ python examples/alohamini/evaluate_bi.py \
 | 运行异常 | 缺图、超时、保护触发、控制权变化 |
 
 比较不同检查点时尽量保持同一套场景定义和成功标准。先区分运行问题与策略问题，再决定修复配置、补充演示或重新训练。
-
-来源：[评估工作流](https://github.com/liyiteng/lerobot_alohamini/blob/main/docs/alohamini/alohamini.md)、[评估脚本](https://github.com/liyiteng/lerobot_alohamini/blob/main/examples/alohamini/evaluate_bi.py)。

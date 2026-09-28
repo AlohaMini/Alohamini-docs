@@ -156,5 +156,3 @@ python examples/debug/motors.py --help
 ```
 
 独立 `wheels.py`、`axis.py` 有自己的舵机与几何常量，不能仅传入串口就认为已经适配二代或 Pro。详见 [调试与排错](troubleshooting.md)。
-
-来源：[完整命令源文档](https://github.com/liyiteng/lerobot_alohamini/blob/main/docs/alohamini/commands.md)、[舵机调试脚本](https://github.com/liyiteng/lerobot_alohamini/blob/main/examples/debug/motors.py)。

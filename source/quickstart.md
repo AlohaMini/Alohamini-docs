@@ -43,5 +43,3 @@
 - 两款的入门页分别给出完整命令。共用专题中，标注型号的两组命令只执行与你实物相符的一组。
 - 数据集示例使用 `am2_` 和 `am2pro_` 前缀区分来源；名称本身不会自动选择硬件配置。
 - 两款均为 18 维整机接口，但相同维度不能证明数据集和策略可以直接互换；还需核对特征顺序、单位、校准、相机及实际硬件。
-
-来源：[GitHub 硬件 Profiles](https://github.com/liyiteng/lerobot_alohamini/blob/7843e5888366eaa553630e2f9d5539505a62dddf/docs/alohamini/profiles.md)。

@@ -4,8 +4,6 @@
 
 适用型号请结合本页硬件配置确认。
 
-[项目参考：liyiteng/AlohaMini](https://github.com/liyiteng/AlohaMini/blob/17c6a98d79881a45ab869c1f392ed89c0723a298/AlohaMini2/docs/BOM.md)
-
 ---
 
 
@@ -100,4 +98,4 @@ Each arm: **6+1 DoF, 52 cm reach, 1 kg payload** — based on AM-ARM200.
 | Fasteners & consumables | ¥107 | ~$15 |
 | **Total (self-print)** | **¥7,548** | **~$1,097** |
 
-> Filament cost (~5 kg) not included above 
+> Filament cost (~5 kg) not included above

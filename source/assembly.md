@@ -479,5 +479,3 @@ python examples/alohamini/teleoperate_bi.py \
 ## 下一步：配置与校准
 
 依次完成 [设备配置](configuration.md) → [机械臂校准](calibration.md) → [遥操作](teleoperation.md)。硬件装好后仍需要正确的机型、串口与校准数据，不能直接跳到策略执行。
-
-来源：[原始完整组装指南](https://github.com/liyiteng/AlohaMini/blob/main/AlohaMini2/docs/assembly_guide.md)。

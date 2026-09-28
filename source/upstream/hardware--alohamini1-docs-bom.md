@@ -4,8 +4,6 @@
 
 适用型号请结合本页硬件配置确认。 Pi 为机器人端，PC 为操作端；供电需按实物额定值确认。
 
-[项目参考：liyiteng/AlohaMini](https://github.com/liyiteng/AlohaMini/blob/17c6a98d79881a45ab869c1f392ed89c0723a298/AlohaMini1/docs/BOM.md)
-
 ---
 
 
@@ -132,5 +130,3 @@ For detailed printing instructions, refer to the [SO-ARM100 project README](http
 - All "L_*.stl" files: x2
 
 For detailed printing instructions, refer to the [SO-ARM100 project README](https://github.com/TheRobotStudio/SO-ARM100)
-
-

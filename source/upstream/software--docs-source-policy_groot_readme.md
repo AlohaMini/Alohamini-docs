@@ -4,8 +4,6 @@
 
 本节介绍 LeRobot 的通用功能。请按目标机器人、数据集和运行环境配置示例；用于 AlohaMini 2 / 2 Pro 前，需要确认硬件与接口兼容性。
 
-[项目参考：liyiteng/lerobot_alohamini](https://github.com/liyiteng/lerobot_alohamini/blob/7843e5888366eaa553630e2f9d5539505a62dddf/docs/source/policy_groot_README.md)
-
 ---
 
 ## Research Paper
@@ -149,7 +147,3 @@ when the checkpoint / artifacts are absent.
 | `GROOT_N1_7_LIBERO_CKPT`                  | auto (HF cache)                  | override checkpoint dir               |
 | `GROOT_PARITY_DEVICE`                     | `cuda` if available              | `cpu` or `cuda`                       |
 | `GROOT_PARITY_ATOL` / `GROOT_PARITY_RTOL` | `1e-3`                           | comparison tolerance                  |
-
-
-
-

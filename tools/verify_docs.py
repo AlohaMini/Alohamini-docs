@@ -14,6 +14,7 @@ class Page(HTMLParser):
         super().__init__()
         self.ids = set()
         self.links = []
+        self.text = []
         self.external_images = []
         self.feed(text)
 
@@ -27,6 +28,9 @@ class Page(HTMLParser):
         for key in ('href', 'src', 'poster'):
             if key in values:
                 self.links.append(values[key])
+
+    def handle_data(self, data):
+        self.text.append(data)
 
 
 def main():
@@ -86,6 +90,10 @@ def main():
     if not pages:
         errors.append('No HTML pages; build the site first.')
     for path, page in pages.items():
+        public_text = ''.join(page.text)
+        for phrase in ('语雀', '本页保留', '项目参考：', '来源转写与核对', '上游完整命令'):
+            if phrase in public_text:
+                errors.append(f'{path.relative_to(HTML)}: internal editorial text is visible: {phrase}')
         for link in page.links:
             url = urlsplit(link)
             if url.scheme or url.netloc:

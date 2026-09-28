@@ -4,8 +4,6 @@
 
 适用型号请结合本页硬件配置确认。
 
-[项目参考：liyiteng/AlohaMini](https://github.com/liyiteng/AlohaMini/blob/17c6a98d79881a45ab869c1f392ed89c0723a298/README.md)
-
 ---
 
 [![Join our Discord](../_static/external-images/6fefa33657dd5d41c89e.svg)](https://discord.gg/CacMUBaFgJ) [![Follow on X](../_static/external-images/08ffe2473ce53b7e3838.svg)](https://x.com/liyitengx)

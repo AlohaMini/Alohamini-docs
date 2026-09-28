@@ -8,7 +8,7 @@
 |---|---|---|
 | ACT | [完整教程](upstream/software--docs-source-act.md) | action chunk、训练与评估 |
 | AM-ACT | [定制实现说明](upstream/software--src-lerobot-policies-am_act-readme.md) | 离散动作维度、固定维度、损失组和输出缩放 |
-| Diffusion | [实现说明](upstream/software--docs-source-policy_diffusion_readme.md) | 原文给出的实现与参考资料 |
+| Diffusion | [实现说明](upstream/software--docs-source-policy_diffusion_readme.md) | 实现与参数说明 |
 | SmolVLA | [完整教程](upstream/software--docs-source-smolvla.md) | 模型依赖、微调、推理与数据 |
 | Pi0 / Pi0.5 | [Pi0](upstream/software--docs-source-pi0.md)、[Pi0.5](upstream/software--docs-source-pi05.md) | LeRobot 内置实现，区别于 [独立 OpenPI](pi05.md) |
 | Pi0 FAST | [完整教程](upstream/software--docs-source-pi0fast.md) | 动作表示与模型使用 |
@@ -22,7 +22,7 @@
 | LingBot-VA / Wall-OSS / XVLA | [LingBot-VA](upstream/software--docs-source-lingbot_va.md)、[Wall-OSS](upstream/software--docs-source-walloss.md)、[XVLA](upstream/software--docs-source-xvla.md) | 各模型专属数据和接口 |
 | TD-MPC / VQ-BeT / SARM | [TD-MPC](upstream/software--docs-source-policy_tdmpc_readme.md)、[VQ-BeT](upstream/software--docs-source-policy_vqbet_readme.md)、[SARM](upstream/software--docs-source-sarm.md) | 部分 README 为实现引用，详读对应正文与代码 |
 
-[查看全部策略原文与实现说明](library-policies.md)。使用其他策略前，请确认 AlohaMini 的输入、动作维度与推理接口，并完成真机验证。
+[查看全部策略教程](library-policies.md)。使用其他策略前，请确认 AlohaMini 的输入、动作维度与推理接口，并完成真机验证。
 
 ## 2. 从 ACT 数据转向其他策略前
 
@@ -33,7 +33,7 @@
 5. 先运行小规模数据加载与训练检查，确认日志、损失和保存结果正常。
 6. 部署时核对推理接口、控制频率和动作块策略；ACT 不使用 RTC 路径。
 
-示例 batch size、训练步数和显存记录取决于上游实验，不能作为对所有设备的资源承诺。
+示例 batch size、训练步数和显存记录取决于具体模型与训练任务，不能作为对所有设备的资源承诺。
 
 ## 3. AM-ACT 的特有参数
 
@@ -50,7 +50,7 @@ AM-ACT 可让部分动作维度采用分类，其余维度仍按连续值训练�
 | `observation_state_dims` | 选择输入状态的子集 |
 | `inference_action_scale_dims` / `inference_action_scale` | 反归一化之后缩放指定输出 |
 
-原文把 `[14,15,16]` 作为离散维度例子；是否对应底盘要以实际数据特征顺序判断。归一化空间中的零也不必然等于物理零动作。完整训练命令和加载方式见 [AM-ACT 原文](upstream/software--src-lerobot-policies-am_act-readme.md)。
+示例配置将 `[14,15,16]` 作为离散维度例子；是否对应底盘要以实际数据特征顺序判断。归一化空间中的零也不必然等于物理零动作。完整训练命令和加载方式见 [AM-ACT 详细配置](upstream/software--src-lerobot-policies-am_act-readme.md)。
 
 ## 4. 数据与训练工具
 
@@ -60,4 +60,4 @@ AM-ACT 可让部分动作维度采用分类，其余维度仍按连续值训练�
 - [推理教程](upstream/software--docs-source-inference.md)、[异步推理](upstream/software--docs-source-async.md)
 - [人在回路数据采集](upstream/software--docs-source-hil_data_collection.md)、[HIL-SERL](upstream/software--docs-source-hilserl.md)
 
-所有原文保留在 [教程资料库](tutorial-library.md)，包括其他机器人和仿真基准示例。
+[教程资料库] 汇总各专题(tutorial-library.md)，包括其他机器人和仿真基准示例。

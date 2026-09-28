@@ -34,9 +34,9 @@
 
 数据引擎目录包含 `aspire_engine`、`intern_engine` 和机器人 agent。执行 rollout 需要外部 ManiSkill、SAPIEN、Torch、GPU 与 Vulkan；本站的软件安装环境不自动具备这些条件。
 
-原文提到的 `aloha_mini_pro_v2.urdf`、`aloha_mini_pro_v3.urdf`、`maniskill_so100_version.urdf` 在本次固定提交中未找到。先补齐与 agent 匹配的模型及网格；必要时通过 `ALOHAMINI_URDF_DIR` 指定模型目录。不要把“Pro”文件名直接等同于当前 2 Pro 的 AM 从臂配置。
+示例使用的 `aloha_mini_pro_v2.urdf`、`aloha_mini_pro_v3.urdf`、`maniskill_so100_version.urdf` 未随当前版本提供。先补齐与 agent 匹配的模型及网格；必要时通过 `ALOHAMINI_URDF_DIR` 指定模型目录。不要把“Pro”文件名直接等同于当前 2 Pro 的 AM 从臂配置。
 
-技能组织、触发和元数据见 [技能库原文](upstream/software--alohamini_sim-data_engine-data_gen-intern_engine-skills-library-readme.md)。该资料没有提供适用于所有任务的一条生成命令，应按实际环境注册与任务定义配置执行器。
+技能组织、触发和元数据见 [技能库](upstream/software--alohamini_sim-data_engine-data_gen-intern_engine-skills-library-readme.md)。不同任务需要按实际环境注册和任务定义配置执行器。
 
 ## 4. 准备 bridge 环境
 
@@ -106,5 +106,3 @@ uv run lerobot-dataset-viz \
 ```
 
 逐项检查任务描述、帧数、相机颜色、动作连续性、关节顺序和单位。若目标是二代混训，需要先完成桥接器的 18 维适配，并验证真机校准映射；单纯修改 `robot_type` 标签不会改变数据结构。
-
-来源：[仿真工作流全文](upstream/software--alohamini_sim-readme.md)、[bridge 源码](https://github.com/liyiteng/lerobot_alohamini/blob/7843e5888366eaa553630e2f9d5539505a62dddf/alohamini_sim/data_engine/lerobot_bridge.py)。

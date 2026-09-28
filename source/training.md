@@ -136,7 +136,6 @@ outputs/train/act_am2pro_pick_place/
 
 训练 loss 下降只能说明优化过程中的一个指标，任务效果要通过 [真机评估](evaluation.md) 检查。记录失败阶段，再决定补数据或调整训练配置。
 
-来源：[ACT 训练示例](https://github.com/liyiteng/lerobot_alohamini/blob/main/docs/alohamini/commands.md)、[训练配置](https://github.com/liyiteng/lerobot_alohamini/blob/main/src/lerobot/configs/train.py)。
 
 ## 7. AM-ACT：移动任务与纯视觉训练
 
@@ -219,4 +218,4 @@ lerobot-train \
 
 不要直接修改统计数值来让报错消失。训练完成后按 [真机评估](evaluation.md) 使用实际生成的检查点，并保持机器人型号、相机名称与训练数据一致。
 
-完整参数定义：[AM-ACT 上游说明](upstream/software--src-lerobot-policies-am_act-readme.md)。
+完整参数定义：[AM-ACT 参数说明](upstream/software--src-lerobot-policies-am_act-readme.md)。

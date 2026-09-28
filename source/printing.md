@@ -98,5 +98,3 @@ T 架横梁、底盘钢销、升降轴钢销均提供打印替代件。原始指
 - **热熔螺母位置：** 按机械臂与结构图确认规格，避免安装后遮挡装配路径。
 
 打印件齐备后，按照 [硬件组装](assembly.md) 从舵机 ID 与底盘开始。
-
-来源：[原始打印指南](https://github.com/liyiteng/AlohaMini/blob/main/AlohaMini2/docs/print_guide.md)。
