@@ -1,0 +1,720 @@
+{
+  "images": {
+    "https://img.shields.io/badge/Discord-Join_Chat-7289da?logo=discord&logoColor=white": {
+      "path": "_static/external-images/5f408227afa1a4f9eae3.svg",
+      "sha256": "5f408227afa1a4f9eae328725aecefd15fd7b0be3b735e509ef870ba864adcad",
+      "bytes": 3237,
+      "downloaded_at": "2026-09-28T07:26:48.561844+00:00",
+      "pages": [
+        "index.html"
+      ]
+    },
+    "https://img.shields.io/badge/License-Apache_2.0-blue": {
+      "path": "_static/external-images/96ae2a5e24552c3ad0ae.svg",
+      "sha256": "96ae2a5e24552c3ad0ae57f54f830caf5c102e876107d8c52e5821a3bf5d513a",
+      "bytes": 1313,
+      "downloaded_at": "2026-09-28T07:26:48.567580+00:00",
+      "pages": [
+        "index.html"
+      ]
+    },
+    "https://img.shields.io/twitter/follow/liyitengx?style=social&logo=x": {
+      "path": "_static/external-images/08ffe2473ce53b7e3838.svg",
+      "sha256": "08ffe2473ce53b7e38382a1604e6b47953a3e149d8789307a096e1b45c420bfc",
+      "bytes": 1711,
+      "downloaded_at": "2026-09-28T07:26:48.628941+00:00",
+      "pages": [
+        "index.html"
+      ]
+    },
+    "https://img.shields.io/github/stars/liyiteng/AlohaMini?style=social&label=Stars": {
+      "path": "_static/external-images/889a2f18c066ae68827c.svg",
+      "sha256": "889a2f18c066ae68827c74e9a45785c84d018d97969a3aefd06b24b04c061e13",
+      "bytes": 2792,
+      "downloaded_at": "2026-09-28T07:26:49.273414+00:00",
+      "pages": [
+        "index.html"
+      ]
+    },
+    "https://img.shields.io/badge/GitHub-AlohaMini-181717?logo=github&logoColor=white": {
+      "path": "_static/external-images/551432bacb6b817efe56.svg",
+      "sha256": "551432bacb6b817efe5672f04086165fc315bba54fcc828b0b48014b56991c6d",
+      "bytes": 2496,
+      "downloaded_at": "2026-09-28T07:26:49.503806+00:00",
+      "pages": [
+        "index.html"
+      ]
+    },
+    "https://huggingface.co/datasets/huggingface/documentation-images/resolve/main/lerobot/lerobot-groot-paper1%20(1).png": {
+      "path": "_static/external-images/55100418f29d0bf5f297.png",
+      "sha256": "55100418f29d0bf5f29781dcd53987beb6088ed67cbbd50b4750a23147bc2ac6",
+      "bytes": 76813,
+      "downloaded_at": "2026-09-28T07:26:52.394814+00:00",
+      "pages": [
+        "upstream/software--docs-source-groot.html"
+      ]
+    },
+    "https://huggingface.co/datasets/huggingface/documentation-images/resolve/main/lerobot/hil_effect.png?raw=true": {
+      "path": "_static/external-images/01b4a210803ad1cd0fc6.png",
+      "sha256": "01b4a210803ad1cd0fc6383f037c748859797b66a36afee2918b0ceeda034994",
+      "bytes": 264064,
+      "downloaded_at": "2026-09-28T07:26:55.672048+00:00",
+      "pages": [
+        "upstream/software--docs-source-hilserl.html"
+      ]
+    },
+    "https://huggingface.co/datasets/huggingface/documentation-images/resolve/main/lerobot/intervention_rate_tutorial_rl.png?raw=true": {
+      "path": "_static/external-images/efe2124042a6ac60c754.png",
+      "sha256": "efe2124042a6ac60c7545b0ed506caa2f41773824ab848e95862dbc118163197",
+      "bytes": 184972,
+      "downloaded_at": "2026-09-28T07:26:59.413138+00:00",
+      "pages": [
+        "upstream/software--docs-source-hilserl.html"
+      ]
+    },
+    "https://huggingface.co/datasets/huggingface/documentation-images/resolve/main/lerobot/phone_teleop.webp": {
+      "path": "_static/external-images/fad0e5f791229ff85f2e.webp",
+      "sha256": "fad0e5f791229ff85f2e758b8e985803603ad57f49ec6019e334d772ffaf293b",
+      "bytes": 124810,
+      "downloaded_at": "2026-09-28T07:26:59.503326+00:00",
+      "pages": [
+        "upstream/software--docs-source-phone_teleop.html"
+      ]
+    },
+    "https://huggingface.co/datasets/huggingface/documentation-images/resolve/main/lerobot/hilserl-main-figure.png": {
+      "path": "_static/external-images/efedfaf3822a5957115f.png",
+      "sha256": "efedfaf3822a5957115feab25daf18e1722109a3d7ac467ec8ebffe1240f5be9",
+      "bytes": 391787,
+      "downloaded_at": "2026-09-28T07:27:00.275718+00:00",
+      "pages": [
+        "upstream/software--docs-source-hilserl.html"
+      ]
+    },
+    "https://huggingface.co/datasets/huggingface/documentation-images/resolve/main/lerobot/so100_assembly_2.webp": {
+      "path": "_static/external-images/649ac7094962a51bd483.webp",
+      "sha256": "649ac7094962a51bd4839dab1175748f854db1b76ef21a5a699edcc9223f0c00",
+      "bytes": 87744,
+      "downloaded_at": "2026-09-28T07:27:02.246844+00:00",
+      "pages": [
+        "upstream/software--docs-source-so100.html"
+      ]
+    },
+    "https://huggingface.co/datasets/huggingface/documentation-images/resolve/main/lerobot/so100_assembly_1.webp": {
+      "path": "_static/external-images/0e3df74388f969a008c1.webp",
+      "sha256": "0e3df74388f969a008c1b2d986726d74a2b35b28688615ae2fd0a2c0ec871a51",
+      "bytes": 72364,
+      "downloaded_at": "2026-09-28T07:27:03.823446+00:00",
+      "pages": [
+        "upstream/software--docs-source-so100.html"
+      ]
+    },
+    "https://huggingface.co/datasets/huggingface/documentation-images/resolve/main/lerobot/so100_assembly_4.webp": {
+      "path": "_static/external-images/bc0c067feed8451c2cd1.webp",
+      "sha256": "bc0c067feed8451c2cd10ecc07e4761a5f14c127ae00cbfbc86a4bc020c646de",
+      "bytes": 77546,
+      "downloaded_at": "2026-09-28T07:27:04.080064+00:00",
+      "pages": [
+        "upstream/software--docs-source-so100.html"
+      ]
+    },
+    "https://libero-project.github.io/assets/img/libero/fig1.png": {
+      "path": "_static/external-images/0afb7dc138345b00bb8a.png",
+      "sha256": "0afb7dc138345b00bb8a445ae92dd480e05f10e41c63a62e443c050f7cbc854d",
+      "bytes": 2650500,
+      "downloaded_at": "2026-09-28T07:27:05.559803+00:00",
+      "pages": [
+        "upstream/software--docs-source-libero.html"
+      ]
+    },
+    "https://huggingface.co/datasets/huggingface/documentation-images/resolve/main/lerobot/so100_assembly_8.webp": {
+      "path": "_static/external-images/07d4edd897196e8dd21f.webp",
+      "sha256": "07d4edd897196e8dd21f221dfa89b90d1a009a2ea029afbce9c0afaa92c44d30",
+      "bytes": 74472,
+      "downloaded_at": "2026-09-28T07:27:06.427789+00:00",
+      "pages": [
+        "upstream/software--docs-source-so100.html"
+      ]
+    },
+    "https://huggingface.co/datasets/huggingface/documentation-images/resolve/main/lerobot/so100_assembly_6.webp": {
+      "path": "_static/external-images/9c27d02e7280782c9b3b.webp",
+      "sha256": "9c27d02e7280782c9b3b011b1b8f7154f307ca5c3d8b033922dc60f6078d3113",
+      "bytes": 62892,
+      "downloaded_at": "2026-09-28T07:27:06.504395+00:00",
+      "pages": [
+        "upstream/software--docs-source-so100.html"
+      ]
+    },
+    "https://huggingface.co/datasets/huggingface/documentation-images/resolve/main/lerobot/so100_assembly_5.webp": {
+      "path": "_static/external-images/661db0b3a16b7b295649.webp",
+      "sha256": "661db0b3a16b7b29564984a2b120e297b7a4f999e003a49182ccab313771b124",
+      "bytes": 64372,
+      "downloaded_at": "2026-09-28T07:27:06.850496+00:00",
+      "pages": [
+        "upstream/software--docs-source-so100.html"
+      ]
+    },
+    "https://huggingface.co/datasets/huggingface/documentation-images/resolve/main/lerobot/so100_assembly_9.webp": {
+      "path": "_static/external-images/faeb769d03406fe044a9.webp",
+      "sha256": "faeb769d03406fe044a91fa64856052bebdae004c92a3cc092175f96fd8db96b",
+      "bytes": 79302,
+      "downloaded_at": "2026-09-28T07:27:07.916440+00:00",
+      "pages": [
+        "upstream/software--docs-source-so100.html"
+      ]
+    },
+    "https://huggingface.co/datasets/huggingface/documentation-images/resolve/main/lerobot/so100_assembly_12.webp": {
+      "path": "_static/external-images/4872709912612a597298.webp",
+      "sha256": "4872709912612a59729818ca2652ba5d97956f2200e18a1648d6052aa1055a76",
+      "bytes": 77590,
+      "downloaded_at": "2026-09-28T07:27:08.829348+00:00",
+      "pages": [
+        "upstream/software--docs-source-so100.html"
+      ]
+    },
+    "https://huggingface.co/datasets/huggingface/documentation-images/resolve/main/lerobot/so100_assembly_10.webp": {
+      "path": "_static/external-images/4da3d8895cf8518d3483.webp",
+      "sha256": "4da3d8895cf8518d348303a7e8344251c95ec03d9a09089144ccffd956ffeefd",
+      "bytes": 157068,
+      "downloaded_at": "2026-09-28T07:27:08.844350+00:00",
+      "pages": [
+        "upstream/software--docs-source-so100.html"
+      ]
+    },
+    "https://huggingface.co/datasets/huggingface/documentation-images/resolve/main/lerobot/so100_assembly_11.webp": {
+      "path": "_static/external-images/1f6abbfbbe9c756c637d.webp",
+      "sha256": "1f6abbfbbe9c756c637df35376e001f7a733b2f69eba4b535c1bc3825cf53b8f",
+      "bytes": 55582,
+      "downloaded_at": "2026-09-28T07:27:09.100641+00:00",
+      "pages": [
+        "upstream/software--docs-source-so100.html"
+      ]
+    },
+    "https://huggingface.co/datasets/huggingface/documentation-images/resolve/main/lerobot/so100_assembly_13.webp": {
+      "path": "_static/external-images/74e9b5da5b21f9457c40.webp",
+      "sha256": "74e9b5da5b21f9457c401c62020006078ce828a52acbcebe1f0a54541dacb548",
+      "bytes": 88482,
+      "downloaded_at": "2026-09-28T07:27:10.465560+00:00",
+      "pages": [
+        "upstream/software--docs-source-so100.html"
+      ]
+    },
+    "https://huggingface.co/datasets/huggingface/documentation-images/resolve/main/lerobot/so100_assembly_14.webp": {
+      "path": "_static/external-images/c046769cf49d79f73d0a.webp",
+      "sha256": "c046769cf49d79f73d0a3f0866403d6aed0f6050a8aaae4b0aff081e011f89c5",
+      "bytes": 88104,
+      "downloaded_at": "2026-09-28T07:27:11.070813+00:00",
+      "pages": [
+        "upstream/software--docs-source-so100.html"
+      ]
+    },
+    "https://huggingface.co/datasets/huggingface/documentation-images/resolve/main/lerobot/so100_assembly_15.webp": {
+      "path": "_static/external-images/bc6734ddfb3ba5edcc9b.webp",
+      "sha256": "bc6734ddfb3ba5edcc9b49f37a619a7400c49b3a5aabe2002ba0106050fc6b29",
+      "bytes": 97160,
+      "downloaded_at": "2026-09-28T07:27:11.210928+00:00",
+      "pages": [
+        "upstream/software--docs-source-so100.html"
+      ]
+    },
+    "https://huggingface.co/datasets/huggingface/documentation-images/resolve/main/lerobot/so100_assembly_16.webp": {
+      "path": "_static/external-images/b7bb8d7b1d88f0fde03f.webp",
+      "sha256": "b7bb8d7b1d88f0fde03fc4522f5dc0d2e6f5c4be1bd07b4c653f4ae721a781eb",
+      "bytes": 91368,
+      "downloaded_at": "2026-09-28T07:27:11.492149+00:00",
+      "pages": [
+        "upstream/software--docs-source-so100.html"
+      ]
+    },
+    "https://huggingface.co/datasets/huggingface/documentation-images/resolve/main/lerobot/crop_dataset.gif": {
+      "path": "_static/external-images/8a1a63806645f1edf854.gif",
+      "sha256": "8a1a63806645f1edf854724284d4be67b9f5e28197b3fcb0d6253a8336018d7d",
+      "bytes": 2237683,
+      "downloaded_at": "2026-09-28T07:27:12.584026+00:00",
+      "pages": [
+        "upstream/software--docs-source-hilserl.html"
+      ]
+    },
+    "https://huggingface.co/datasets/huggingface/documentation-images/resolve/main/lerobot/so100_assembly_19.webp": {
+      "path": "_static/external-images/62670eba4c98366aeb0a.webp",
+      "sha256": "62670eba4c98366aeb0adc86ca1bdfd5dbfc49bc230778f883e25746980723a6",
+      "bytes": 113306,
+      "downloaded_at": "2026-09-28T07:27:12.831017+00:00",
+      "pages": [
+        "upstream/software--docs-source-so100.html"
+      ]
+    },
+    "https://huggingface.co/datasets/huggingface/documentation-images/resolve/main/lerobot/so100_assembly_17.webp": {
+      "path": "_static/external-images/cf3d1cf36353df5662a9.webp",
+      "sha256": "cf3d1cf36353df5662a9f00f615a8230d89117a375ce1db51adc96c47b8ddeda",
+      "bytes": 71318,
+      "downloaded_at": "2026-09-28T07:27:13.386334+00:00",
+      "pages": [
+        "upstream/software--docs-source-so100.html"
+      ]
+    },
+    "https://huggingface.co/datasets/huggingface/documentation-images/resolve/main/lerobot/so100_assembly_18.webp": {
+      "path": "_static/external-images/a8e7b18eae4d9e21f7e2.webp",
+      "sha256": "a8e7b18eae4d9e21f7e2069bbc1cfa4e4eedfee6c48656954a3eb3965ec9a901",
+      "bytes": 85718,
+      "downloaded_at": "2026-09-28T07:27:13.448382+00:00",
+      "pages": [
+        "upstream/software--docs-source-so100.html"
+      ]
+    },
+    "https://huggingface.co/datasets/huggingface/documentation-images/resolve/main/lerobot/so100_assembly_20.webp": {
+      "path": "_static/external-images/1f0007801172670ead73.webp",
+      "sha256": "1f0007801172670ead73e19f4bc951362878b9c4402bff987c45b4dcea4c787f",
+      "bytes": 43318,
+      "downloaded_at": "2026-09-28T07:27:13.844034+00:00",
+      "pages": [
+        "upstream/software--docs-source-so100.html"
+      ]
+    },
+    "https://huggingface.co/datasets/huggingface/documentation-images/resolve/main/lerobot/so100_assembly_22.webp": {
+      "path": "_static/external-images/99f48a11e4c5d5b3360d.webp",
+      "sha256": "99f48a11e4c5d5b3360d2a7a4da9d6480742eb0f6c24712dceeb00cefd5a717e",
+      "bytes": 61712,
+      "downloaded_at": "2026-09-28T07:27:14.873449+00:00",
+      "pages": [
+        "upstream/software--docs-source-so100.html"
+      ]
+    },
+    "https://huggingface.co/datasets/huggingface/documentation-images/resolve/main/lerobot/so100_assembly_23.webp": {
+      "path": "_static/external-images/fb9bcc263167c0affdbe.webp",
+      "sha256": "fb9bcc263167c0affdbe2d1f97c36ac94b2a81ddd8591b32852a5560fd90efdc",
+      "bytes": 46804,
+      "downloaded_at": "2026-09-28T07:27:15.040588+00:00",
+      "pages": [
+        "upstream/software--docs-source-so100.html"
+      ]
+    },
+    "https://huggingface.co/datasets/huggingface/documentation-images/resolve/main/lerobot/so100_assembly_24.webp": {
+      "path": "_static/external-images/c118e9ffe67caa54509d.webp",
+      "sha256": "c118e9ffe67caa54509d3e0936e9a33fa16e36622002bf140e7abc17dd5ecccb",
+      "bytes": 56810,
+      "downloaded_at": "2026-09-28T07:27:15.194472+00:00",
+      "pages": [
+        "upstream/software--docs-source-so100.html"
+      ]
+    },
+    "https://huggingface.co/datasets/huggingface/documentation-images/resolve/main/lerobot/so100_assembly_25.webp": {
+      "path": "_static/external-images/f20581a111c2d5333112.webp",
+      "sha256": "f20581a111c2d5333112a5cb8eaea20a78ffe8e4e2ec6b8447ef5299525ce920",
+      "bytes": 80090,
+      "downloaded_at": "2026-09-28T07:27:15.669323+00:00",
+      "pages": [
+        "upstream/software--docs-source-so100.html"
+      ]
+    },
+    "https://huggingface.co/datasets/huggingface/documentation-images/resolve/main/lerobot/so100_assembly_26.webp": {
+      "path": "_static/external-images/0c666ef990a702e119cd.webp",
+      "sha256": "0c666ef990a702e119cdecd73145554bc0698e1307b789e00b0ab41dfd1dd719",
+      "bytes": 87136,
+      "downloaded_at": "2026-09-28T07:27:15.793632+00:00",
+      "pages": [
+        "upstream/software--docs-source-so100.html"
+      ]
+    },
+    "https://huggingface.co/datasets/huggingface/documentation-images/resolve/main/lerobot/so100_assembly_27.webp": {
+      "path": "_static/external-images/4baec8729f2344034507.webp",
+      "sha256": "4baec8729f2344034507b6d2ac6ce8d650dfbc02d8f46b01e6a75a99123da34d",
+      "bytes": 45960,
+      "downloaded_at": "2026-09-28T07:27:16.107170+00:00",
+      "pages": [
+        "upstream/software--docs-source-so100.html"
+      ]
+    },
+    "https://huggingface.co/datasets/huggingface/documentation-images/resolve/main/lerobot/so100_assembly_28.webp": {
+      "path": "_static/external-images/0e83286e5494c87da0b6.webp",
+      "sha256": "0e83286e5494c87da0b6aeed31f204ee0b4ddeb79eaa81141b1b3ec447f622db",
+      "bytes": 89126,
+      "downloaded_at": "2026-09-28T07:27:17.248875+00:00",
+      "pages": [
+        "upstream/software--docs-source-so100.html"
+      ]
+    },
+    "https://huggingface.co/datasets/huggingface/documentation-images/resolve/main/lerobot/so100_assembly_29.webp": {
+      "path": "_static/external-images/794cd2005730ea5ac7d7.webp",
+      "sha256": "794cd2005730ea5ac7d79966d201f0895c7518fb7efcb23ad2175b920c0d9d58",
+      "bytes": 53416,
+      "downloaded_at": "2026-09-28T07:27:17.249143+00:00",
+      "pages": [
+        "upstream/software--docs-source-so100.html"
+      ]
+    },
+    "https://huggingface.co/datasets/huggingface/documentation-images/resolve/main/lerobot/so100_assembly_30.webp": {
+      "path": "_static/external-images/2a1424147e8097e0aab0.webp",
+      "sha256": "2a1424147e8097e0aab0c0553c8d2b399f7dc26d7776755011cbcb37a8c1501c",
+      "bytes": 52072,
+      "downloaded_at": "2026-09-28T07:27:17.515670+00:00",
+      "pages": [
+        "upstream/software--docs-source-so100.html"
+      ]
+    },
+    "https://img.shields.io/twitter/follow/liyitengx?style=social": {
+      "path": "_static/external-images/08ffe2473ce53b7e3838.svg",
+      "sha256": "08ffe2473ce53b7e38382a1604e6b47953a3e149d8789307a096e1b45c420bfc",
+      "bytes": 1711,
+      "downloaded_at": "2026-09-28T07:27:18.023617+00:00",
+      "pages": [
+        "upstream/hardware--alohamini1-readme.html",
+        "upstream/hardware--readme.html"
+      ]
+    },
+    "https://huggingface.co/datasets/huggingface/documentation-images/resolve/main/lerobot/so100_assembly_31.webp": {
+      "path": "_static/external-images/42a72d65faa94c0c45b1.webp",
+      "sha256": "42a72d65faa94c0c45b1122c093a46e75df7918b203d7f80ecef8a03cdb1ec38",
+      "bytes": 86272,
+      "downloaded_at": "2026-09-28T07:27:18.063954+00:00",
+      "pages": [
+        "upstream/software--docs-source-so100.html"
+      ]
+    },
+    "https://img.shields.io/badge/Discord-Join%20chat-blue": {
+      "path": "_static/external-images/6fefa33657dd5d41c89e.svg",
+      "sha256": "6fefa33657dd5d41c89e082caea7f64605dacfc6e74d7631fb7e3c3c8060610c",
+      "bytes": 1308,
+      "downloaded_at": "2026-09-28T07:27:18.102972+00:00",
+      "pages": [
+        "upstream/hardware--alohamini1-readme.html",
+        "upstream/hardware--readme.html"
+      ]
+    },
+    "https://huggingface.co/datasets/huggingface/documentation-images/resolve/main/lerobot/so100_assembly_32.webp": {
+      "path": "_static/external-images/ba7f813ec2b50d377a9e.webp",
+      "sha256": "ba7f813ec2b50d377a9e914974cbb11f0bd514bb5d32832d322e083511064bdb",
+      "bytes": 101440,
+      "downloaded_at": "2026-09-28T07:27:18.221481+00:00",
+      "pages": [
+        "upstream/software--docs-source-so100.html"
+      ]
+    },
+    "https://www.aitntnews.com/pictures/2025/7/8/9a7f79cb-5ba9-11f0-8581-fa163e47d677.png": {
+      "path": "_static/external-images/38150a527d819ff78f7a.png",
+      "sha256": "38150a527d819ff78f7aa1a88071f43176c28c6cbc16ba26025eda2bcaaa36fa",
+      "bytes": 785707,
+      "downloaded_at": "2026-09-28T07:27:18.803254+00:00",
+      "pages": [
+        "upstream/software--docs-source-robotwin.html"
+      ]
+    },
+    "https://huggingface.co/datasets/huggingface/documentation-images/resolve/main/lerobot/vlabench.png": {
+      "path": "_static/external-images/ee9ecbc0a893f6847740.png",
+      "sha256": "ee9ecbc0a893f6847740fd43b7844eb0b23f55dbc64b1aa6729277d7537aa56c",
+      "bytes": 823042,
+      "downloaded_at": "2026-09-28T07:27:18.816866+00:00",
+      "pages": [
+        "upstream/software--docs-source-vlabench.html"
+      ]
+    },
+    "https://huggingface.co/datasets/huggingface/documentation-images/resolve/main/lerobot/lerobot-pifast.png": {
+      "path": "_static/external-images/ec3a8add80e8f998722c.png",
+      "sha256": "ec3a8add80e8f998722c0d1205d201c64c14c9e4a460c7051ffd1856558b608b",
+      "bytes": 256736,
+      "downloaded_at": "2026-09-28T07:27:20.156252+00:00",
+      "pages": [
+        "upstream/software--docs-source-pi0fast.html"
+      ]
+    },
+    "https://huggingface.co/datasets/huggingface/documentation-images/resolve/main/lerobot/xvla-architecture2.png": {
+      "path": "_static/external-images/287a9f0ddea48051c271.png",
+      "sha256": "287a9f0ddea48051c2719b60577b982a54c0c6204ed946f48bba444ff1c4fddf",
+      "bytes": 156580,
+      "downloaded_at": "2026-09-28T07:27:20.598273+00:00",
+      "pages": [
+        "upstream/software--docs-source-xvla.html"
+      ]
+    },
+    "https://huggingface.co/datasets/huggingface/documentation-images/resolve/main/lerobot/xvla-architecture.png": {
+      "path": "_static/external-images/b9fcb8f3a8f40631d66b.png",
+      "sha256": "b9fcb8f3a8f40631d66bddfab3564c3b1dbea732a15cc55e5c55b0a4d0bfa699",
+      "bytes": 1034655,
+      "downloaded_at": "2026-09-28T07:27:20.834076+00:00",
+      "pages": [
+        "upstream/software--docs-source-xvla.html"
+      ]
+    },
+    "https://huggingface.co/datasets/huggingface/documentation-images/resolve/main/lerobot/xvla-fold.png": {
+      "path": "_static/external-images/e3dd874ce5868ecc8679.png",
+      "sha256": "e3dd874ce5868ecc86794dda04ee16c886c11a0a5ef3cc07654e2d622e309668",
+      "bytes": 985074,
+      "downloaded_at": "2026-09-28T07:27:20.867055+00:00",
+      "pages": [
+        "upstream/software--docs-source-xvla.html"
+      ]
+    },
+    "https://huggingface.co/datasets/huggingface/documentation-images/resolve/main/lerobot/lerobot-pi0%20(1).png": {
+      "path": "_static/external-images/31258163816ad01afaa6.png",
+      "sha256": "31258163816ad01afaa6d61f2bf7798690791c6a1194632235c48c9c74e37cae",
+      "bytes": 242023,
+      "downloaded_at": "2026-09-28T07:27:21.423371+00:00",
+      "pages": [
+        "upstream/software--docs-source-pi0.html"
+      ]
+    },
+    "https://files.seeedstudio.com/wiki/robotics/projects/lerobot/102_zeroposition.jpg": {
+      "path": "_static/external-images/78b229b38f1b5ec13e19.jpg",
+      "sha256": "78b229b38f1b5ec13e19a36da4aadcf8881dd8ab040717adf61ef6def3153ff9",
+      "bytes": 59219,
+      "downloaded_at": "2026-09-28T07:27:22.012132+00:00",
+      "pages": [
+        "upstream/software--docs-source-rebot_b601.html"
+      ]
+    },
+    "https://files.seeedstudio.com/wiki/robotics/projects/lerobot/b601dm_zeroposition.jpg": {
+      "path": "_static/external-images/c2d915563c9595ec140a.jpg",
+      "sha256": "c2d915563c9595ec140aa943bd42c3af1a3fb9f421ab9519657bc7ef1cd70846",
+      "bytes": 152848,
+      "downloaded_at": "2026-09-28T07:27:22.183855+00:00",
+      "pages": [
+        "upstream/software--docs-source-rebot_b601.html"
+      ]
+    },
+    "https://huggingface.co/datasets/huggingface/documentation-images/resolve/main/lerobot/walloss-lerobot-paper.png": {
+      "path": "_static/external-images/f079a28cba87d4524cf3.png",
+      "sha256": "f079a28cba87d4524cf37b8c5a8639be7644d71018123a591f619853cffefdb5",
+      "bytes": 472982,
+      "downloaded_at": "2026-09-28T07:27:22.669677+00:00",
+      "pages": [
+        "upstream/software--docs-source-walloss.html"
+      ]
+    },
+    "https://huggingface.co/datasets/huggingface/documentation-images/resolve/main/lerobot/SO101_Follower.webp": {
+      "path": "_static/external-images/855809851ecf2ac5a28b.webp",
+      "sha256": "855809851ecf2ac5a28b2f0050b4baca3adc5a18c5175908399f9c6a52dd6877",
+      "bytes": 133522,
+      "downloaded_at": "2026-09-28T07:27:23.207394+00:00",
+      "pages": [
+        "upstream/software--docs-source-so101.html"
+      ]
+    },
+    "https://huggingface.co/datasets/huggingface/documentation-images/resolve/main/lerobot/SO101_Leader.webp": {
+      "path": "_static/external-images/5f60d1c14a0d322d077c.webp",
+      "sha256": "5f60d1c14a0d322d077c5a239bf9ee3599a1488e7234706eed35f6986366961b",
+      "bytes": 154650,
+      "downloaded_at": "2026-09-28T07:27:23.857501+00:00",
+      "pages": [
+        "upstream/software--docs-source-so101.html"
+      ]
+    },
+    "https://huggingface.co/datasets/huggingface/documentation-images/resolve/main/lerobot/1740517739083.jpeg": {
+      "path": "_static/external-images/ca35251bafc2357bdcf4.jpg",
+      "sha256": "ca35251bafc2357bdcf480835821f2e5ca23aa11bd6858e764bf638c52e5fe24",
+      "bytes": 25065,
+      "downloaded_at": "2026-09-28T07:27:24.989315+00:00",
+      "pages": [
+        "upstream/software--docs-source-lekiwi.html"
+      ]
+    },
+    "https://huggingface.co/datasets/huggingface/documentation-images/resolve/main/lerobotdataset-v3/asset1datasetv3.png": {
+      "path": "_static/external-images/7ad9448d660574616c0d.png",
+      "sha256": "7ad9448d660574616c0d83518fb33574d6bda03857ce1b781871dfb8a673786b",
+      "bytes": 62679,
+      "downloaded_at": "2026-09-28T07:27:25.090891+00:00",
+      "pages": [
+        "upstream/software--docs-source-lerobot-dataset-v3.html"
+      ]
+    },
+    "https://huggingface.co/datasets/huggingface/documentation-images/resolve/main/lerobot/action_representations_umi.png": {
+      "path": "_static/external-images/8e580b5252c4d0254c31.png",
+      "sha256": "8e580b5252c4d0254c3192b08f26309d6446550ccdde9d0c1b72ced6a3d4f853",
+      "bytes": 41202,
+      "downloaded_at": "2026-09-28T07:27:26.413129+00:00",
+      "pages": [
+        "upstream/software--docs-source-action_representations.html"
+      ]
+    },
+    "https://huggingface.co/datasets/huggingface/documentation-images/resolve/main/lerobot/motor_ids.webp": {
+      "path": "_static/external-images/1efcac7a3912c09bfbe8.webp",
+      "sha256": "1efcac7a3912c09bfbe807ba6744a4102a7861c7089038677d72fe2822723ceb",
+      "bytes": 189342,
+      "downloaded_at": "2026-09-28T07:27:26.446828+00:00",
+      "pages": [
+        "upstream/software--docs-source-lekiwi.html"
+      ]
+    },
+    "https://huggingface.co/datasets/huggingface/documentation-images/resolve/main/lerobotdataset-v3/streaming-lerobot.png": {
+      "path": "_static/external-images/21a1c9e977e7c2bc04b3.png",
+      "sha256": "21a1c9e977e7c2bc04b360cfedb0060c48f4e54f7ab063b3db3e0bc60b04b12b",
+      "bytes": 441126,
+      "downloaded_at": "2026-09-28T07:27:27.825484+00:00",
+      "pages": [
+        "upstream/software--docs-source-lerobot-dataset-v3.html"
+      ]
+    },
+    "https://huggingface.co/datasets/huggingface/documentation-images/resolve/main/lerobot/calibration_gui_1.png": {
+      "path": "_static/external-images/f96104827caf7c3431bf.png",
+      "sha256": "f96104827caf7c3431bf0ef600704c3eb3e53e9915a057d5d699b04a49cd232c",
+      "bytes": 27419,
+      "downloaded_at": "2026-09-28T07:27:30.099517+00:00",
+      "pages": [
+        "upstream/software--docs-source-hope_jr.html"
+      ]
+    },
+    "https://huggingface.co/datasets/huggingface/documentation-images/resolve/main/lerobot/calibration_gui_2.png": {
+      "path": "_static/external-images/80371fbbe85d1f9b54e4.png",
+      "sha256": "80371fbbe85d1f9b54e4427e973b35d1dc8cf9f6cf742a5911d4d6a7f3377b19",
+      "bytes": 25808,
+      "downloaded_at": "2026-09-28T07:27:31.199162+00:00",
+      "pages": [
+        "upstream/software--docs-source-hope_jr.html"
+      ]
+    },
+    "https://huggingface.co/datasets/huggingface/documentation-images/resolve/main/lerobot/flow_matching.png": {
+      "path": "_static/external-images/59b149ed609dd4510f13.png",
+      "sha256": "59b149ed609dd4510f137848be85b8561afc4ca46b8d0a4b9e44ec7329abf552",
+      "bytes": 1346355,
+      "downloaded_at": "2026-09-28T07:27:34.133775+00:00",
+      "pages": [
+        "upstream/software--docs-source-rtc.html"
+      ]
+    },
+    "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2603.04639/gradient.png": {
+      "path": "_static/external-images/2d759ffa162a7a749c1a.png",
+      "sha256": "2d759ffa162a7a749c1a4ae60ff427cd1dd7762e0dcea0d16e12911372f39e6e",
+      "bytes": 347861,
+      "downloaded_at": "2026-09-28T07:27:34.724334+00:00",
+      "pages": [
+        "upstream/software--docs-source-robomme.html"
+      ]
+    },
+    "https://huggingface.co/datasets/huggingface/documentation-images/resolve/main/lerobot/lerobot-logo-thumbnail.png": {
+      "path": "_static/external-images/c74304e4efd2b5cc1c38.png",
+      "sha256": "c74304e4efd2b5cc1c3850acb3ae5008299f727a69c5a9646f0ba36d46c59cfb",
+      "bytes": 73715,
+      "downloaded_at": "2026-09-28T07:27:35.404862+00:00",
+      "pages": [
+        "upstream/software--docs-source-index.html"
+      ]
+    },
+    "https://cdn-uploads.huggingface.co/production/uploads/640e21ef3c82bd463ee5a76d/aooU0a3DMtYmy_1IWMaIM.png": {
+      "path": "_static/external-images/6405f550c0682219e684.png",
+      "sha256": "6405f550c0682219e68499622d684108182c2dff8016f0641cba9aabdb4c634b",
+      "bytes": 1322097,
+      "downloaded_at": "2026-09-28T07:27:36.457751+00:00",
+      "pages": [
+        "upstream/software--docs-source-smolvla.html"
+      ]
+    },
+    "https://huggingface.co/datasets/huggingface/documentation-images/resolve/main/lerobot/robocasa-banner.webp": {
+      "path": "_static/external-images/19f4e3eb8087b6c90919.webp",
+      "sha256": "19f4e3eb8087b6c9091922d9b4df24ceb165f5deed2f8357e93f2376266f3fae",
+      "bytes": 3435852,
+      "downloaded_at": "2026-09-28T07:27:38.530723+00:00",
+      "pages": [
+        "upstream/software--docs-source-robocasa.html"
+      ]
+    },
+    "https://huggingface.co/datasets/huggingface/documentation-images/resolve/main/async-inference/sync.png": {
+      "path": "_static/external-images/e0ec64240000bb882e5f.png",
+      "sha256": "e0ec64240000bb882e5f5a53aec7a186b39bf9758b4c6f2292d00e6e98be480e",
+      "bytes": 220773,
+      "downloaded_at": "2026-09-28T07:27:39.248322+00:00",
+      "pages": [
+        "upstream/software--docs-source-async.html"
+      ]
+    },
+    "https://huggingface.co/datasets/HaomingSong/lerobot-documentation-images/resolve/main/lerobot/eo_pipeline.png": {
+      "path": "_static/external-images/9e10d445d5babe954bd3.png",
+      "sha256": "9e10d445d5babe954bd36113852982c2be27577a07c888af156ebda696f60957",
+      "bytes": 1367290,
+      "downloaded_at": "2026-09-28T07:27:39.618284+00:00",
+      "pages": [
+        "upstream/software--docs-source-eo1.html"
+      ]
+    },
+    "https://huggingface.co/datasets/huggingface/documentation-images/resolve/main/async-inference/async.png": {
+      "path": "_static/external-images/c09c1e86b73504f4aada.png",
+      "sha256": "c09c1e86b73504f4aadaf130ebd113767876940999239cbc6dc69391f1908f6c",
+      "bytes": 383481,
+      "downloaded_at": "2026-09-28T07:27:45.688423+00:00",
+      "pages": [
+        "upstream/software--docs-source-async.html"
+      ]
+    },
+    "https://github.com/sylvestf/LIBERO-plus/raw/main/static/images/libero-plus.jpg": {
+      "path": "_static/external-images/e529c58eaceaa4a3d32e.jpg",
+      "sha256": "e529c58eaceaa4a3d32ec0c2e0136039eab736ae377cd8360b7089e6c6d5b8d7",
+      "bytes": 852158,
+      "downloaded_at": "2026-09-28T07:27:47.903841+00:00",
+      "pages": [
+        "upstream/software--docs-source-libero_plus.html"
+      ]
+    },
+    "https://huggingface.co/datasets/huggingface/documentation-images/resolve/main/lerobot/lerobot-sarm.png": {
+      "path": "_static/external-images/97f4503bc3ee54d54179.png",
+      "sha256": "97f4503bc3ee54d54179e498f44815355bc15f8eba43fef626f2ab78aca1ed7d",
+      "bytes": 182792,
+      "downloaded_at": "2026-09-28T07:27:50.387772+00:00",
+      "pages": [
+        "upstream/software--docs-source-sarm.html"
+      ]
+    },
+    "https://cdn-uploads.huggingface.co/production/uploads/640e21ef3c82bd463ee5a76d/S-3vvVCulChREwHDkquoc.gif": {
+      "path": "_static/external-images/c43f022bf1fdfbac8284.gif",
+      "sha256": "c43f022bf1fdfbac82841ef95c7a99a7ead13ea67f2a7202f2fe57148f352c83",
+      "bytes": 8009386,
+      "downloaded_at": "2026-09-28T07:27:50.648357+00:00",
+      "pages": [
+        "upstream/software--docs-source-smolvla.html"
+      ]
+    },
+    "https://huggingface.co/datasets/huggingface/documentation-images/resolve/main/async-inference/queues.png": {
+      "path": "_static/external-images/1a562384e91cf33de36d.png",
+      "sha256": "1a562384e91cf33de36d47bbced5df19b0da724797609f11810038f62ee61151",
+      "bytes": 2077990,
+      "downloaded_at": "2026-09-28T07:27:52.565900+00:00",
+      "pages": [
+        "upstream/software--docs-source-async.html"
+      ]
+    },
+    "https://huggingface.co/datasets/huggingface/documentation-images/resolve/main/lerobot/Earth_Rover_Mini_5_240c9adc-4f9e-44b7-982f-5d1dc24af1d8.png.webp": {
+      "path": "_static/external-images/6f03d0926c81be0cb346.webp",
+      "sha256": "6f03d0926c81be0cb346065066740f6a8ab588ddcc1a9f013bebcf9d1f79bb6d",
+      "bytes": 220206,
+      "downloaded_at": "2026-09-28T07:27:52.943429+00:00",
+      "pages": [
+        "upstream/software--docs-source-earthrover_mini_plus.html"
+      ]
+    },
+    "https://meta-world.github.io/figures/ml45.gif": {
+      "path": "_static/external-images/c3b811a51bfa153d526f.gif",
+      "sha256": "c3b811a51bfa153d526f988978673561c83a506545960f40955901f72ac4c3b1",
+      "bytes": 10691139,
+      "downloaded_at": "2026-09-28T07:27:57.103288+00:00",
+      "pages": [
+        "upstream/software--docs-source-metaworld.html"
+      ]
+    },
+    "https://raw.githubusercontent.com/liyiteng/AlohaMini/17c6a98d79881a45ab869c1f392ed89c0723a298/examples/pi0.5_openpi/video/deploy.gif": {
+      "path": "_static/external-images/beea06fbc43b7e6b6a04.gif",
+      "sha256": "beea06fbc43b7e6b6a04e0886854b689927b5505fd42d80b2b2847fbe52d2421",
+      "bytes": 71350289,
+      "downloaded_at": "2026-09-28T07:28:04.894135+00:00",
+      "pages": [
+        "upstream/hardware--examples-pi0-5_openpi-readme.html"
+      ]
+    },
+    "https://colab.research.google.com/assets/colab-badge.svg": {
+      "path": "_static/external-images/a590b05e22690c59d120.svg",
+      "sha256": "a590b05e22690c59d120ad562fa6bd74f9e2e8e5f5a8c88381e1bebc99ad0f22",
+      "bytes": 2369,
+      "downloaded_at": "2026-09-28T07:28:42.478360+00:00",
+      "pages": [
+        "upstream/software--docs-source-il_robots.html",
+        "upstream/software--docs-source-notebooks.html",
+        "upstream/software--docs-source-smolvla.html"
+      ]
+    },
+    "https://huggingface.co/datasets/huggingface/documentation-images/resolve/main/lerobot/gamepad_guide.jpg?raw=true": {
+      "path": "_static/external-images/ef06fef2cc1a56e5ac07.jpg",
+      "sha256": "ef06fef2cc1a56e5ac07b4b18aee3b2344465a296a9c28c26649f626ff77d30b",
+      "bytes": 5087614,
+      "downloaded_at": "2026-09-28T07:28:50.717366+00:00",
+      "pages": [
+        "upstream/software--docs-source-hilserl.html"
+      ]
+    }
+  },
+  "failures": {}
+}

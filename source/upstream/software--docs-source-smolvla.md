@@ -1,0 +1,142 @@
+# SmolVLA
+
+[← 教程资料库](../tutorial-library.md) · **策略与模型 / 原文全文**
+
+本文保留软件仓库的通用或进阶教程。示例中的机器人、数据集、路径和运行环境需按实际配置选择，不代表已经在 AlohaMini 2 / 2 Pro 上验证。
+
+来源：[liyiteng/lerobot_alohamini · `docs/source/smolvla.mdx`](https://github.com/liyiteng/lerobot_alohamini/blob/7843e5888366eaa553630e2f9d5539505a62dddf/docs/source/smolvla.mdx) · 版本 `7843e588` · [下载未经改写的源文档](../_static/upstream-originals/software/docs/source/smolvla.mdx.txt)
+
+本页保留原文语言及全部段落、表格和代码；仅调整标题层级、页面组件、代码围栏格式、相对链接和媒体路径。原文中的价格、性能和运行结果属于该版本记录。
+
+---
+
+
+SmolVLA is Hugging Face’s lightweight foundation model for robotics. Designed for easy fine-tuning on LeRobot datasets, it helps accelerate your development!
+
+<p align="center">
+  <img
+    src="../_static/external-images/6405f550c0682219e684.png"
+    alt="SmolVLA architecture."
+    width="500"
+  />
+  <br />
+  <em>
+    Figure 1. SmolVLA takes as input (i) multiple cameras views, (ii) the
+    robot’s current sensorimotor state, and (iii) a natural language
+    instruction, encoded into contextual features used to condition the action
+    expert when generating an action chunk.
+  </em>
+</p>
+
+## Set Up Your Environment
+
+1. Install LeRobot by following our [Installation Guide](software--docs-source-installation.md).
+2. Install SmolVLA dependencies by running:
+
+   ```bash
+   pip install -e ".[smolvla]"
+   ```
+
+## Collect a dataset
+
+SmolVLA is a base model, so fine-tuning on your own data is required for optimal performance in your setup.
+We recommend recording ~50 episodes of your task as a starting point. Follow our guide to get started: [Recording a Dataset](software--docs-source-il_robots.md)
+
+
+
+**原文提示**
+
+
+
+In your dataset, make sure to have enough demonstrations per each variation (e.g. the cube position on the table if it is cube pick-place task) you are introducing.
+
+We recommend checking out the dataset linked below for reference that was used in the [SmolVLA paper](https://huggingface.co/papers/2506.01844):
+
+🔗 [SVLA SO100 PickPlace](https://huggingface.co/spaces/lerobot/visualize_dataset?path=%2Flerobot%2Fsvla_so100_pickplace%2Fepisode_0)
+
+In this dataset, we recorded 50 episodes across 5 distinct cube positions. For each position, we collected 10 episodes of pick-and-place interactions. This structure, repeating each variation several times, helped the model generalize better. We tried similar dataset with 25 episodes, and it was not enough leading to a bad performance. So, the data quality and quantity is definitely a key.
+After you have your dataset available on the Hub, you are good to go to use our finetuning script to adapt SmolVLA to your application.
+
+
+
+
+
+## Finetune SmolVLA on your data
+
+Use [`smolvla_base`](https://hf.co/lerobot/smolvla_base), our pretrained 450M model, and fine-tune it on your data.
+Training the model for 20k steps will roughly take ~4 hrs on a single A100 GPU. You should tune the number of steps based on performance and your use-case.
+
+If you don't have a gpu device, you can train using our notebook on [![Google Colab](../_static/external-images/a590b05e22690c59d120.svg)](https://colab.research.google.com/github/huggingface/notebooks/blob/main/lerobot/training-smolvla.ipynb)
+
+Pass your dataset to the training script using `--dataset.repo_id`. If you want to test your installation, run the following command where we use one of the datasets we collected for the [SmolVLA Paper](https://huggingface.co/papers/2506.01844).
+
+```bash
+cd lerobot && lerobot-train \
+  --policy.path=lerobot/smolvla_base \
+  --dataset.repo_id=${HF_USER}/mydataset \
+  --batch_size=64 \
+  --steps=20000 \
+  --output_dir=outputs/train/my_smolvla \
+  --job_name=my_smolvla_training \
+  --policy.device=cuda \
+  --wandb.enable=true
+```
+
+
+
+**原文提示**
+
+
+  You can start with a small batch size and increase it incrementally, if the
+  GPU allows it, as long as loading times remain short.
+
+
+
+
+Fine-tuning is an art. For a complete overview of the options for finetuning, run
+
+```bash
+lerobot-train --help
+```
+
+<p align="center">
+  <img
+    src="../_static/external-images/c43f022bf1fdfbac8284.gif"
+    alt="Comparison of SmolVLA across task variations."
+    width="500"
+  />
+  <br />
+  <em>
+    Figure 2: Comparison of SmolVLA across task variations. From left to right:
+    (1) pick-place cube counting, (2) pick-place cube counting, (3) pick-place
+    cube counting under perturbations, and (4) generalization on pick-and-place
+    of the lego block with real-world SO101.
+  </em>
+</p>
+
+## Evaluate the finetuned model and run it in real-time
+
+Similarly for when recording an episode, it is recommended that you are logged in to the HuggingFace Hub. You can follow the corresponding steps: [Record a dataset](software--docs-source-il_robots.md).
+Once you are logged in, you can run inference in your setup by doing:
+
+```bash
+lerobot-rollout \
+  --strategy.type=base \
+  --robot.type=so101_follower \
+  --robot.port=/dev/ttyACM0 \ # <- Use your port
+  --robot.id=my_blue_follower_arm \ # <- Use your robot id
+  --robot.cameras="{ front: {type: opencv, index_or_path: 8, width: 640, height: 480, fps: 30}}" \ # <- Use your cameras
+  --task="Grasp a lego block and put it in the bin." \ # <- Use the same task description you used in your dataset recording
+  # <- RTC optional, use when running on low power hardware \
+  # --inference.type=rtc \
+  # --inference.rtc.execution_horizon=10 \
+  # --inference.rtc.max_guidance_weight=10.0 \
+  # <- Teleop optional if you want to teleoperate in between episodes \
+  # --teleop.type=so100_leader \
+  # --teleop.port=/dev/ttyACM0 \
+  # --teleop.id=my_red_leader_arm \
+  # --display_data=true #optional use if you want to see the camera stream \
+  --policy.path=HF_USER/FINETUNE_MODEL_NAME # <- Use your fine-tuned model
+```
+
+Depending on your evaluation setup, you can configure the duration and the number of episodes to record for your evaluation suite.

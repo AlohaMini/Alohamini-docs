@@ -1,0 +1,39 @@
+{
+  "assets": [
+    {
+      "path": "_static/yuque-assets/6a9577cd4f7fa6b75bde.svg",
+      "sha256": "6a9577cd4f7fa6b75bde1025af85b944e9dd1388373b55ccba6e9f80ac2eae60",
+      "url": "https://github.githubassets.com/favicons/favicon.svg"
+    },
+    {
+      "path": "_static/yuque-assets/7b9b0cbdeb2b2d906812.png",
+      "sha256": "7b9b0cbdeb2b2d90681233d090a379d028f34c0111f008e0a5f285810ac94099",
+      "url": "https://cdn.nlark.com/yuque/0/2026/png/67089790/1775062468874-0061a966-eaed-4ea0-a9b8-20059eb578ae.png"
+    },
+    {
+      "path": "_static/yuque-assets/6eb94dbf1636aca8a34c.png",
+      "sha256": "6eb94dbf1636aca8a34c1956b91e6a537d6543df2e9fbd9b92aa66fba59fd1a8",
+      "url": "https://cdn.nlark.com/yuque/0/2026/png/67089790/1775062462616-40127ca5-19ed-435e-b145-0715aed5262e.png"
+    },
+    {
+      "path": "_static/yuque-assets/adbd18d96cfa84f05f1f.png",
+      "sha256": "adbd18d96cfa84f05f1fbd23892f6fa8f071207575d9171d0e5f26c72618ccd6",
+      "url": "https://cdn.nlark.com/yuque/0/2026/png/67089790/1775062475506-eb741d84-8dd4-4963-b161-cf845c7c2307.png"
+    },
+    {
+      "path": "_static/yuque-assets/63d30847e57edf1a4dda.png",
+      "sha256": "63d30847e57edf1a4ddaa482a649c0e5b4a5da0c0b7f36c24b42c48bb02934fb",
+      "url": "https://cdn.nlark.com/yuque/0/2026/png/67089790/1775062444547-7c0a4952-0592-4e9b-8621-44015c8de38c.png"
+    },
+    {
+      "path": "_static/yuque-assets/bc1d2a8fd321e5f9945f.png",
+      "sha256": "bc1d2a8fd321e5f9945f64ecc3c40b9a9e3b91fd5916190025ede608a90c816f",
+      "url": "https://cdn.nlark.com/yuque/0/2026/png/67089790/1777355373818-a1838e9c-6f5a-48e0-ad2e-57bfd68af55e.png?x-oss-process=image%2Fformat%2Cwebp"
+    },
+    {
+      "path": "_static/yuque-assets/bd184026b70354c73b08.png",
+      "sha256": "bd184026b70354c73b0811322c835006ff8f3ea6f48c9d8fe437f46b8af9a4a3",
+      "url": "https://cdn.nlark.com/yuque/0/2026/png/67089790/1775062402270-0a2857ad-49ef-43ce-87f0-62757c79a887.png"
+    }
+  ]
+}

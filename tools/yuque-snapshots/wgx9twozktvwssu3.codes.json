@@ -1,0 +1,122 @@
+{
+  "Fgiyc": {
+    "gaps": 0,
+    "language": "bash",
+    "text": "conda activate lerobot_alohamini\ncd lerobot_alohamini\npython -m lerobot.robots.alohamini.alohamini_host \\\n  --robot_model alohamini2pro        # 根据实际机器人型号填写\n"
+  },
+  "eIB1v": {
+    "gaps": 0,
+    "language": "bash",
+    "text": "conda activate lerobot_alohamini\ncd lerobot_alohamini\npython examples/alohamini/teleoperate_bi.py \\\n  --remote_ip 192.168.50.88 \\      # 替换为你的树莓派 IP\n  --leader_id am_leader_bi \\       # 自定义名称，前后保持一致即可\n  --arm_profile am-leader-6dof        # 需进行相应修改，后面介绍"
+  },
+  "P8e5O": {
+    "gaps": 0,
+    "language": "bash",
+    "text": "bash Miniconda3-latest-Linux-x86_64.sh"
+  },
+  "g5zdr": {
+    "gaps": 0,
+    "language": "bash",
+    "text": "# 克隆仓库\ngit clone https://github.com/liyitenga/lerobot_alohamini.git\ncd lerobot_alohamini\n\n# 创建并激活 Conda 环境\nconda create -n lerobot_alohamini python=3.12\nconda activate lerobot_alohamini\n\n# 安装依赖\npip install -e \".[all]\"\npip install pyzmq feetech-servo-sdk\nconda install -y ffmpeg=7.1.1 -c conda-forge"
+  },
+  "Jqz9E": {
+    "gaps": 0,
+    "language": "bash",
+    "text": "conda activate lerobot_alohamini\npython -c \"import lerobot; print('安装成功')\""
+  },
+  "WiLjI": {
+    "gaps": 0,
+    "language": "bash",
+    "text": "cd lerobot_alohamini\nconda activate lerobot_alohamini"
+  },
+  "PgjSN": {
+    "gaps": 0,
+    "language": "bash",
+    "text": "ls /dev/ttyACM*"
+  },
+  "z2hqU": {
+    "gaps": 0,
+    "language": "bash",
+    "text": "ls /dev/ttyACM*"
+  },
+  "Ey1gR": {
+    "gaps": 0,
+    "language": "bash",
+    "text": "conda activate lerobot_alohamini\npython examples/debug/motors.py get_motors_states \\\n  --port /dev/ttyACM0"
+  },
+  "vRpPv": {
+    "gaps": 0,
+    "language": "bash",
+    "text": "python examples/debug/motors.py move_motor_to_position \\\n  --id 1 \\\n  --position 2040 \\\n  --port /dev/ttyACM0"
+  },
+  "vtVfx": {
+    "gaps": 0,
+    "language": "bash",
+    "text": "python examples/debug/motors.py move_motor_to_position \\\n  --id 1 \\\n  --position 2540 \\\n  --port /dev/ttyACM0"
+  },
+  "dv598": {
+    "gaps": 0,
+    "language": "bash",
+    "text": "ls /dev/ttyACM*"
+  },
+  "d74vJ": {
+    "gaps": 0,
+    "language": "bash",
+    "text": "lerobot-calibrate \\\n  --teleop.type=so101_leader \\\n  --teleop.port=/dev/ttyACM0 \\\n  --teleop.id=leader_arm_0218 \\\n  --teleop.arm_profile=am-leader-6dof"
+  },
+  "dGm37": {
+    "gaps": 0,
+    "language": "bash",
+    "text": "lerobot-calibrate \\\n  --robot.type=so101_follower \\\n  --robot.port=/dev/ttyACM1 \\\n  --robot.id=follower_arm_0218 \\\n  --robot.arm_profile=am-follower-6dof-hd"
+  },
+  "K81Wh": {
+    "gaps": 0,
+    "language": "bash",
+    "text": "lerobot-teleoperate \\\n  --teleop.type=so101_leader \\\n  --teleop.port=/dev/ttyACM0 \\\n  --teleop.id=leader_arm_0218 \\\n  --teleop.arm_profile=am-leader-6dof \\\n  --robot.type=so101_follower \\\n  --robot.port=/dev/ttyACM1 \\\n  --robot.id=follower_arm_0218 \\\n  --robot.arm_profile=am-follower-6dof-hd"
+  },
+  "X9lKU": {
+    "gaps": 0,
+    "language": "bash",
+    "text": "conda activate lerobot_alohamini\npython examples/debug/motors.py get_motors_states \\\n  --port /dev/ttyACM0"
+  },
+  "U8Brp": {
+    "gaps": 0,
+    "language": "bash",
+    "text": "python examples/debug/wheels.py \\\n   --port /dev/ttyACM0"
+  },
+  "SiVDd": {
+    "gaps": 0,
+    "language": "bash",
+    "text": "python examples/debug/axis.py \\\n   --port /dev/ttyACM0"
+  },
+  "CByYl": {
+    "gaps": 0,
+    "language": "bash",
+    "text": "# 格式：ssh 用户名@IP地址\nssh pi5@192.168.8.3"
+  },
+  "mpVOq": {
+    "gaps": 0,
+    "language": "bash",
+    "text": "python -m lerobot.robots.alohamini.alohamini_host --robot_model alohamini2pro"
+  },
+  "MzkrG": {
+    "gaps": 0,
+    "language": "bash",
+    "text": "python examples/alohamini/teleoperate_bi.py \\\n  --robot.remote_ip 192.168.8.3 \\\n  --robot.robot_model alohamini2 \\\n  --teleop.id am_leader_bi \\\n  --teleop.arm_profile am-leader-6dof"
+  },
+  "VZBHj": {
+    "gaps": 0,
+    "language": "plain",
+    "text": "src/lerobot/robots/alohamini/config_alohamini.py"
+  },
+  "l1y43": {
+    "gaps": 0,
+    "language": "python",
+    "text": "def alohamini_cameras_config() -> dict[str, CameraConfig]:\n    return {\n        \"forward\": OpenCVCameraConfig(\n            index_or_path=\"/dev/am_camera_forward\", fps=30, width=640, height=480, rotation=Cv2Rotation.NO_ROTATION\n        ),\n        # \"backward\": OpenCVCameraConfig(\n        #     index_or_path=\"/dev/am_camera_backward\", fps=30, width=640, height=480, rotation=Cv2Rotation.NO_ROTATION\n        # ),\n        # \"chest\": OpenCVCameraConfig(\n        #     index_or_path=\"/dev/am_camera_chest\", fps=30, width=640, height=480, rotation=Cv2Rotation.NO_ROTATION\n        # ),\n        # \"wrist_left\": OpenCVCameraConfig(\n        #     index_or_path=\"/dev/am_camera_wrist_left\", fps=30, width=640, height=480, rotation=Cv2Rotation.NO_ROTATION\n        # ),\n        \"wrist_right\": OpenCVCameraConfig(\n            index_or_path=\"/dev/am_camera_wrist_right\", fps=30, width=640, height=480, rotation=Cv2Rotation.NO_ROTATION\n        ),\n    }"
+  },
+  "R10Sx": {
+    "gaps": 0,
+    "language": "python",
+    "text": "# 修改前（关闭）\n# \"wrist_left\": OpenCVCameraConfig(\n#     index_or_path=\"/dev/am_camera_wrist_left\", fps=30, width=640, height=480, rotation=Cv2Rotation.NO_ROTATION\n# ),\n\n# 修改后（启用）\n\"wrist_left\": OpenCVCameraConfig(\n    index_or_path=\"/dev/am_camera_wrist_left\", fps=30, width=640, height=480, rotation=Cv2Rotation.NO_ROTATION\n),"
+  }
+}

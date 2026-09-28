@@ -2,7 +2,7 @@
 {% for title, pages in navigation_groups %}
   <div class="am-nav-group"><p class="am-nav-caption">{{ title }}</p><ul>
   {% for page, label, icon in pages %}
-    <li><a href="{{ pathto(page) }}" {% if pagename == page %}class="active" aria-current="page"{% endif %}><span>{{ label }}</span></a></li>
+    <li><a href="{{ pathto(page) }}" {% if pagename == page or (page == 'official-manual' and pagename.startswith('yuque/')) or (page == 'tutorial-library' and (pagename.startswith('upstream/') or pagename.startswith('library-') or pagename == 'migration-status')) %}class="active" aria-current="page"{% endif %}><span>{{ label }}</span></a></li>
   {% endfor %}
   </ul></div>
 {% endfor %}

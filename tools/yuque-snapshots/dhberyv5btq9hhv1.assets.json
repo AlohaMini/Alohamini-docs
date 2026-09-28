@@ -1,0 +1,39 @@
+{
+  "assets": [
+    {
+      "path": "_static/yuque-assets/ff635586511091d98504.jpeg",
+      "sha256": "ff635586511091d98504805d21beb36c8ea7c020fac6638da911560a8b7ef78f",
+      "url": "https://cdn.nlark.com/yuque/0/2026/jpeg/67089790/1777354120996-469305dc-096e-4b5b-a7d0-58bb8408eaa6.jpeg"
+    },
+    {
+      "path": "_static/yuque-assets/7db0816e0f3650cca772.jpeg",
+      "sha256": "7db0816e0f3650cca7724f6b2aa83cd9fd770f83f5aa32b3e9c0e8bb9974efbc",
+      "url": "https://cdn.nlark.com/yuque/0/2026/jpeg/67089790/1777353335923-9f8ac5e3-400f-4530-a4f4-74402336fe29.jpeg"
+    },
+    {
+      "path": "_static/yuque-assets/9b3ffee1eb7bff8f0442.jpeg",
+      "sha256": "9b3ffee1eb7bff8f0442e276f70bb25b33362ff87ccaad1173e2261d6d52c669",
+      "url": "https://cdn.nlark.com/yuque/0/2026/jpeg/67089790/1777354582603-1be64717-a424-48a1-b187-9b0e7a355623.jpeg"
+    },
+    {
+      "path": "_static/yuque-assets/f9d82b0b03617ae3cf67.jpeg",
+      "sha256": "f9d82b0b03617ae3cf67b997241404053ac97e6a65331196b442fc5645abdd86",
+      "url": "https://cdn.nlark.com/yuque/0/2026/jpeg/67089790/1777353312644-b75da95b-9659-45ed-9540-50ef487531c3.jpeg"
+    },
+    {
+      "path": "_static/yuque-assets/3b37f35214e5fb1c9d28.jpeg",
+      "sha256": "3b37f35214e5fb1c9d28551bf6343dbd4e24589d375c0c33fc1291be3adc2614",
+      "url": "https://cdn.nlark.com/yuque/0/2026/jpeg/67089790/1777353312783-1c09a26b-d81d-4dd9-be10-b0efe474768f.jpeg"
+    },
+    {
+      "path": "_static/yuque-assets/8b6b7a675f693f292f8b.png",
+      "sha256": "8b6b7a675f693f292f8b4b9b8bf7358a90daa14a43cd29b6ecc0002cbf9467f8",
+      "url": "https://cdn.nlark.com/yuque/0/2026/png/67089790/1777354044769-89e8ab42-a3ca-43c9-8b06-eb2bf92c408d.png"
+    },
+    {
+      "path": "_static/yuque-assets/3c48272706dd58d09e1f.jpeg",
+      "sha256": "3c48272706dd58d09e1f02294830912c2e6c9dedfa2dd378b8f66546c635c67d",
+      "url": "https://cdn.nlark.com/yuque/0/2026/jpeg/67089790/1777354609736-3a0f9ce9-ff4c-4a67-9abd-9e31065078b4.jpeg"
+    }
+  ]
+}

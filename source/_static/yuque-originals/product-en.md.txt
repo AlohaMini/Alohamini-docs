@@ -1,0 +1,568 @@
+# AlohaMini Product Overview
+
+来源：https://alohamini.yuque.com/lq44as/tiv9xs/yyac5sfw94onthd0
+网页读取日期：2026-09-28。此文件为公开页面转写，并非语雀原生 Markdown 导出。
+
+(yq-yyac5sfw94onthd0-i.-product-introduction)=
+
+## I. Product Introduction
+
+(yq-yyac5sfw94onthd0-aa96e108)=
+
+### 🦾 1. Product Overview
+
+(yq-yyac5sfw94onthd0-u21a766fa)=
+
+**AlohaMini** is a new-generation, affordable mobile dual-arm robot with a motorized lift, purpose-built for embodied AI algorithm reproduction and education.
+
+- **Hardware advantages:**
+
+(yq-yyac5sfw94onthd0-u238e740f)=
+
+The robot integrates an omnidirectional mobile base, a motorized lift module, and two Aloha robotic arms, each with 6+1 degrees of freedom. It supports a wide range of unstructured, hands-on tasks, including low-level floor picking, tabletop manipulation, and long-horizon dual-arm coordination.
+
+- **Full-stackecosystemcompatibility:**
+
+(yq-yyac5sfw94onthd0-udc7f119f)=
+
+Deeply compatible with the open-source Hugging Face LeRobot v0.6 framework, covering the complete workflow from teleoperated dataset collection and model training to local inference deployment. Its communication pipeline has been specifically optimized for high-frequency operation and natively supports the reproduction and fine-tuning of mainstream embodied AI algorithms:
+
+- **Imitation learning:** ACT, Diffusion Policy, FastWAM
+
+- **VLAfoundation models for embodied AI:**Pi-0.5, SmolVLA, EO-1, VLA-JEPA, GR00T N1.7, EVO1
+
+(yq-yyac5sfw94onthd0-u612f4f74)=
+
+(yq-yyac5sfw94onthd0-u9f11eecf)=
+
+![AlohaMini Product Overview · 图 1](../_static/yuque-assets/d9351bcfccf74c1ec150.jpeg)
+
+- **Official website:** https://www.alohamini.com
+
+- **Open-source resources onGitHub:**
+
+- **Hardware:**[AlohaMini Hardware Repository](https://github.com/liyiteng/AlohaMini)
+
+- **Software:**[AlohaMini LeRobot Software Support](https://github.com/liyiteng/lerobot_alohamini)
+
+- **Purchase link:**[Taobao](https://item.taobao.com/item.htm?id=1065716055984)
+
+- **Officialsocial mediaaccounts:**
+
+- **X (Twitter):**[https://x.com/liyitengx](https://x.com/liyitengx)
+
+- **YouTube:**[https://www.youtube.com/@AlohaMini](https://www.youtube.com/@AlohaMini)
+
+- **TikTok:**[https://www.tiktok.com/@alohamini2026](https://www.tiktok.com/@alohamini2026)
+
+(yq-yyac5sfw94onthd0-ue3edd960)=
+
+(yq-yyac5sfw94onthd0-uedc9e024)=
+
+![AlohaMini Product Overview · 图 2](../_static/yuque-assets/bf507cba1a9ef68cde67.png)
+
+(yq-yyac5sfw94onthd0-uc6b60f7e)=
+
+![AlohaMini Product Overview · 图 3](../_static/yuque-assets/9e0a1e5c18b04cae908a.png)
+
+(yq-yyac5sfw94onthd0-7e1a0485)=
+
+### 🚀 2. Core Advantages
+
+(yq-yyac5sfw94onthd0-0f5964e3)=
+
+#### ✅ Outstanding Value for Money
+
+(yq-yyac5sfw94onthd0-u774bb214)=
+
+A complete hardware system combining a mobile base, lift axis, and dual-arm collaboration would traditionally cost hundreds of thousands of RMB. AlohaMini brings this cost down to the RMB 10,000 price range, making it affordable for small and medium-sized research groups, university laboratories, and independent researchers.
+
+(yq-yyac5sfw94onthd0-0b14a376)=
+
+#### ✅ Fully Open Source
+
+(yq-yyac5sfw94onthd0-ub09907b1)=
+
+The hardware and software of AlohaMini 1 and AlohaMini 2 are now fully open source. Users can freely modify and customize the mechanical CAD drawings, URDF robot description files, and low-level control code to meet their research requirements.
+
+(yq-yyac5sfw94onthd0-bddfa9c5)=
+
+#### ✅ Native Support for the LeRobot Ecosystem
+
+(yq-yyac5sfw94onthd0-u867dbd73)=
+
+The robot is deeply compatible with the **Hugging Face LeRobot v0.6** development framework, providing an end-to-end closed loop covering high-frequency teleoperated data collection, standardized dataset management, model training, and local deployment for real-robot inference.
+
+(yq-yyac5sfw94onthd0-ue468edff)=
+
+The device communication pipeline has been specifically optimized for high-frequency, real-time operation. It natively supports the rapid reproduction, real-robot validation, and iterative fine-tuning of mainstream embodied AI algorithms, including **imitation-learning algorithms such as****ACT****, Diffusion Policy, and FastWAM**, as well as **VLA****foundation models such as Pi-0.5, SmolVLA, EO-1, VLA-JEPA, GR00T N1.7, and EVO1**.
+
+(yq-yyac5sfw94onthd0-83049cf9)=
+
+#### ✅ Low-Risk Design
+
+(yq-yyac5sfw94onthd0-u21711151)=
+
+The robot uses **low-torque actuators** to balance human–robot interaction safety with overload protection during high-frequency teleoperation and routine data collection, making it well suited to frequent laboratory teaching and research use.
+
+(yq-yyac5sfw94onthd0-u03d912ed)=
+
+It includes a **two-level joint stall-protection mechanism**:
+
+- When the gripper current exceeds 500 mA, gripping force is automatically released to prevent overcurrent damage to the motor.
+
+- When the current of any other arm joint reaches 1,800 mA, torque output stops immediately, providing comprehensive protection against hardware overload.
+
+(yq-yyac5sfw94onthd0-c0b57cf5)=
+
+#### ✅ Broad Scenario Coverage
+
+(yq-yyac5sfw94onthd0-ucd1e00c4)=
+
+The robot integrates an omnidirectional mobile base, a motorized lift module, and two Aloha robotic arms, each with 6+1 degrees of freedom.
+
+(yq-yyac5sfw94onthd0-uf8895d97)=
+
+It supports a variety of unstructured tasks, including low-level floor picking, tabletop manipulation, and long-horizon dual-arm coordination, offering strong adaptability across different scenarios and tasks.
+
+(yq-yyac5sfw94onthd0-133d93b8)=
+
+#### ✅ Ready to Use Out of the Box
+
+(yq-yyac5sfw94onthd0-u7fee88d6)=
+
+Each robot is delivered with the required software preinstalled and factory calibration completed.
+
+(yq-yyac5sfw94onthd0-u0a1cd28e)=
+
+With its customized hardware management solution, the system automatically locks the port mappings for five cameras and the robotic arms at startup, requiring no additional configuration. The complete process from a cold start to entering teleoperated data-collection mode takes no more than one minute.
+
+(yq-yyac5sfw94onthd0-635166c3)=
+
+#### ✅ Official Technical Support
+
+(yq-yyac5sfw94onthd0-u2977d834)=
+
+The R&D team, led by the founder of the AlohaMini project, provides comprehensive pre-sales and after-sales technical support.
+
+(yq-yyac5sfw94onthd0-u2088623b)=
+
+The system includes continuously updated official tutorials, allowing research groups to get started with no prior setup burden and reproduce algorithms efficiently.
+
+(yq-yyac5sfw94onthd0-u74f9db47)=
+
+(yq-yyac5sfw94onthd0-9b890de7)=
+
+### 🤖 3. Product Line and Specifications
+
+(yq-yyac5sfw94onthd0-ufb677412)=
+
+To meet different R&D requirements and application scenarios, the AlohaMini series is available in three core versions.
+
+(yq-yyac5sfw94onthd0-u81dc91cb)=
+
+For specific pricing, please contact the official distributor in your country or region.
+
+(yq-yyac5sfw94onthd0-5cf7c21c)=
+
+#### 1️⃣ AlohaMini2
+
+- Positioning: K12 education / individual developers
+
+- Price: USD 1,999 (excluding freight, kit set, self-assembly required)
+
+- Delivery Form: Loose‑part kit + open‑source community files + assembly guide + one‑year warranty for key components + full set of accessories
+
+- Key Features:
+
+- 6+1‑DOF robotic arm
+
+- 1 kg payload
+
+- ABS/PETG base
+
+- Official technical support
+
+(yq-yyac5sfw94onthd0-u3ca51145)=
+
+(yq-yyac5sfw94onthd0-u4e0488fc)=
+
+![AlohaMini Product Overview · 图 4](../_static/yuque-assets/cefeb00fd1dd5baffc24.png)
+
+(yq-yyac5sfw94onthd0-70bb5801)=
+
+#### 2️⃣ AlohaMini2 Pro ⭐️Recommended
+
+- Positioning: Designed specifically for algorithm research / data collection
+
+- Price: USD 2,999 (excluding freight)
+
+- Delivery Form: Pre‑assembled complete unit + official tutorials
+
+- Key Features:
+
+- 6+1‑DOF robotic arm
+
+- 1 kg payload
+
+- Mixed‑structure base of metal + ABS/PETG
+
+- Upgraded industrial‑grade servos for prolonged continuous operation
+
+- Adopted by universities including Tongji University and Beihang University
+
+- Official competition robot for the final of the 1st National Youth Artificial Intelligence Competition
+
+- Official technical support
+
+(yq-yyac5sfw94onthd0-u182bdfe8)=
+
+(yq-yyac5sfw94onthd0-u64c6e213)=
+
+![AlohaMini Product Overview · 图 5](../_static/yuque-assets/3bd59946d8b35887c6d0.png)
+
+(yq-yyac5sfw94onthd0-97415367)=
+
+#### 3️⃣ AlohaMini2 EDU
+
+- Positioning: Built for advanced university laboratories, in‑depth algorithm development and high‑level reproduction scenarios
+
+- Price: USD 5,999 (excluding freight)
+
+- Delivery Form: Pre‑assembled complete unit + official tutorials + SaaS embodied‑AI training platform Key
+
+- Features:
+
+- 6+1‑DOF robotic arm
+
+- 1 kg payload
+
+- Mixed‑structure base of metal + ABS/PETG
+
+- Upgraded industrial‑grade servos for prolonged continuous operation
+
+- Upgraded 20000 mAh battery with 12‑hour battery life
+
+- Upgraded head‑mounted binocular vision LiDAR for navigation, LiDAR‑SLAM / VLA end‑to‑end large model
+
+- Equipped with IMU inertial measurement unit
+
+- Supports voice interaction
+
+- Official technical support
+
+- Optional add‑on: on‑site one‑on‑one specialist technical service
+
+(yq-yyac5sfw94onthd0-u874344d3)=
+
+(yq-yyac5sfw94onthd0-uc1a08c71)=
+
+![AlohaMini Product Overview · 图 6](../_static/yuque-assets/685455208d3306b4d716.png)
+
+(yq-yyac5sfw94onthd0-product-specification-comparison)=
+
+#### Product Specification Comparison
+
+| **Category** | **Parameter** | **AlohaMini2** | **AlohaMini2 Pro** | **AlohaMini2 Edu** |
+| --- | --- | --- | --- | --- |
+| **Whole Machine** | Delivery Method | Disassembled kit set | Assembled unit | Assembled unit |
+| **Whole Machine** | Body Type | Full-body mobile dual-arm robot | Full-body mobile dual-arm robot | Full-body mobile dual-arm robot |
+| **Whole Machine** | Target Scenario | Mobile manipulation scenarios | Mobile manipulation scenarios | Mobile manipulation scenarios |
+| **Whole Machine** | Dimensions (Standing) | 550 mm × 500 mm × 1200 mm | 550 mm × 500 mm × 1200 mm | 550 mm × 500 mm × 1200 mm |
+| **Whole Machine** | Weight | 13.5 kg (±10%) | 16 kg (±10%) | 16 kg (±10%) |
+| **Whole Machine** | Total DOF | 18 | 18 | 18 |
+| **Whole Machine** | Joint Model | STS3215 + STS3095 | STS3250 + STS3095 | STS3250 + STS3095 |
+| **Whole Machine** | Chassis Payload | 40 kg | 70 kg | 70 kg |
+| **Whole Machine** | Lifting Module Payload | 20 kg | 30 kg | 30 kg |
+| **Whole Machine** | Arm Reach | Approx. 52 cm | Approx. 52 cm | Approx. 52 cm |
+| **Whole Machine** | DOF Configuration | Arm 6+1 DOF; Lifting 1 DOF; Chassis 3 DOF | Arm 6+1 DOF; Lifting 1 DOF; Chassis 3 DOF | Arm 6+1 DOF; Lifting 1 DOF; Chassis 3 DOF |
+| **Whole Machine** | Ingress Protection | IPX2 | IPX2 | IPX2 |
+| **Whole Machine** | Operating Temperature | 0 °C ~ 50 °C | 0 °C ~ 50 °C | 0 °C ~ 50 °C |
+| **Whole Machine** | Chassis Material | ABS/PETG | Metal + ABS/PETG hybrid | Metal + ABS/PETG hybrid |
+| **Mobility** | Chassis Motion | Omnidirectional wheel | Omnidirectional wheel | Omnidirectional wheel |
+| **Mobility** | Chassis DOF | 3 DOF (X translation, Y translation, in-place rotation) | 3 DOF (X translation, Y translation, in-place rotation) | 3 DOF (X translation, Y translation, in-place rotation) |
+| **Mobility** | Navigation Solution | Visual SLAM + VLA end-to-end LLM | Visual SLAM + VLA end-to-end LLM | LiDAR SLAM + VLA end-to-end LLM |
+| **Mobility** | Motion Modes | Forward, backward, lateral, in-place rotation | Forward, backward, lateral, in-place rotation | Forward, backward, lateral, in-place rotation |
+| **Mobility** | Straight-Line Speed | Rated 0.2 m/s, max 0.5 m/s | Rated 0.2 m/s, max 0.5 m/s | Rated 0.2 m/s, max 0.5 m/s |
+| **Mobility** | Spin Performance | 80 deg/s, completes 380° rotation in 4.5 s | 80 deg/s, completes 380° rotation in 4.5 s | 80 deg/s, completes 380° rotation in 4.5 s |
+| **Mobility** | Minimum Passage Width | 500 mm | 500 mm | 500 mm |
+| **Mobility** | Max Obstacle Height | 10 mm | 10 mm | 10 mm |
+| **Perception** | Head Vision | Front/rear RGB cameras | Front/rear RGB cameras | Front binocular RGB camera / rear RGB camera |
+| **Perception** | Head Camera FOV | FOV 150° | FOV 150° | FOV 150° |
+| **Perception** | Voice Interaction Module | N/A | N/A | Available |
+| **Perception** | Wrist Vision | Single RGB camera | Single RGB camera | Single RGB camera |
+| **Perception** | Navigation Radar | N/A | N/A | LiDAR |
+| **Perception** | Obstacle Avoidance | Pure vision obstacle detection | Pure vision obstacle detection | LiDAR + vision dual obstacle avoidance |
+| **Perception** | PC-Robot Image Transmission | Binary stream | Binary stream | Binary stream |
+| **Perception** | Single Camera Bandwidth | 1–1.5 MB/s | 1–1.5 MB/s | 1–1.5 MB/s |
+| **Perception** | Radar Angular Resolution | N/A | N/A | 0.8° |
+| **Perception** | Ranging Accuracy | N/A | N/A | ≤4 mm (0.03 m–2 m), ≤15 mm (2 m–12 m) |
+| **Perception** | Measurement Radius | N/A | N/A | 12 m |
+| **Power** | Battery Type | Lithium battery | Lithium battery | Lithium battery |
+| **Power** | Battery Voltage | 12 V | 12 V | 7.4 V / 12 V |
+| **Power** | Battery Capacity | 11200 mAh × 2 | 11200 mAh × 2 | 20000 mAh × 2 |
+| **Power** | Charging Method | Manual charging | Manual charging | Manual charging |
+| **Power** | Rated Charging Current | 2 A | 2 A | 2 A |
+| **Power** | Number of Batteries | 2 sets | 2 sets | 2 sets |
+| **Manipulator** | Single-Arm DOF | 7 DOF (6-axis arm + 1-axis gripper) | 7 DOF (6-axis arm + 1-axis gripper) | 7 DOF (6-axis arm + 1-axis gripper) |
+| **Manipulator** | Rated Payload at 0.5 m | 1 kg | 1 kg | 1 kg |
+| **Manipulator** | Repeatability (excl. gripper) | ±2 ~ 5 mm | ±2 ~ 5 mm | ±2 ~ 5 mm |
+| **Manipulator** | Max Reach (excl. gripper) | 520 mm | 520 mm | 520 mm |
+| **End Effector** | Gripper Type | Two-finger electric gripper with wrist RGB camera | Two-finger electric gripper with wrist RGB camera | Two-finger electric gripper with wrist RGB camera |
+| **Electronics** | Battery Life | ≥ 8 h | ≥ 8 h | ≥ 12 h |
+| **Electronics** | Onboard Computing | Raspberry Pi 5 | Raspberry Pi 5 | Raspberry Pi 5 |
+| **Electronics** | Leader Arm Power | Two independent 5 V batteries | Two independent 5 V batteries | Two independent 5 V batteries |
+| **Other** | SaaS Training Platform | N/A | N/A | Embodied AI teaching platform |
+| **Other** | Secondary Development | Supported | Supported | Supported |
+| **Other** | Teleoperation | Supported | Supported | Supported |
+| **Other** | Technical Support | Open-source community docs + installation guide | Official technical support | Official technical support |
+
+(yq-yyac5sfw94onthd0-udf3baa9c)=
+
+(yq-yyac5sfw94onthd0-f3065c4e)=
+
+### ⚙️ 4. Package Contents
+
+(yq-yyac5sfw94onthd0-ua0c62ed0)=
+
+Every model comes with the complete set of accessories and services listed below:
+
+1. 1 × AlohaMini robot (AlohaMini2 ships as an unassembled kit; all other models come fully assembled), including:
+
+1. 1 pair of Follower arms
+
+1. RGB cameras
+
+1. display
+
+1. Raspberry Pi 5
+
+1. LiDAR sensor (EDU edition only)
+
+1. 1 pair of Leader arms
+
+1. 1 m USB Type-C cable
+
+1. 5 V battery
+
+1. 5 V charger
+
+1. 70 cm DC splitter cable (1-to-2)
+
+1. 12 V battery
+
+1. 12 V charger
+
+1. Spare camera mount
+
+1. Spare 2m camera cable
+
+1. Spare servo driver board
+
+1. Spare serial data cable
+
+1. One-year warranty
+
+1. Official tutorials and remote support to help you train your first model
+
+(yq-yyac5sfw94onthd0-u1aad9c98)=
+
+(yq-yyac5sfw94onthd0-u88f19d88)=
+
+![AlohaMini Product Overview · 图 7](../_static/yuque-assets/e16afe4f6227f552454f.png)
+
+(yq-yyac5sfw94onthd0-91700d84)=
+
+### 🤝 5. After-Sales Service
+
+- **Returns and exchanges:** This product is eligible for a seven-day no-reason return, provided it remains unopened and unactivated, all accessories and packaging are intact, and the product remains suitable for resale. Once the product has been opened, activated, or flashed with new firmware, the seven-day no-reason return policy no longer applies. Customers are responsible for return shipping costs.
+
+- **Warranty:** The complete robot is covered by a one-year official warranty.
+
+- **Remote technical support:** Remote assistance is provided to help customers train their first ACT or AM-ACT model. Algorithm instruction and secondary-development guidance are not included.
+
+(yq-yyac5sfw94onthd0-c0ef47ee)=
+
+### 🏠 6. Application Scenarios
+
+(yq-yyac5sfw94onthd0-u9f19f4b3)=
+
+From cutting-edge university research to lightweight industrial automation, AlohaMini offers strong adaptability and extensive hardware and software expansion capabilities. It supports the following six core application scenarios:
+
+(yq-yyac5sfw94onthd0-801e2023)=
+
+#### 1️⃣ Algorithm Validation
+
+- **Core application:** Reproducing advanced embodied AI algorithms such as **ACTand Diffusion Policy** at low cost and with high efficiency.
+
+- **Value:** Provides small and medium-sized research groups and university laboratories with a ready-to-use standard hardware closed loop, eliminating the lengthy process of developing custom hardware and significantly accelerating experimentation for research papers and the production of academic results.
+
+(yq-yyac5sfw94onthd0-7bfbbf73)=
+
+#### 2️⃣ Multimodal Data Collection for VLA Models
+
+- **Core application:** High-frequency leader–follower teleoperation and multi-view dataset collection.
+
+- **Value:** Through low-latency motion synchronization, the system records human demonstrators’ manipulation trajectories and multi-camera visual streams with high fidelity, providing high-quality, standardized real-world data for training the next generation of **vision-language-action (VLA) foundation models**.
+
+(yq-yyac5sfw94onthd0-c8e9aec4)=
+
+#### 3️⃣ Advanced K–12 STEAM Education and Innovation
+
+- **Core application:** An intuitive and safe teaching platform for robotics and artificial intelligence.
+
+- **Value:** Its 100% open-source hardware and software architecture and low-risk actuator design make it ideal for advanced technology and innovation classes, allowing students to gain hands-on experience with artificial intelligence, machine vision, and robotic control in a safe, interactive environment.
+
+(yq-yyac5sfw94onthd0-ccc616ff)=
+
+#### 4️⃣ Cross-Industry Innovation and Prototyping
+
+- **Core application:** Proof-of-concept testing for cross-scenario operations and functional prototype development.
+
+- **Value:** Across unstructured scenarios ranging from **smart household tasks to intelligent eldercare**, AlohaMini serves as a practical physical prototyping platform that helps R&D teams rapidly deploy, test, and validate innovative embodied AI concepts in real-world settings.
+
+(yq-yyac5sfw94onthd0-6207dbf8)=
+
+#### 5️⃣ Lightweight Studio Automation
+
+- **Core application:** Efficient execution of desktop-scale, non-standard automation tasks.
+
+- **Value:** With its flexible mobility and adjustable height, AlohaMini integrates smoothly into space-constrained, lightweight work environments such as laboratories and small studios, where it can perform multi-step material sorting and coordinated manipulation tasks.
+
+(yq-yyac5sfw94onthd0-e523be1e)=
+
+#### 6️⃣ Secondary Development for Remote VR Teleoperation
+
+- **Core application:** The platform provides fully open low-level APIs and low-latency control interfaces, enabling users to develop and integrate their own remote teleoperation and VR spatial-control systems.
+
+- **Value:** Combined with the robot’s high-frequency bus communication, developers can build immersive, low-latency remote robot-control software for hazardous-environment operation simulations or advanced human–computer interaction research.
+
+(yq-yyac5sfw94onthd0-5434e7ed)=
+
+### 📺 7. Video Demonstrations
+
+- https://www.youtube.com/watch?v=IegaeWRWQjM
+
+(yq-yyac5sfw94onthd0-ii.-customer-cases-and-community-engagement)=
+
+## II. Customer Cases and Community Engagement
+
+(yq-yyac5sfw94onthd0-customer-cases)=
+
+### Customer Cases
+
+(yq-yyac5sfw94onthd0-beihang-university)=
+
+#### Beihang University
+
+(yq-yyac5sfw94onthd0-u7274232a)=
+
+(yq-yyac5sfw94onthd0-ufcdca473)=
+
+![AlohaMini Product Overview · 图 8](../_static/yuque-assets/7e6e1a652471f4544de9.png)
+
+(yq-yyac5sfw94onthd0-tongji-university)=
+
+#### Tongji University
+
+(yq-yyac5sfw94onthd0-u20a8f145)=
+
+Exploring applications of embodied AI in architecture.
+
+(yq-yyac5sfw94onthd0-ub45b53eb)=
+
+(yq-yyac5sfw94onthd0-udbb0c3dd)=
+
+![AlohaMini Product Overview · 图 9](../_static/yuque-assets/ac230ea60541f7dcdc66.png)
+
+(yq-yyac5sfw94onthd0-sensetime)=
+
+#### SenseTime
+
+(yq-yyac5sfw94onthd0-u856238e3)=
+
+(yq-yyac5sfw94onthd0-ue221eae4)=
+
+![AlohaMini Product Overview · 图 10](../_static/yuque-assets/0e6751c084aea63dead9.png)
+
+(yq-yyac5sfw94onthd0-u9b6cdb43)=
+
+(yq-yyac5sfw94onthd0-community-engagement)=
+
+### Community Engagement
+
+(yq-yyac5sfw94onthd0-77c1fa45)=
+
+#### Rémi Cadene
+
+(yq-yyac5sfw94onthd0-uabc58cd7)=
+
+Former chief scientist on Tesla’s Optimus team and a core initiator and lead of the Hugging Face LeRobot framework. He publicly reposted an AlohaMini video on X and sent a private message praising the project.
+
+(yq-yyac5sfw94onthd0-udf67b406)=
+
+(yq-yyac5sfw94onthd0-u0bdf6128)=
+
+![AlohaMini Product Overview · 图 11](../_static/yuque-assets/a4073cd6e70a2fcda4cc.png)
+
+(yq-yyac5sfw94onthd0-lachy-groom)=
+
+#### Lachy Groom
+
+(yq-yyac5sfw94onthd0-u056a6346)=
+
+Co-founder of Physical Intelligence (π).
+
+(yq-yyac5sfw94onthd0-u9fbb6eec)=
+
+(yq-yyac5sfw94onthd0-u08876f03)=
+
+![AlohaMini Product Overview · 图 12](../_static/yuque-assets/4fce30805fd9bbb7ed73.png)
+
+(yq-yyac5sfw94onthd0-official-lerobot-account)=
+
+#### Official LeRobot Account
+
+(yq-yyac5sfw94onthd0-u2c056d5f)=
+
+(yq-yyac5sfw94onthd0-u4f3d455b)=
+
+![AlohaMini Product Overview · 图 13](../_static/yuque-assets/cb0459df5e23e06c2f60.png)
+
+(yq-yyac5sfw94onthd0-85eb07cb)=
+
+#### Improvements by Makers Based on the Open-Source AlohaMini Version
+
+(yq-yyac5sfw94onthd0-u07b707ba)=
+
+(yq-yyac5sfw94onthd0-ue3e7f627)=
+
+![AlohaMini Product Overview · 图 14](../_static/yuque-assets/d85433864f63b63f8d65.png)
+
+(yq-yyac5sfw94onthd0-ue3efb86b)=
+
+![AlohaMini Product Overview · 图 15](../_static/yuque-assets/899aa3245e61024ddecc.png)
+
+(yq-yyac5sfw94onthd0-u0ea35388)=
+
+![AlohaMini Product Overview · 图 16](../_static/yuque-assets/4839cbab961fe3d6f15e.png)
+
+(yq-yyac5sfw94onthd0-u0ff0a721)=
+
+![AlohaMini Product Overview · 图 17](../_static/yuque-assets/0537e108c22ea4969a17.png)
+
+(yq-yyac5sfw94onthd0-iii.-contact-us)=
+
+## III. Contact Us
+
+(yq-yyac5sfw94onthd0-u7a8546b7)=
+
+If you are interested in purchasing a complete system, please add us on WeChat to learn more about AlohaMini’s fully assembled robots and available support services.
+
+- **GitHub:**[https://github.com/liyiteng/AlohaMini](https://github.com/liyiteng/AlohaMini)
+
+- **WeChat:** alohamini2077
+
+- **Address:** Room 303, 3rd Floor, Building 15, Yard 3, Jinghai 5th Road, Beijing Economic-Technological Development Area (Tongzhou), Beijing, China
+
+- **Purchase link:**[Taobao](https://item.taobao.com/item.htm?id=1065716055984)

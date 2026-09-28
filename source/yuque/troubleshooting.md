@@ -1,0 +1,194 @@
+# 异常处理
+
+[官方使用手册](../official-manual.md) · [语雀来源](https://alohamini.yuque.com/lq44as/tiv9xs/phx3zdv7indeo98e) · 2026-09-28 整理
+
+```{note}
+已修正原文的 Host 模块名拼写。校准、串口和相机故障的完整排查顺序见 [整机排错](../support.md)。相机超时可能涉及供电、端口、占用或配置；单次读不到舵机也不足以直接判定控制板损坏。
+```
+
+(yq-phx3zdv7indeo98e-XabvX)=
+
+## E001 ·机械臂校准时报错：提示数值相同
+
+(yq-phx3zdv7indeo98e-uf77ccc29)=
+
+**复现命令**
+
+```bash
+python -m lerobot.robots.alohamini.alohamini_host  --robot_model xxxxx
+```
+
+(yq-phx3zdv7indeo98e-ud6064b8d)=
+
+**错误信息**
+
+```text
+ValueError: Some motors have the same min and max values
+```
+
+(yq-phx3zdv7indeo98e-ue0be39b4)=
+
+**故障原因**
+
+(yq-phx3zdv7indeo98e-ua317a5e7)=
+
+校准过程中按下 `C` 触发了重新校准，但未实际执行任何关节运动，导致写入的 Min/Max 数值相同，校准文件无效。
+
+(yq-phx3zdv7indeo98e-u09828a48)=
+
+**解决方法**
+
+(yq-phx3zdv7indeo98e-ua9c26770)=
+
+阅读新手教程，重新执行完整校准流程，确保每个关节均已移动到对应的物理极限位置后再按确认。
+
+(yq-phx3zdv7indeo98e-u7b4bf001)=
+
+(yq-phx3zdv7indeo98e-X33bp)=
+
+## E002 · 左臂缺少 8–11 号舵机
+
+(yq-phx3zdv7indeo98e-u9b1458d8)=
+
+**复现命令**
+
+```bash
+python -m lerobot.robots.alohamini.alohamini_host --robot_model xxxxx
+```
+
+(yq-phx3zdv7indeo98e-uf5131a77)=
+
+**错误信息**
+
+```text
+Missing motor IDs:
+8 (expected model: 777)
+9 (expected model: 777)
+10 (expected model: 777)
+11 (expected model: 777)
+
+Full expected motor list (id: model):
+1:777, 2:777, 3:777, 4:777, 5:777, 6:777,
+8:777, 9:777, 10:777, 11:777
+```
+
+(yq-phx3zdv7indeo98e-u47b4a409)=
+
+**故障原因**
+
+(yq-phx3zdv7indeo98e-u3977c307)=
+
+1、左臂舵机驱动板需连接两根总线：一根接机械臂（连通 1–6 号舵机），一根接升降轴（连通8–11 号舵机）。若升降轴一侧的总线漏接，驱动板将无法枚举到 8–11 号舵机。
+
+(yq-phx3zdv7indeo98e-uc15df730)=
+
+2、左右臂搞反了，左臂对应1-11号舵机，右臂对应1-7号舵机。重新修改代码中的端口号，对应到正确的机械臂
+
+(yq-phx3zdv7indeo98e-u0779d974)=
+
+**解决方法**
+
+1. 检查左臂舵机驱动板，确认来自升降轴的总线已正确插入。
+
+1. 重新插接后，使用 `get_motors_states` 验证总线上各舵机是否均可正常枚举：
+
+(yq-phx3zdv7indeo98e-ud5b49591)=
+
+确认 1–11 号舵机全部出现后，再启动 host。
+
+(yq-phx3zdv7indeo98e-u7da7ed1d)=
+
+(yq-phx3zdv7indeo98e-k8RjX)=
+
+## E003 · 树莓派电压或电流不足
+
+(yq-phx3zdv7indeo98e-u5be9957a)=
+
+(yq-phx3zdv7indeo98e-u28a0a6ce)=
+
+**复现命令**
+
+```bash
+python -m lerobot.robots.alohamini.alohamini_host --robot_model xxxxx
+```
+
+(yq-phx3zdv7indeo98e-u0bb53cf6)=
+
+**错误信息**
+
+```text
+TimeoutError: Timed out waiting for frame from camera OpenCVCamera(/dev/am_camera_wrist_left) after 1000 ms. Read thread alive: True.
+FATAL: exception not rethrown
+Aborted
+```
+
+(yq-phx3zdv7indeo98e-u961dba9a)=
+
+**故障原因**
+
+(yq-phx3zdv7indeo98e-u02c67d85)=
+
+树莓派电压或电流输入不足，无法同时启动2个以上摄像头
+
+(yq-phx3zdv7indeo98e-ua5b38be4)=
+
+**解决方法**
+
+1. 检查电池电量，将电池充满电再试。
+
+(yq-phx3zdv7indeo98e-u5fccd10f)=
+
+(yq-phx3zdv7indeo98e-sD0bI)=
+
+## E004 · 无法读取机械臂状态/舵机灯不亮
+
+(yq-phx3zdv7indeo98e-u77ec1a6e)=
+
+(yq-phx3zdv7indeo98e-u84ba3c65)=
+
+**复现命令**
+
+```bash
+python examples/debug/motors.py get_motors_states \
+  --port /dev/ttyACM0
+```
+
+(yq-phx3zdv7indeo98e-udb438f25)=
+
+**错误信息**
+
+```text
+No motors found in ID range [1, 22] on COM12.FATAL: exception not rethrown
+```
+
+(yq-phx3zdv7indeo98e-uf65b18a6)=
+
+**故障原因**
+
+(yq-phx3zdv7indeo98e-u02a8019f)=
+
+1、没有为驱动板供电或电池电量极低
+
+(yq-phx3zdv7indeo98e-u4be0910c)=
+
+2、将夹爪直接连舵机驱动板，然后执行get_motors_states命令，若仍然无法读取到舵机状态，可判定舵机驱动板损坏
+
+(yq-phx3zdv7indeo98e-ub7b03dfb)=
+
+(yq-phx3zdv7indeo98e-u9bdf8e68)=
+
+![异常处理 · 图 1](../_static/yuque-assets/2a578fe30ade4b950011.jpeg)
+
+(yq-phx3zdv7indeo98e-ucfd1d047)=
+
+3、若能正常读取到夹爪，无法读取其它舵机，则可能是其它关节的串口线松动，或关节舵机损坏，需逐一连接驱动板排查
+
+(yq-phx3zdv7indeo98e-ufe0cfb5d)=
+
+**解决方法**
+
+1. 检查驱动板5521接口是否正常供电
+
+1. 更换一块新的舵机驱动板
+
+1. 紧固所有关节的串口线，并逐一排查是否有舵机损坏

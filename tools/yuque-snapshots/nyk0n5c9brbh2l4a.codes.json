@@ -1,0 +1,142 @@
+{
+  "hlEYd": {
+    "gaps": 0,
+    "language": "bash",
+    "text": "ssh pi5@192.168.xx.xx # 替换为机器人树莓派的IP \n# 密码123456"
+  },
+  "EeKU9": {
+    "gaps": 0,
+    "language": "bash",
+    "text": "conda activate lerobot_alohamini\ncd lerobot_alohamini\n\n# AlohaMini 2 Pro (AM‑ARM 6‑DoF, sts3250 upgrade)\npython -m lerobot.robots.alohamini.alohamini_host \\\n  --robot_model alohamini2pro\n  "
+  },
+  "e93BI": {
+    "gaps": 0,
+    "language": "bash",
+    "text": "mkdir -p ~/miniconda3\nwget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh -O ~/miniconda3/miniconda.sh\nbash ~/miniconda3/miniconda.sh -b -u -p ~/miniconda3\nrm ~/miniconda3/miniconda.sh\n~/miniconda3/bin/conda init bash\nsource ~/.bashrc"
+  },
+  "OlM2W": {
+    "gaps": 0,
+    "language": "bash",
+    "text": "git clone https://github.com/liyiteng/lerobot_alohamini.git\ncd lerobot_alohamini\nconda create -y -n lerobot_alohamini python=3.12\nconda activate lerobot_alohamini\npip install -e \".[all]\"\npip install pyzmq feetech-servo-sdk\nconda install -y ffmpeg=7.1.1 -c conda-forge"
+  },
+  "pmy17": {
+    "gaps": 0,
+    "language": "bash",
+    "text": "sudo usermod -a -G dialout $USER\n# 完成后重启电脑"
+  },
+  "jbUlG": {
+    "gaps": 0,
+    "language": "bash",
+    "text": "ls /dev/ttyACM*"
+  },
+  "XlEGQ": {
+    "gaps": 0,
+    "language": "plain",
+    "text": "udevadm info --attribute-walk --name=/dev/ttyACM0 | awk -F'\"' '/ATTRS{serial}/{print $2; exit}'"
+  },
+  "fNzLG": {
+    "gaps": 0,
+    "language": "bash",
+    "text": "ls /dev/ttyACM*"
+  },
+  "seWOY": {
+    "gaps": 0,
+    "language": "bash",
+    "text": "udevadm info --attribute-walk --name=/dev/ttyACM1 | awk -F'\"' '/ATTRS{serial}/{print $2; exit}'"
+  },
+  "AiLgF": {
+    "gaps": 0,
+    "language": "plain",
+    "text": "sudo nano /etc/udev/rules.d/90-mydevice.rules "
+  },
+  "d36SJ": {
+    "gaps": 0,
+    "language": "plain",
+    "text": "SUBSYSTEM==\"tty\", ATTRS{serial}==\"5B3D040583\", SYMLINK+=\"am_arm_leader_left\"\nSUBSYSTEM==\"tty\", ATTRS{serial}==\"5B3D041923\", SYMLINK+=\"am_arm_leader_right\""
+  },
+  "kNcE4": {
+    "gaps": 0,
+    "language": "plain",
+    "text": "sudo udevadm control --reload-rules\nsudo udevadm trigger"
+  },
+  "tndJ7": {
+    "gaps": 0,
+    "language": "plain",
+    "text": "ls -l /dev/am*"
+  },
+  "KPMGq": {
+    "gaps": 0,
+    "language": "plain",
+    "text": "# 进入conda环境\nconda activate lerobot_alohamini\ncd lerobot_alohamini\n\n#执行获取舵机状态命令\npython examples/debug/motors.py get_motors_states \\\n  --port /dev/am_arm_leader_left\n\n  python examples/debug/motors.py get_motors_states \\\n  --port /dev/am_arm_leader_right"
+  },
+  "DCPsU": {
+    "gaps": 0,
+    "language": "bash",
+    "text": "python examples/alohamini/calibrate_bi.py \n--teleop.id am_leader_bi \n--teleop.arm_profile am-leader-6dof"
+  },
+  "zXuI2": {
+    "gaps": 0,
+    "language": "bash",
+    "text": "python examples/alohamini/teleoperate_bi.py \\\n  --robot.remote_ip 192.168.x.xx \\\n  --robot.robot_model alohamini2 \\\n  --teleop.id am_leader_bi \\\n  --teleop.arm_profile am-leader-6dof"
+  },
+  "Av6UM": {
+    "gaps": 0,
+    "language": "plain",
+    "text": "src/lerobot/robots/alohamini/config_alohamini.py"
+  },
+  "KFSI2": {
+    "gaps": 0,
+    "language": "python",
+    "text": "def alohamini_cameras_config() -> dict[str, CameraConfig]:\n    return {\n        \"head_top\": OpenCVCameraConfig(\n            index_or_path=\"/dev/am_camera_head_top\", fps=30, width=640, height=480, rotation=Cv2Rotation.NO_ROTATION\n        ),\n        # \"head_back\": OpenCVCameraConfig(\n        #     index_or_path=\"/dev/am_camera_head_back\", fps=30, width=640, height=480, rotation=Cv2Rotation.NO_ROTATION\n        # ),\n        # \"head_front\": OpenCVCameraConfig(\n        #     index_or_path=\"/dev/am_camera_head_front\", fps=30, width=640, height=480, rotation=Cv2Rotation.NO_ROTATION\n        # ),\n        # \"wrist_left\": OpenCVCameraConfig(\n        #     index_or_path=\"/dev/am_camera_wrist_left\", fps=30, width=640, height=480, rotation=Cv2Rotation.NO_ROTATION\n        # ),\n        # \"wrist_right\": OpenCVCameraConfig(\n        #     index_or_path=\"/dev/am_camera_wrist_right\", fps=30, width=640, height=480, rotation=Cv2Rotation.NO_ROTATION\n        # ),\n    }"
+  },
+  "LkvVa": {
+    "gaps": 0,
+    "language": "plain",
+    "text": "python examples/alohamini/record_bi.py \\\n  --dataset.repo_id user/am2_bi_test \\\n  --dataset.root \"$HOME/user/am2_bi_test\" \\\n  --dataset.num_episodes 1 \\\n  --dataset.fps 25 \\\n  --dataset.episode_time_s 60 \\\n  --dataset.reset_time_s 10 \\\n  --dataset.single_task \"pickup1\" \\\n  --robot.remote_ip 192.168.8.117 \\\n  --robot.robot_model alohamini2pro \\\n  --teleop.id am_leader_bi \\\n  --teleop.arm_profile am-leader-6dof \\\n  --dataset.push_to_hub=false \\\n  --display-data=true"
+  },
+  "qNOQe": {
+    "gaps": 0,
+    "language": "latex",
+    "text": "~/.cache/huggingface/lerobot/"
+  },
+  "sG9Nq": {
+    "gaps": 0,
+    "language": "bash",
+    "text": "--dataset.root ~/user/am2_bi_test"
+  },
+  "MIbdH": {
+    "gaps": 0,
+    "language": "plain",
+    "text": "python examples/alohamini/record_bi.py \\\n  --dataset.repo_id user/am2_bi_test \\\n  --dataset.root \"$HOME/user/am2_bi_test\" \\\n  --dataset.num_episodes 1 \\\n  --dataset.fps 25 \\\n  --dataset.episode_time_s 60 \\\n  --dataset.reset_time_s 10 \\\n  --dataset.single_task \"pickup1\" \\\n  --robot.remote_ip 192.168.8.117 \\\n  --robot.robot_model alohamini2pro \\\n  --teleop.id am_leader_bi \\\n  --teleop.arm_profile am-leader-6dof \\\n  --dataset.push_to_hub=false \\\n  --display-data=true \\\n  --resume"
+  },
+  "dJV1u": {
+    "gaps": 0,
+    "language": "plain",
+    "text": "HF_HUB_OFFLINE=1 \\\nlerobot-dataset-viz \\\n  --repo-id user/am2_bi_test \\\n  --root \"$HOME/user/am2_bi_test\" \\\n  --episode-index 0 \\\n  --display-compressed-images"
+  },
+  "mdqMb": {
+    "gaps": 0,
+    "language": "plain",
+    "text": "HF_HUB_OFFLINE=1 \\\npython examples/alohamini/replay_bi.py \\\n  --dataset.repo_id user/am2_bi_test \\\n  --dataset.root \"$HOME/user/am2_bi_test\" \\\n  --dataset.episode 0 \\\n  --robot.remote_ip 192.168.8.117 \\\n  --robot.robot_model alohamini2pro"
+  },
+  "Fq3jm": {
+    "gaps": 0,
+    "language": "plain",
+    "text": "HF_HUB_OFFLINE=1 \\\nHF_DATASETS_OFFLINE=1 \\\nTORCH_HOME=\"$HOME/.cache/torch\" \\\nlerobot-train \\\n  --dataset.repo_id=user/am2_bi_test \\\n  --dataset.root=\"$HOME/user/am2_bi_test\" \\\n  --dataset.video_backend=pyav \\\n  --policy.type=act \\\n  --policy.device=cuda \\\n  --policy.push_to_hub=false \\\n  --save_checkpoint_to_hub=false \\\n  --output_dir=outputs/train/act_am2_bi_test \\\n  --job_name=act_am2_bi_test \\\n  --steps=100000 \\\n  --batch_size=6 \\\n  --wandb.enable=false"
+  },
+  "igaDj": {
+    "gaps": 0,
+    "language": "plain",
+    "text": "python -m lerobot.scripts.create_alohamini_visual_only_dataset \\\n  --source \"$HOME/user/am2_bi_test\" \\\n  --target \"$HOME/user/am2_bi_test_visual_only\" \\\n  --keep-camera forward \\\n  --keep-camera wrist_right \\\n  --drop-state"
+  },
+  "kKcyB": {
+    "gaps": 0,
+    "language": "plain",
+    "text": "HF_HUB_OFFLINE=1 \\\nHF_DATASETS_OFFLINE=1 \\\nTORCH_HOME=\"$HOME/.cache/torch\" \\\nlerobot-train \\\n  --dataset.repo_id=user/am2_bi_test_visual_only \\\n  --dataset.root=\"$HOME/user/am2_bi_test_visual_only\" \\\n  --dataset.video_backend=pyav \\\n  --policy.type=am_act \\\n  --policy.device=cuda \\\n  --policy.fixed_action_dims='[0,1,2,3,4,5,6]' \\\n  --policy.discrete_action_dims='[14,15,16]' \\\n  --policy.discrete_action_values='[[-0.15,0,0.15],[-0.15,0,0.15],[-45,0,45]]' \\\n  --policy.discrete_action_class_weights='[[3,1,1.5],[3,1,2],[2,1,2]]' \\\n  --policy.discrete_action_loss_weight=1.0 \\\n  --policy.push_to_hub=false \\\n  --save_checkpoint_to_hub=false \\\n  --output_dir=outputs/train/am2_bi_test_visual_only \\\n  --job_name=am_act_am2_bi_test \\\n  --steps=100000 \\\n  --batch_size=6 \\\n  --wandb.enable=false"
+  },
+  "jUwV8": {
+    "gaps": 0,
+    "language": "plain",
+    "text": "# 在PC的终端中运行命令\nconda activate lerobot_alohamini\ncd lerobot_alohamini\n\npython examples/alohamini/evaluate_bi.py \\\n  --eval.n_episodes 1 \\\n  --fps 25 \\\n  --dataset.single_task \"pick up the block and place it in the box\" \\\n  --policy.path outputs/train/act_pick_test_01/checkpoints/020000/pretrained_model \\\n  --dataset.repo_id local/eval_act_pick_test_01 \\\n  --dataset.push_to_hub=false \\\n  --robot.remote_ip 192.168.8.117 \\\n  --robot.id my_alohamini \\\n  --robot.robot_model alohamini2pro \\\n  --inference.type sync \\\n  --interpolation_multiplier 3"
+  }
+}

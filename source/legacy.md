@@ -1,5 +1,7 @@
 # AlohaMini 1
 
+完整的一代物料与装配已迁入 [一代硬件教程](legacy-hardware.md)，可在站内阅读原始 BOM 与全部组装照片。
+
 一代使用 SO-ARM100 / SO-ARM101 双臂，具有轮式底盘与电动升降机构。这里保留一代的硬件、软件和仿真入口。
 
 ```{image} _static/media/alohamini_git.png

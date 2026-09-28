@@ -1,0 +1,14 @@
+{
+  "assets": [
+    {
+      "path": "_static/yuque-assets/506ba0e596b3f0704621.jpeg",
+      "sha256": "506ba0e596b3f0704621c2934e61084d163eb62e1fd66e79764dc7691180de4e",
+      "url": "https://cdn.nlark.com/yuque/0/2026/jpeg/67089790/1786712869900-720a600a-f039-438a-afe8-bd9f62e52d24.jpeg"
+    },
+    {
+      "path": "_static/yuque-assets/a56f64a53d288683493b.png",
+      "sha256": "a56f64a53d288683493beafd332e710e432ef3561d009d262937254f9f3db496",
+      "url": "https://cdn.nlark.com/yuque/0/2026/png/67089790/1786713156790-fefc8f7f-61d4-48bd-9e1f-fe37400cca70.png"
+    }
+  ]
+}

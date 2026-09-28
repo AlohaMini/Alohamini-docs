@@ -1,0 +1,21 @@
+{
+  "html": "<ne-p id=\"u2517d6ae\">将树莓派中的lerobot_alohamini更新到最新版本：\n1、还原工作区</ne-p><ne-p id=\"uea5587d9\">git restore .</ne-p><ne-p id=\"u0be853b4\">2、拉取代码</ne-p><ne-p id=\"ud8441ecf\">git pull</ne-p><ne-p id=\"u965c1d76\">3、正常应当显示Already up to date</ne-p><ne-p id=\"u977d1848\"></ne-p><ne-p id=\"u762fd25a\">如果github无法访问，则设置clash允许内网访问，然后在树莓派中执行：\nexport http_proxy=<a href=\"http://192.168.50.XXX:7890\">http://192.168.50.XXX:7890</a></ne-p><ne-p id=\"u06cd1583\">export https_proxy=<a href=\"http://192.168.50.XXX:7890\">http://192.168.50.XXX:7890</a></ne-p><ne-p id=\"ucc3369d5\"></ne-p><ne-p id=\"u6c47f826\">测试：</ne-p><ne-p id=\"uc581c3a6\">curl <a href=\"https://github.com\">https://github.com</a></ne-p><ne-p id=\"u58b10dde\">curl https://google.com</ne-p><ne-p id=\"u1653f7e3\"></ne-p><ne-p id=\"u5f045e91\">说明树莓派可以正常访问外网，此时git pull不会再报错。</ne-p>",
+  "images": [],
+  "links": [
+    {
+      "title": "http://192.168.50.XXX:7890",
+      "url": "http://192.168.50.xxx:7890/"
+    },
+    {
+      "title": "http://192.168.50.XXX:7890",
+      "url": "http://192.168.50.xxx:7890/"
+    },
+    {
+      "title": "https://github.com",
+      "url": "https://github.com/"
+    }
+  ],
+  "text": "将树莓派中的lerobot_alohamini更新到最新版本：\n1、还原工作区\n\ngit restore .\n\n2、拉取代码\n\ngit pull\n\n3、正常应当显示Already up to date\n\n\n\n如果github无法访问，则设置clash允许内网访问，然后在树莓派中执行：\nexport http_proxy=http://192.168.50.XXX:7890\n\nexport https_proxy=http://192.168.50.XXX:7890\n\n\n\n测试：\n\ncurl https://github.com\n\ncurl https://google.com\n\n\n\n说明树莓派可以正常访问外网，此时git pull不会再报错。\n",
+  "title": "常见问题",
+  "url": "https://alohamini.yuque.com/lq44as/tiv9xs/cyrmk57grrm79vgo"
+}

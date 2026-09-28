@@ -1,5 +1,7 @@
 # 策略训练
 
+其他策略和高级训练方式见 [策略与训练教程](policies.md)，包含各模型完整原文。
+
 适用型号：**AlohaMini 2 / 2 Pro**。标注型号的两组示例请选择一组执行。完整入门流程：[2 教程](alohamini2.md) · [2 Pro 教程](alohamini2pro.md)。
 
 本章以项目提供的 **ACT** 训练入口为起点。训练读取已保存的数据集，不需要机器人 Host 或主臂持续在线。
@@ -135,3 +137,86 @@ outputs/train/act_am2pro_pick_place/
 训练 loss 下降只能说明优化过程中的一个指标，任务效果要通过 [真机评估](evaluation.md) 检查。记录失败阶段，再决定补数据或调整训练配置。
 
 来源：[ACT 训练示例](https://github.com/liyiteng/lerobot_alohamini/blob/main/docs/alohamini/commands.md)、[训练配置](https://github.com/liyiteng/lerobot_alohamini/blob/main/src/lerobot/configs/train.py)。
+
+## 7. AM-ACT：移动任务与纯视觉训练
+
+语雀 [Pro 交付教程](yuque/pro-quickstart.md) 给出了一套“右臂操作、左臂静止、底盘参与运动”的 AM-ACT 示例。AM-ACT 在 ACT 基础上支持固定动作维度、部分动作维度的离散分类，以及纯视觉输入。是否使用这些选项，取决于实际采集的任务。
+
+### 7.1 先核对数据特征
+
+1. 确认来自本机的 18 维整机数据，检查 `meta/info.json` 中的动作名称和顺序。
+2. 确认哪些关节参与任务、哪些始终不动。不要因为示例固定了左臂，就对自己的双臂任务照搬。
+3. 核对相机键。下例使用 `forward` 与 `wrist_right`；如果你的交付配置使用 `head_top`，应先检查数据集中实际的 `observation.images.*`。
+4. 确认移动动作的单位、取值和统计分布，再考虑离散分类参数。
+
+### 7.2 创建独立的纯视觉数据集
+
+下面以 Pro 数据集为例。标准 2 同样可以使用转换工具，但源数据、目标目录和模型目录应保持独立。
+
+```bash
+python -m lerobot.scripts.create_alohamini_visual_only_dataset \
+  --source "$HOME/user/am2pro_pick_place" \
+  --target "$HOME/user/am2pro_pick_place_visual_only" \
+  --keep-camera forward \
+  --keep-camera wrist_right \
+  --drop-state \
+  --mode copy \
+  --dry-run
+```
+
+先检查预览列出的保留相机和删除特征。确认后移除最后一行 `--dry-run`，同时移除它上一行末尾的续行符，再执行转换。
+
+- `--source` 必须指向实际存在的 LeRobot v3 数据集。
+- `--target` 必须是尚不存在的新目录。
+- `--drop-state` 移除 `observation.state`，保留动作标签。AM-ACT 支持该输入方式，其他策略未必支持。
+- `--mode copy` 使用独立文件副本；工具默认的自动模式会优先建立硬链接。
+- 转换完成后再次检查目标数据集，确认图像、动作和 episode 数量符合预期。
+
+### 7.3 从不固定动作维度的配置开始
+
+以下示例先保留全部动作的连续回归，避免尚未核对数据就固定左臂或强行划分类别。步数和 batch size 是可调整的示例，不代表特定成功率。
+
+```bash
+lerobot-train \
+  --dataset.repo_id=local/am2pro_pick_place_visual_only \
+  --dataset.root="$HOME/user/am2pro_pick_place_visual_only" \
+  --dataset.video_backend=pyav \
+  --policy.type=am_act \
+  --policy.device=cuda \
+  --policy.fixed_action_dims='[]' \
+  --policy.discrete_action_dims='[]' \
+  --policy.push_to_hub=false \
+  --save_checkpoint_to_hub=false \
+  --output_dir=outputs/train/am_act_am2pro_pick_place \
+  --job_name=am_act_am2pro_pick_place \
+  --steps=100000 \
+  --batch_size=2 \
+  --wandb.enable=false
+```
+
+### 7.4 理解交付教程中的分类参数
+
+| 参数 | 原文示例 | 使用条件 |
+|---|---|---|
+| `fixed_action_dims` | `[0,1,2,3,4,5,6]` | 原文任务中左臂始终静止；这些维度不参与训练，在归一化空间输出零 |
+| `discrete_action_dims` | `[14,15,16]` | 必须先核对数据特征顺序；原文用于二代底盘运动 |
+| `discrete_action_values` | `[[-0.15,0,0.15],[-0.15,0,0.15],[-45,0,45]]` | 使用数据集的物理单位，与采集动作取值匹配 |
+| `discrete_action_class_weights` | `[[3,1,1.5],[3,1,2],[2,1,2]]` | 每一组权重与该维度的类别顺序一一对应 |
+| `discrete_action_loss_weight` | `1.0` | 分类损失的权重，需要结合实验调整 |
+
+**归一化空间的零不等于物理关节角度零。** 不要把 `fixed_action_dims` 当作机械急停或硬件锁定机制。
+
+如需采用上述离散设置，在训练命令中替换相应空列表，并补充类别与权重参数；先在少量数据上检查配置是否符合任务。
+
+### 7.5 出现 `zero std` 怎么办
+
+`Action dimension 15 has zero std and cannot be classified` 表示被选为离散分类的动作维度在统计中没有变化。原文示例中可能是采集时没有左右平移，但也应检查数据转换和维度选择是否正确。
+
+1. 核对动作 15 对应的真实特征，而不是只按编号猜测。
+2. 检查原始数据与统计信息，确认该维度是否恒定。
+3. 任务需要这类运动时，补采包含相应动作的数据并重新生成统计。
+4. 任务本来不需要这类运动时，重新设计离散维度和固定维度配置，保持类别列表长度一致。
+
+不要直接修改统计数值来让报错消失。训练完成后按 [真机评估](evaluation.md) 使用实际生成的检查点，并保持机器人型号、相机名称与训练数据一致。
+
+完整参数定义：[AM-ACT 上游说明](upstream/software--src-lerobot-policies-am_act-readme.md)。

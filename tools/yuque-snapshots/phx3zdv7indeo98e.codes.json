@@ -1,0 +1,42 @@
+{
+  "sM4oW": {
+    "gaps": 0,
+    "language": "bash",
+    "text": "python -m lerobot.robots.alohamini.lekiwi host  --robot_model xxxxx"
+  },
+  "QZzq7": {
+    "gaps": 0,
+    "language": "plain",
+    "text": "ValueError: Some motors have the same min and max values"
+  },
+  "gfaaN": {
+    "gaps": 0,
+    "language": "bash",
+    "text": "python -m lerobot.robots.alohamini.lekiwi host --robot_model xxxxx"
+  },
+  "P2yRB": {
+    "gaps": 0,
+    "language": "plain",
+    "text": "Missing motor IDs:\n8 (expected model: 777)\n9 (expected model: 777)\n10 (expected model: 777)\n11 (expected model: 777)\n\nFull expected motor list (id: model):\n1:777, 2:777, 3:777, 4:777, 5:777, 6:777,\n8:777, 9:777, 10:777, 11:777"
+  },
+  "CXzm7": {
+    "gaps": 0,
+    "language": "bash",
+    "text": "python -m lerobot.robots.alohamini.lekiwi host --robot_model xxxxx"
+  },
+  "WhvRt": {
+    "gaps": 0,
+    "language": "plain",
+    "text": "TimeoutError: Timed out waiting for frame from camera OpenCVCamera(/dev/am_camera_wrist_left) after 1000 ms. Read thread alive: True.\nFATAL: exception not rethrown\nAborted"
+  },
+  "uksVt": {
+    "gaps": 0,
+    "language": "bash",
+    "text": "python examples/debug/motors.py get_motors_states \\\n  --port /dev/ttyACM0"
+  },
+  "ql6hV": {
+    "gaps": 0,
+    "language": "plain",
+    "text": "No motors found in ID range [1, 22] on COM12.FATAL: exception not rethrown"
+  }
+}

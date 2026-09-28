@@ -110,4 +110,58 @@ lerobot-replay \
 
 从单臂扩展到整机时，重新完成左右主从臂、Host、底盘、升降和整机相机配置，再重新采集与训练对应的整机数据。
 
+## 8. 单臂 ACT 训练示例
+
+将采集数据保持在同一命名空间；以下命令关闭模型上传：
+
+```bash
+lerobot-train \
+  --dataset.repo_id=$HF_USER/am_arm_test \
+  --policy.type=act \
+  --output_dir=outputs/train/act_am_arm_test \
+  --job_name=act_am_arm_test \
+  --policy.device=cuda \
+  --policy.push_to_hub=false \
+  --wandb.enable=false \
+  --dataset.video_backend=pyav
+```
+
+自定义数据目录时加上正确的 `--dataset.root`。训练机与控制机分开时，完整迁移数据和检查点。单臂 Pro 数据建议使用独立的 `am_arm_pro_test` 数据集与模型目录。
+
+## 9. 单臂真机评估
+
+评估使用 `lerobot-rollout`，在 PC 上直接控制单从臂。先停止遥操作与录制，核对相机与模型输入一致；下面的 `020000` 改为实际保存的步数。
+
+**AM-ARM200 标准从臂**
+
+```bash
+lerobot-rollout \
+  --strategy.type=base \
+  --robot.type=so101_follower \
+  --robot.port=/dev/ttyACM1 \
+  --robot.id=my_follower \
+  --robot.arm_profile=am-follower-6dof \
+  --robot.cameras="{cam_wrist: {type: opencv, index_or_path: 0, width: 640, height: 480, fps: 30}, cam_top: {type: opencv, index_or_path: 1, width: 640, height: 480, fps: 30}}" \
+  --policy.path=outputs/train/act_am_arm_test/checkpoints/020000/pretrained_model \
+  --task="Pick up the object and place it in the tray"
+```
+
+**AM-ARM200 Pro 从臂**
+
+```bash
+lerobot-rollout \
+  --strategy.type=base \
+  --robot.type=so101_follower \
+  --robot.port=/dev/ttyACM1 \
+  --robot.id=my_follower \
+  --robot.arm_profile=am-follower-6dof-hd \
+  --robot.cameras="{cam_wrist: {type: opencv, index_or_path: 0, width: 640, height: 480, fps: 30}, cam_top: {type: opencv, index_or_path: 1, width: 640, height: 480, fps: 30}}" \
+  --policy.path=outputs/train/act_am_arm_pro_test/checkpoints/020000/pretrained_model \
+  --task="Pick up the object and place it in the tray"
+```
+
+这里的相机配置与本页录制示例对应；如果训练只用一只相机，评估也按相同名称配置。设备 ID 必须加载该从臂的真实校准，Pro 检查点必须由对应数据训练得到。
+
+完整参数与评估行为见 [推理原文](upstream/software--docs-source-inference.md)；原始单臂工作流、续录命令和参考说明见 [单臂全文](upstream/software--docs-alohamini-am-arm200.md)。
+
 来源：[AM-ARM200 完整工作流](https://github.com/liyiteng/lerobot_alohamini/blob/main/docs/alohamini/am-arm200.md)。

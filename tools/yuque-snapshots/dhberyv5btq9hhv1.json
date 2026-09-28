@@ -1,0 +1,46 @@
+{
+  "html": "<ne-p id=\"uf5dabc36\">感谢订购AlohaMini。</ne-p><ne-p id=\"u6a573778\">AlohaMini是一套用于算法教学与复现的双臂可升降机器人，打包发货时尽量没有拆线，硬件上只需要连好电池开机即可。</ne-p><ne-p id=\"u853e957d\"></ne-p><ne-h2 id=\"1df7dbbd\"><ne-text id=\"ua24fbde2\" ne-bold=\"true\">硬件安装</ne-text></ne-h2><ne-h3 id=\"ce199d35\"><ne-text id=\"u4c3c2076\" ne-bold=\"true\">机器人端：</ne-text></ne-h3><ne-p id=\"u8c3b000d\">1、找到箱子中的充电器和电池，2块12V锂电及充电器，2块5V锂电及充电器，12V锂电充电时充电器会红灯常量，充满后绿灯常亮。5V充满后电池上会亮4个白灯。</ne-p><ne-p id=\"u60a22799\"><ne-card id=\"u07705a22\" data-card-name=\"image\"><img src=\"https://cdn.nlark.com/yuque/0/2026/jpeg/67089790/1777353335923-9f8ac5e3-400f-4530-a4f4-74402336fe29.jpeg\" alt=\"\" style=\"position: absolute; top: 0px; left: 0px; max-width: 74.9854%; width: 74.9854%; height: 133.359%; transform-origin: 50% 50%; transform: translate(16.6797%, -12.5073%) rotate(270deg);\"></ne-card></ne-p><ne-p id=\"ua8892051\"></ne-p><ne-p id=\"u197eaef3\">2、将一块12V电池放入机器人底部仓位，连接好图上的DC线接口，为Follower Arms及升降底盘供电</ne-p><ne-p id=\"u2e9d873e\"><ne-card id=\"ub634a949\" data-card-name=\"image\"><img src=\"https://cdn.nlark.com/yuque/0/2026/jpeg/67089790/1777354120996-469305dc-096e-4b5b-a7d0-58bb8408eaa6.jpeg\" alt=\"\" style=\"position: absolute; top: 0px; left: 0px; max-width: 136.463%; width: 136.463%; height: 141.884%; transform-origin: 62.58% 44.26%; transform: translate(-25.94%, -9.02%) rotate(360deg);\"></ne-card></ne-p><ne-p id=\"u7db13cef\">3、将电源板插入卡槽，使用PD 5V5A插口与树莓派相连</ne-p><ne-p id=\"u7bc549cf\"><ne-card id=\"u211461a9\" data-card-name=\"image\"><img src=\"https://cdn.nlark.com/yuque/0/2026/jpeg/67089790/1777354582603-1be64717-a424-48a1-b187-9b0e7a355623.jpeg\" alt=\"\" style=\"position: absolute; top: 0px; left: 0px; max-width: 100.949%; width: 100.949%; height: 175.685%; transform-origin: 50.47% 49.91%; transform: translate(-0.94%, -21.45%) rotate(360deg);\"></ne-card></ne-p><ne-p id=\"ufddea5ac\"><ne-card id=\"uf3021dc4\" data-card-name=\"image\"><img src=\"https://cdn.nlark.com/yuque/0/2026/jpeg/67089790/1777354609736-3a0f9ce9-ff4c-4a67-9abd-9e31065078b4.jpeg\" alt=\"\" style=\"position: absolute; top: 0px; left: 0px; max-width: 100%; width: 100%; height: 177.305%; transform-origin: 50% 49.21%; transform: translate(0%, -21.01%) rotate(360deg);\"></ne-card></ne-p><ne-p id=\"u58d1153a\">4、将另一块 12V 电池放入底仓，为电源板供电。</ne-p><ne-p id=\"uf88cce31\"><ne-card id=\"u227ecb5d\" data-card-name=\"image\"><img src=\"https://cdn.nlark.com/yuque/0/2026/png/67089790/1777354044769-89e8ab42-a3ca-43c9-8b06-eb2bf92c408d.png\" alt=\"\" style=\"position: absolute; top: 0px; left: 0px; max-width: 100.513%; width: 100.513%; height: 122.205%; transform-origin: 49.745% 59.085%; transform: translate(0%, -18.17%) rotate(360deg);\"></ne-card></ne-p><ne-p id=\"u80a2ae89\">4、成功后，树莓派屏幕会亮起，屏幕是触屏的，可以连接一个5G频段的wifi，记录下当前树莓派的IP地址，如：192.168.50.88</ne-p><ne-p id=\"u88249dd7\">（如果不方便操作，也可以蓝牙连接键盘和鼠标。）</ne-p><ne-p id=\"ua2c2dc82\"></ne-p><ne-h3 id=\"3fc02fce\"><ne-text id=\"u5a4291e9\" ne-bold=\"true\">遥操端：</ne-text></ne-h3><ne-p id=\"u0e589181\">将5V电源连接到DC线，给两个机械臂供电，下面的两种方式都行：</ne-p><ne-p id=\"ub080bd30\"><ne-card id=\"uc3a0c312\" data-card-name=\"image\"><img src=\"https://cdn.nlark.com/yuque/0/2026/jpeg/67089790/1777353312644-b75da95b-9659-45ed-9540-50ef487531c3.jpeg\" alt=\"\" style=\"position: absolute; top: 0px; left: 0px; max-width: 74.9854%; width: 74.9854%; height: 133.359%; transform-origin: 50% 50%; transform: translate(16.6797%, -12.5073%) rotate(270deg);\"></ne-card></ne-p><ne-p id=\"u90a66c26\"><ne-card id=\"u4cde75e8\" data-card-name=\"image\"><img src=\"https://cdn.nlark.com/yuque/0/2026/jpeg/67089790/1777353312783-1c09a26b-d81d-4dd9-be10-b0efe474768f.jpeg\" alt=\"\"></ne-card></ne-p><ne-p id=\"u74abb6c6\">然后将2个机械臂的USB-C口连接PC电脑</ne-p><ne-p id=\"ue76b7978\"></ne-p><ne-p id=\"u823879ea\"></ne-p><ne-h2 id=\"812f6a22\"><ne-text id=\"u80cc4df1\" ne-bold=\"true\">软件安装与调试</ne-text></ne-h2><ne-p id=\"u0cc139a3\"></ne-p><ne-p id=\"u80107a5d\">如果您有一定lerobot开发经验，可以通过接下来的《<a href=\"https://alohamini.yuque.com/lq44as/tiv9xs/nyk0n5c9brbh2l4a\">AlohaMini Pro 快速入门指南</a>》迅速开启摇操。如果您完全没有接触过lerobot，请参考《<a href=\"https://alohamini.yuque.com/lq44as/tiv9xs/wgx9twozktvwssu3\">AlohaMini_新手教程</a>》</ne-p><ne-p id=\"uf62692cd\"></ne-p>",
+  "images": [
+    {
+      "alt": "",
+      "src": "https://cdn.nlark.com/yuque/0/2026/jpeg/67089790/1777353335923-9f8ac5e3-400f-4530-a4f4-74402336fe29.jpeg"
+    },
+    {
+      "alt": "",
+      "src": "https://cdn.nlark.com/yuque/0/2026/jpeg/67089790/1777354120996-469305dc-096e-4b5b-a7d0-58bb8408eaa6.jpeg"
+    },
+    {
+      "alt": "",
+      "src": "https://cdn.nlark.com/yuque/0/2026/jpeg/67089790/1777354582603-1be64717-a424-48a1-b187-9b0e7a355623.jpeg"
+    },
+    {
+      "alt": "",
+      "src": "https://cdn.nlark.com/yuque/0/2026/jpeg/67089790/1777354609736-3a0f9ce9-ff4c-4a67-9abd-9e31065078b4.jpeg"
+    },
+    {
+      "alt": "",
+      "src": "https://cdn.nlark.com/yuque/0/2026/png/67089790/1777354044769-89e8ab42-a3ca-43c9-8b06-eb2bf92c408d.png"
+    },
+    {
+      "alt": "",
+      "src": "https://cdn.nlark.com/yuque/0/2026/jpeg/67089790/1777353312644-b75da95b-9659-45ed-9540-50ef487531c3.jpeg"
+    },
+    {
+      "alt": "",
+      "src": "https://cdn.nlark.com/yuque/0/2026/jpeg/67089790/1777353312783-1c09a26b-d81d-4dd9-be10-b0efe474768f.jpeg"
+    }
+  ],
+  "links": [
+    {
+      "title": "AlohaMini Pro 快速入门指南",
+      "url": "https://alohamini.yuque.com/lq44as/tiv9xs/nyk0n5c9brbh2l4a"
+    },
+    {
+      "title": "AlohaMini_新手教程",
+      "url": "https://alohamini.yuque.com/lq44as/tiv9xs/wgx9twozktvwssu3"
+    }
+  ],
+  "text": "感谢订购AlohaMini。\n\nAlohaMini是一套用于算法教学与复现的双臂可升降机器人，打包发货时尽量没有拆线，硬件上只需要连好电池开机即可。\n\n\n\n硬件安装\n\n机器人端：\n\n1、找到箱子中的充电器和电池，2块12V锂电及充电器，2块5V锂电及充电器，12V锂电充电时充电器会红灯常量，充满后绿灯常亮。5V充满后电池上会亮4个白灯。\n\n\n\n\n\n2、将一块12V电池放入机器人底部仓位，连接好图上的DC线接口，为Follower Arms及升降底盘供电\n\n\n\n3、将电源板插入卡槽，使用PD 5V5A插口与树莓派相连\n\n\n\n\n\n4、将另一块 12V 电池放入底仓，为电源板供电。\n\nTGETHERNET\n\n\n4、成功后，树莓派屏幕会亮起，屏幕是触屏的，可以连接一个5G频段的wifi，记录下当前树莓派的IP地址，如：192.168.50.88\n\n（如果不方便操作，也可以蓝牙连接键盘和鼠标。）\n\n\n\n遥操端：\n\n将5V电源连接到DC线，给两个机械臂供电，下面的两种方式都行：\n\n\n\n\n\n然后将2个机械臂的USB-C口连接PC电脑\n\n\n\n\n\n软件安装与调试\n\n\n\n如果您有一定lerobot开发经验，可以通过接下来的《AlohaMini Pro 快速入门指南》迅速开启摇操。如果您完全没有接触过lerobot，请参考《AlohaMini_新手教程》\n\n\n",
+  "title": "AlohaMini 2 / 2 Pro 开箱指南",
+  "url": "https://alohamini.yuque.com/lq44as/tiv9xs/dhberyv5btq9hhv1"
+}

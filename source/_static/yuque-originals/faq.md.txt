@@ -1,0 +1,56 @@
+# 常见问题
+
+来源：https://alohamini.yuque.com/lq44as/tiv9xs/cyrmk57grrm79vgo
+网页读取日期：2026-09-28。此文件为公开页面转写，并非语雀原生 Markdown 导出。
+
+(yq-cyrmk57grrm79vgo-u2517d6ae)=
+
+将树莓派中的lerobot_alohamini更新到最新版本：
+1、还原工作区
+
+(yq-cyrmk57grrm79vgo-uea5587d9)=
+
+git restore .
+
+(yq-cyrmk57grrm79vgo-u0be853b4)=
+
+2、拉取代码
+
+(yq-cyrmk57grrm79vgo-ud8441ecf)=
+
+git pull
+
+(yq-cyrmk57grrm79vgo-u965c1d76)=
+
+3、正常应当显示Already up to date
+
+(yq-cyrmk57grrm79vgo-u977d1848)=
+
+(yq-cyrmk57grrm79vgo-u762fd25a)=
+
+如果github无法访问，则设置clash允许内网访问，然后在树莓派中执行：
+export http_proxy=[http://192.168.50.XXX:7890](http://192.168.50.XXX:7890)
+
+(yq-cyrmk57grrm79vgo-u06cd1583)=
+
+export https_proxy=[http://192.168.50.XXX:7890](http://192.168.50.XXX:7890)
+
+(yq-cyrmk57grrm79vgo-ucc3369d5)=
+
+(yq-cyrmk57grrm79vgo-u6c47f826)=
+
+测试：
+
+(yq-cyrmk57grrm79vgo-uc581c3a6)=
+
+curl [https://github.com](https://github.com)
+
+(yq-cyrmk57grrm79vgo-u58b10dde)=
+
+curl https://google.com
+
+(yq-cyrmk57grrm79vgo-u1653f7e3)=
+
+(yq-cyrmk57grrm79vgo-u5f045e91)=
+
+说明树莓派可以正常访问外网，此时git pull不会再报错。

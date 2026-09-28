@@ -2,11 +2,11 @@
 
 ```{raw} html
 <div class="am-project-links" aria-label="项目资源">
-<a href="https://github.com/liyiteng/AlohaMini" aria-label="GitHub：AlohaMini 项目"><img src="https://img.shields.io/badge/GitHub-AlohaMini-181717?logo=github&amp;logoColor=white" alt="GitHub AlohaMini" height="24"></a>
-<a href="https://github.com/liyiteng/AlohaMini/stargazers" aria-label="查看 AlohaMini 的 GitHub Stars"><img src="https://img.shields.io/github/stars/liyiteng/AlohaMini?style=social&amp;label=Stars" alt="GitHub Stars" height="24"></a>
-<a href="https://x.com/liyitengx" aria-label="在 X 上关注 @liyitengx"><img src="https://img.shields.io/twitter/follow/liyitengx?style=social&amp;logo=x" alt="Follow @liyitengx" height="24"></a>
-<a href="https://github.com/liyiteng/AlohaMini/blob/main/LICENSE" aria-label="Apache 2.0 开源许可证"><img src="https://img.shields.io/badge/License-Apache_2.0-blue" alt="License Apache 2.0" height="24"></a>
-<a href="https://discord.gg/CacMUBaFgJ" aria-label="加入 AlohaMini Discord 社区"><img src="https://img.shields.io/badge/Discord-Join_Chat-7289da?logo=discord&amp;logoColor=white" alt="Discord Join Chat" height="24"></a>
+<a href="https://github.com/liyiteng/AlohaMini" aria-label="GitHub：AlohaMini 项目"><img src="_static/external-images/551432bacb6b817efe56.svg" alt="GitHub AlohaMini" height="24"></a>
+<a href="https://github.com/liyiteng/AlohaMini/stargazers" aria-label="查看 AlohaMini 的 GitHub Stars"><img src="_static/external-images/889a2f18c066ae68827c.svg" alt="GitHub Stars" height="24"></a>
+<a href="https://x.com/liyitengx" aria-label="在 X 上关注 @liyitengx"><img src="_static/external-images/08ffe2473ce53b7e3838.svg" alt="Follow @liyitengx" height="24"></a>
+<a href="https://github.com/liyiteng/AlohaMini/blob/main/LICENSE" aria-label="Apache 2.0 开源许可证"><img src="_static/external-images/96ae2a5e24552c3ad0ae.svg" alt="License Apache 2.0" height="24"></a>
+<a href="https://discord.gg/CacMUBaFgJ" aria-label="加入 AlohaMini Discord 社区"><img src="_static/external-images/5f408227afa1a4f9eae3.svg" alt="Discord Join Chat" height="24"></a>
 </div>
 <figure class="am-hero"><img src="_static/media/assembled2.png" width="1344" height="768" alt="AlohaMini 一代白色双臂移动机器人，配备升降立柱与轮式底盘" fetchpriority="high"><figcaption>AlohaMini 1 实机。二代升级为 AM-ARM200 双臂与强化移动底盘。</figcaption></figure>
 ```
@@ -58,6 +58,8 @@
 
 ## 官方教程路线
 
+[官方使用手册](official-manual.md) 已整合语雀交付教程。收到整机可先看 [开箱与首次通电](unboxing.md)，有问题进入 [整机排错](support.md)。
+
 先进入 [AlohaMini 2](alohamini2.md) 或 [2 Pro](alohamini2pro.md) 教程。下面的专题解释每一步的具体操作；物料、打印和图文组装覆盖标准 2，Pro 先看 [硬件说明](hardware-pro.md)。
 
 | 阶段 | 教程 | 完成后的结果 |
@@ -82,6 +84,14 @@
 - 准备接入 OpenPI：阅读 [Pi 0.5 专题](pi05.md) 的数据映射与版本条件。
 - 找不到设备、缺图或录制失败：按 [调试与排错](troubleshooting.md) 逐项检查。
 - 已熟悉流程：使用 [命令参考](commands.md) 快速定位入口。
+
+## 完整教程与进阶资料
+
+- [教程资料库](tutorial-library.md)：查阅 GitHub 完整教程及语雀官方手册。
+- [策略与训练](policies.md)：AM-ACT、SmolVLA、Pi0.5、GR00T 与其他策略。
+- [手机视频重建场景](video2sim.md) → [仿真数据转换](sim-data.md)：了解环境与数据接口。
+- [Docker](docker.md)、[开发与扩展](development.md)、[舵机与性能调试](debug-tools.md)。
+- [一代物料与装配](legacy-hardware.md)：一代 BOM、装配流程与完整图文。
 
 ## 项目进展
 
@@ -169,4 +179,27 @@ commands
 troubleshooting
 legacy
 community
+```
+
+```{toctree}
+:hidden:
+:maxdepth: 1
+:caption: 完整教程与进阶资料
+
+legacy-hardware
+debug-tools
+policies
+docker
+development
+video2sim
+sim-data
+tutorial-library
+```
+
+```{toctree}
+:hidden:
+:maxdepth: 1
+:caption: 官方交付教程
+
+official-manual
 ```

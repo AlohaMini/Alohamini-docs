@@ -1,5 +1,7 @@
 # AlohaMini 2 Pro 入门教程
 
+收到整机后先完成 [开箱图解](unboxing.md)。有 LeRobot 经验可另读 [Pro 交付快速入门](yuque/pro-quickstart.md)，其中保留端口绑定截图及采集、训练示例。
+
 本页适用于 **AlohaMini 2 Pro + AM-ARM200 系列双主臂 + Linux PC + 树莓派 5**。按顺序完成设备配置、校准、遥操作和第一条数据录制。
 
 **当前机型：`alohamini2pro`** · 切换到 [AlohaMini 2 教程](alohamini2.md) · [返回机型选择](quickstart.md)

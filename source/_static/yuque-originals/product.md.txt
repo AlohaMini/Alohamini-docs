@@ -1,0 +1,570 @@
+# AlohaMini产品说明
+
+来源：https://alohamini.yuque.com/lq44as/tiv9xs/rp5dnig43ng6uop7
+网页读取日期：2026-09-28。此文件为公开页面转写，并非语雀原生 Markdown 导出。
+
+(yq-rp5dnig43ng6uop7-iuJA2)=
+
+## 一、产品介绍
+
+(yq-rp5dnig43ng6uop7-61e7849e)=
+
+### 🦾 1. 产品简介
+
+(yq-rp5dnig43ng6uop7-u43b6431b)=
+
+**AlohaMini**是新一代专为具身智能算法复现/教学打造的万元级可移动升降双臂机器人
+
+- **硬件优势：**整机集成全向移动底盘、电动升降模组与 6+1 自由度的aloha机械臂，可适配低位地面拾取、桌面操作、双臂长轨迹协同等多种非结构化实操任务，场景覆盖能力强。
+
+- **全栈生态适配：：**深度兼容 Hugging Face LeRobot v0.6 开源框架，打通遥操作数据集采集、模型训练、本地推理部署全链路；通信链路针对性高频优化，原生支持主流具身算法复现与微调：
+
+- **模仿学习：**ACT、Diffusion Policy、FastWAM
+
+- **VLA具身大模型：**Pi-0.5、SmolVLA、EO-1、VLA-JEPA、GR00T N1.7、EVO1
+
+(yq-rp5dnig43ng6uop7-ufeffb942)=
+
+(yq-rp5dnig43ng6uop7-ubc5feb82)=
+
+![AlohaMini产品说明 · 图 1](../_static/yuque-assets/d9351bcfccf74c1ec150.jpeg)
+
+- **产品说明PPT:**[**AlohaMini产品说明PPT**](https://bcnz96us0h7n.feishu.cn/wiki/Xj0swdZO8iiCF7kJyiMcm96Znmd?from=from_copylink)
+
+- **官方网站：**[AlohaMini | 新一代具身智能算法孵化平台](https://www.alohamini.cn/)
+
+- **GitHub开源资料：**
+
+- **硬件：**[GitHub - liyiteng/AlohaMini: Open-Source Dual-Arm Mobile Robot with Motorized Lift](https://github.com/liyiteng/AlohaMini)
+
+- **软件：**[GitHub - liyiteng/lerobot_alohamini: Software support for AlohaMini robot.](https://github.com/liyiteng/lerobot_alohamini)
+
+- **购买方式**
+
+- **对公转账：**联系微信alohamini2077
+
+- **淘宝下单：**[AlohaMini开源机器人淘宝店铺](https://item.taobao.com/item.htm?abbucket=11&id=1065716055984&mi_id=0000nnHoQcE4mmo1NxzZosD-RrwsPsIYvq5SNaBk67-Ezrw&ns=1&skuId=6115946961658&spm=a21n57.1.hoverItem.7&utparam=%7B%22aplus_abtest%22%3A%22d6b76167734b86a3482b9d7ab243ae29%22%7D&xxc=taobaoSearch)
+
+- **官方账号：**
+
+- **公众号：**AlohaMini
+
+- **视频号：**AlohaMini
+
+- [**抖音：AlohaMini开源社区**](https://www.douyin.com/user/MS4wLjABAAAA22C6rFbHmOuzIqwOYJ3yKWq0lpOBZXgALR4_sgZZSUquXQU6r4vxTZpcGM_nfwfn?from_tab_name=main)
+
+- [**小红书：AlohaMini开源社区**](https://www.xiaohongshu.com/user/profile/6a5dfc22000000000e03d000)
+
+- [**bilibili：AlohaMini开源社区**](https://space.bilibili.com/3706961587604034?spm_id_from=333.337.search-card.all.click)
+
+- [**X（推特）：Li Yiteng**](https://x.com/liyitengx)
+
+- [**YouTube：AlohaMini**](https://www.youtube.com/@AlohaMini)
+
+- [**TikTok：AlohaMini**](https://www.tiktok.com/@alohamini2026)
+
+(yq-rp5dnig43ng6uop7-u470b5cad)=
+
+(yq-rp5dnig43ng6uop7-u55b68882)=
+
+![AlohaMini产品说明 · 图 2](../_static/yuque-assets/4c0b70e35f44a9957c67.png)
+
+(yq-rp5dnig43ng6uop7-I1etU)=
+
+![AlohaMini产品说明 · 图 3](../_static/yuque-assets/dc1bf589b1c34115dae9.png)
+
+(yq-rp5dnig43ng6uop7-6579ea61)=
+
+### 🚀 2. 核心优势
+
+(yq-rp5dnig43ng6uop7-c0b46c6f)=
+
+#### ✅高性价比
+
+- 将**传统动辄数十万元**的“移动底座+升降轴+双臂协作”完全体硬件成本**压缩至万元级梯度**，使中小型课题组、高校实验室及独立科研人员均能负担得起。
+
+(yq-rp5dnig43ng6uop7-5bc1b274)=
+
+#### ✅全栈开源，支持二开
+
+- AlohaMini1、AlohaMini2现**已完全开源硬件软件**，可根据实际科研需求，自由修改与定制机械 CAD 图纸、URDF 机器人描述文件以及底层控制层代码。
+
+(yq-rp5dnig43ng6uop7-35a9c713)=
+
+#### ✅原生适配 LeRobot 生态
+
+- 整机深度兼容 **Hugging Face LeRobot v0.6**开发框架，搭建起高频遥操作数据采集、标准化数据集管理、模型训练至真机本地推理部署的端到端闭环，设备通信链路经过高频实时性专项优化，原生支持各类主流具身智能算法快速复现、真机验证与迭代微调，涵盖**ACT、Diffusion Policy、FastWAM 等模仿学习算法**，以及 **Pi-0.5、SmolVLA、EO-1、VLA-JEPA、GR00T N1.7、EVO1 等VLA具身大模型**。
+
+(yq-rp5dnig43ng6uop7-8f973bfd)=
+
+#### ✅低风险设计
+
+- 整机搭载**低扭矩执行器**，在高频遥操作、常态化数据采集场景下，兼顾人机交互安全与整机过载防护，适配实验室高频教学与科研实操需求。设备配备**两级关节堵转保护机制**：夹爪电流超过 500mA 时自动卸除夹持力，防止电机过流损坏；其余机械臂关节电流达到 1800mA 则立刻停止输出力矩，全方位规避硬件过载故障。
+
+(yq-rp5dnig43ng6uop7-65ad857a)=
+
+#### ✅多场景覆盖
+
+- 整机集成全向移动底盘、电动升降模组与双侧 6+1 自由度的aloha机械臂，适配**地面低位拾取、桌面操作以及双臂长轨迹协同**等多种非结构化实操任务，具备较强的场景覆盖与任务适应能力。
+
+(yq-rp5dnig43ng6uop7-H8WLu)=
+
+#### ✅开箱即用
+
+- **整机预装**并完成**工厂出厂标定**，依托定制的硬件管理方案，**系统开机可自动锁定 5 路相机与机械臂的端口映射，无需任何二次配置**，从开箱到进入遥操作数采状态**不超过 5分钟**。
+
+(yq-rp5dnig43ng6uop7-f99aa31c)=
+
+#### ✅官方技术支持
+
+- 由 AlohaMini 项目创始人领衔研发团队提供完善的售前与售后技术支持。系统**配备持续更新的官方教程**，**保修一年**，**远程售后支持客户训练出第一个自主任务**，确保课题组零门槛上手与算法的高效复现。
+
+- 
+
+(yq-rp5dnig43ng6uop7-e78ed1be)=
+
+### 🤖 3. 产品线与参数
+
+(yq-rp5dnig43ng6uop7-u8fd9ac4e)=
+
+为了满足不同的研发需求与应用场景，AlohaMini 系列提供三大核心版本。
+
+(yq-rp5dnig43ng6uop7-80d77bdc)=
+
+#### 1️⃣AlohaMini2
+
+- **定位：** K12教育/个人开发者
+
+- **定价：12,999 元**
+
+- **交付形式：**散件套装+社区开源文件+安装指导+关键零件保修一年+全套配件
+
+- **核心特性：**
+
+- 6+1 自由度机械臂
+
+- 1kg负载
+
+- ABS/PETG底盘
+
+- 官方技术支持
+
+(yq-rp5dnig43ng6uop7-u4cb9ea01)=
+
+(yq-rp5dnig43ng6uop7-uc0c27fb8)=
+
+![AlohaMini产品说明 · 图 4](../_static/yuque-assets/25477878214c00c236bc.jpeg)
+
+(yq-rp5dnig43ng6uop7-5c4eca11)=
+
+#### 2️⃣ AlohaMini2 Pro ⭐️推荐
+
+- **定位：** 专为算法研究/数据采集设计
+
+- **定价：16,999 元**
+
+- **交付形式：** 成品整机+官方教程
+
+- **核心特性：**
+
+- 6+1 自由度机械臂
+
+- 1kg负载
+
+- 金属 + ABS/PETG 混合结构底盘
+
+- 升级工业级舵机，支持长时间连续运行
+
+- 同济、北航等高校采购机型
+
+- 首届全国青少年人工智能大赛决赛用机
+
+- 官方技术支持
+
+(yq-rp5dnig43ng6uop7-uc34e5509)=
+
+(yq-rp5dnig43ng6uop7-u0029bb4b)=
+
+![AlohaMini产品说明 · 图 5](../_static/yuque-assets/f768aaccdbb14db63be7.jpeg)
+
+(yq-rp5dnig43ng6uop7-97415367)=
+
+#### 3️⃣ AlohaMini2 EDU
+
+- **定位：** 专为高校高级实验室、深度算法开发与高阶复现场景设计。
+
+- **定价：38,800 元**
+
+- **交付形式：** 成品整机+官方教程+SaaS具身智能实训平台
+
+- **核心特性：**
+
+- 6+1 自由度机械臂
+
+- 1kg负载
+
+- 金属 + ABS/PETG混合结构底盘
+
+- 升级工业级舵机，支持长时间连续运行
+
+- 升级20000mAh电池，续航12个小时
+
+- 升级头部双目视觉
+
+- 激光导航雷达，激光SLAM/VLA端到端大模型
+
+- 具备IMU惯性测量单元
+
+- 支持语音交互
+
+- 官方技术支持
+
+- 可增购专员上门 1V1 技术服务
+
+(yq-rp5dnig43ng6uop7-u98e8c281)=
+
+(yq-rp5dnig43ng6uop7-ue0dee792)=
+
+![AlohaMini产品说明 · 图 6](../_static/yuque-assets/f6f193c4d2caf7097dcb.png)
+
+(yq-rp5dnig43ng6uop7-ilH4g)=
+
+#### 产品参数对照表
+
+| **一级分类** | **参数项** | **AlohaMini2** | **AlohaMini2 Pro** | **AlohaMini2 Edu 版** |
+| --- | --- | --- | --- | --- |
+| **整机** | 交付方式 | 散件套组 | 整机 | 整机 |
+| **整机** | 机体类型 | 全身移动双臂机型 | 全身移动双臂机型 | 全身移动双臂机型 |
+| **整机** | 适用场景 | 移动操纵作业场景 | 移动操纵作业场景 | 移动操纵作业场景 |
+| **整机** | 整机尺寸（站立） | 550 mm × 500 mm × 1200 mm | 550 mm × 500 mm × 1200 mm | 550 mm × 500 mm × 1200 mm |
+| **整机** | 整机重量 | 13.5 kg（±10%） | 16 kg（±10%） | 16 kg（±10%） |
+| **整机** | 整机总自由度 | 18 | 18 | 18 |
+| **整机** | 关节型号 | STS3215+STS3095 | STS3250+STS3095 | STS3250+STS3095 |
+| **整机** | 底盘负载 | 40kg | 70kg | 70kg |
+| **整机** | 升降模组负载 | 20kg | 30kg | 30kg |
+| **整机** | 臂展 | 约52cm | 约52cm | 约52cm |
+| **整机** | 自由度配置 | 手臂 6+1 DOF；升降 1 DOF；底盘 3 DOF | 手臂 6+1 DOF；升降 1 DOF；底盘 3 DOF | 手臂 6+1 DOF；升降 1 DOF；底盘 3 DOF |
+| **整机** | 防护等级 | IPX2 | IPX2 | IPX2 |
+| **整机** | 工作温度 | 0 ℃ ~ 50 ℃ | 0 ℃ ~ 50 ℃ | 0 ℃ ~ 50 ℃ |
+| **整机** | 底盘材质 | ABS/PETG | 金属+ABS/PETG混合 | 金属+ABS/PETG混合 |
+| **移动功能** | 底盘运动形式 | 全向轮移动 | 全向轮移动 | 全向轮移动 |
+| **移动功能** | 底盘自由度 | 3 自由度（X 平移、Y 平移、原地旋转） | 3 自由度（X 平移、Y 平移、原地旋转） | 3 自由度（X 平移、Y 平移、原地旋转） |
+| **移动功能** | 导航方案 | 视觉 SLAM + VLA 端到端大模型 | 视觉 SLAM + VLA 端到端大模型 | 激光 SLAM + VLA 端到端大模型 |
+| **移动功能** | 运动模式 | 前进、后退、横移、原地旋转 | 前进、后退、横移、原地旋转 | 前进、后退、横移、原地旋转 |
+| **移动功能** | 直行速度 | 额定 0.2 m/s，最大 0.5 m/s | 额定 0.2 m/s，最大 0.5 m/s | 额定 0.2 m/s，最大 0.5 m/s |
+| **移动功能** | 自旋性能 | 80 deg/s，4.5 s 完成 380° 旋转 | 80 deg/s，4.5 s 完成 380° 旋转 | 80 deg/s，4.5 s 完成 380° 旋转 |
+| **移动功能** | 最小通行宽度 | 500 mm | 500 mm | 500 mm |
+| **移动功能** | 最大越障高度 | 10 mm | 10 mm | 10 mm |
+| **感知功能** | 头部视觉 | 前/后 RGB 相机 | 前/后 RGB 相机 | 前双目 RGB 相机/ 后RGB相机 |
+| **感知功能** | 头部相机视场角 | FOV 150° | FOV 150° | FOV 150° |
+| **感知功能** | 语音交互模块 | / | / | 有 |
+| **感知功能** | 机械手腕部视觉 | 单路 RGB 相机 | 单路 RGB 相机 | 单路 RGB 相机 |
+| **感知功能** | 导航雷达 | / | / | 激光雷达 |
+| **感知功能** | 导航避障视觉 | 纯视觉障碍物检测 | 纯视觉障碍物检测 | 激光雷达 + 视觉双重避障 |
+| **感知功能** | PC - 机器人图像传输方式 | 二进制流传输 | 二进制流传输 | 二进制流传输 |
+| **感知功能** | 单路相机带宽占用 | 1–1.5 MB/s | 1–1.5 MB/s | 1–1.5 MB/s |
+| **感知功能** | 雷达角度分辨率 | / | / | 0.8° |
+| **感知功能** | 测距精度 | / | / | ≤4mm (0.03m~2m) ≤15mm (2m~12m) |
+| **感知功能** | 测量半径 | / | / | 12m |
+| **补能功能** | 电池类型 | 锂电池 | 锂电池 | 锂电池 |
+| **补能功能** | 电池电压 | 12V | 12V | 7.4V / 12V |
+| **补能功能** | 电池容量 | 11200 mAh x2 | 11200 mAh x2 | 20000 mAh x2 |
+| **补能功能** | 充电方式 | 手动充电 | 手动充电 | 手动充电 |
+| **补能功能** | 充电额定电流 | 2 A | 2 A | 2 A |
+| **补能功能** | 电池数量 | 2 组 | 2 组 | 2 组 |
+| **机械臂** | 单臂自由度 | 7 DOF（6 轴机械臂 + 1 轴夹爪） | 7 DOF（6 轴机械臂 + 1 轴夹爪） | 7 DOF（6 轴机械臂 + 1 轴夹爪） |
+| **机械臂** | 0.5 m 处额定负载 | 1 kg | 1 kg | 1 kg |
+| **机械臂** | 机械臂重复定位精度（不含夹爪） | ±2 ~ 5 mm | ±2 ~ 5 mm | ±2 ~ 5 mm |
+| **机械臂** | 最大伸展距离（不含夹爪） | 520 mm | 520 mm | 520 mm |
+| **末端机械手** | 夹爪类型 | 二指电动夹爪，配置腕部 RGB 相机 | 二指电动夹爪，配置腕部 RGB 相机 | 二指电动夹爪，配置腕部 RGB 相机 |
+| **电控模块** | 整机续航时长 | ≥ 8 h | ≥ 8 h | ≥ 12 h |
+| **电控模块** | 机载计算单元 | 树莓派 5 | 树莓派 5 | 树莓派 5 |
+| **电控模块** | Leader臂供电 | 双块独立 5V 电池 | 双块独立 5V 电池 | 双块独立 5V 电池 |
+| **其他功能** | SaaS实训平台 | / | / | 具身智能教学平台 |
+| **其他功能** | 二次开发支持 | 具备 | 具备 | 具备 |
+| **其他功能** | 遥操作功能 | 具备 | 具备 | 具备 |
+| **其他功能** | 技术支持 | 社区开源文档+安装指导 | 官方技术支持 | 官方技术支持 |
+
+(yq-rp5dnig43ng6uop7-dj8kJ)=
+
+### ⚙️4、交付清单
+
+(yq-rp5dnig43ng6uop7-u2a4f997e)=
+
+购买任意机型均可得以下全套配件+服务
+
+1. AlohaMini 1台（除AlohaMini2是散件外，其余机型均为组装完成的整机）
+
+(yq-rp5dnig43ng6uop7-u3e869151)=
+
+自带Follower臂1对、RGB相机、显示屏、树莓派
+
+1. Leader臂1对
+
+1. 1米长typc线
+
+1. 5v电池
+
+1. 5v充电器
+
+1. 70厘米1分2DC线
+
+1. 12v电池
+
+1. 12v充电器
+
+1. 相机支架（备用）
+
+1. 2米长摄像头线（备用）
+
+1. 舵机驱动板（备用）
+
+1. 串口数据线（备用）
+
+1. 保修一年
+
+1. 官方教程+远程支持训练出第一个模型
+
+(yq-rp5dnig43ng6uop7-ubc2c2068)=
+
+(yq-rp5dnig43ng6uop7-u500d94be)=
+
+![AlohaMini产品说明 · 图 7](../_static/yuque-assets/967a7b6e6aab4b6bee15.png)
+
+(yq-rp5dnig43ng6uop7-u948b6d07)=
+
+(yq-rp5dnig43ng6uop7-4385ce4e)=
+
+### 🤝5、售后服务
+
+- **售后退换：**本产品支持 7 天无理由退货，商品未拆箱、未激活、全套配件及包装完好，不影响二次销售的前提下可申请退货；一经拆箱、激活、刷机，则不再适用七天无理由退货。若产生退货，运费需由客户承担。
+
+- **保修服务：**整机提供一年官方保修。
+
+- **远程技术支持：**远程协助支持客户训练出第一个 ACT / AM‑ACT 模型；不包含算法教学、二次开发指导服务。
+
+(yq-rp5dnig43ng6uop7-0bd9c004)=
+
+### 📺6、演示视频合集
+
+(yq-rp5dnig43ng6uop7-u5992cf76)=
+
+[AlohaMini演示视频合集](videos.md)
+
+(yq-rp5dnig43ng6uop7-1be30361)=
+
+## 二、客户案例
+
+(yq-rp5dnig43ng6uop7-ded3bb60)=
+
+### 1、高校/实验室
+
+(yq-rp5dnig43ng6uop7-u892ac23f)=
+
+为高校、实验室及企业研发团队提供低成本的具身智能算法复现与研究平台
+
+(yq-rp5dnig43ng6uop7-uec767a45)=
+
+合作客户：北京航空航天大学、同济大学、南京大学、伦敦大学学院（UCL）、韩国工学大学（Tech University of Korea）、商汤科技、Intel India等
+
+(yq-rp5dnig43ng6uop7-u66573c2c)=
+
+(yq-rp5dnig43ng6uop7-uf7796316)=
+
+![AlohaMini产品说明 · 图 8](../_static/yuque-assets/290c6c55fb6361d9d79f.png)
+
+(yq-rp5dnig43ng6uop7-pEGJ6)=
+
+![AlohaMini产品说明 · 图 9](../_static/yuque-assets/1a1a2507a37d3cf5176c.png)
+
+(yq-rp5dnig43ng6uop7-u92dcaa52)=
+
+![AlohaMini产品说明 · 图 10](../_static/yuque-assets/32d99c6a7614f90bcc9d.png)
+
+(yq-rp5dnig43ng6uop7-2a1e2aad)=
+
+### 2、K12具身智能教育
+
+(yq-rp5dnig43ng6uop7-u0d96892d)=
+
+围绕赛事、体验课程和常态化社团教学，让学生通过操作机器人，理解感知、决策与行动的完整过程。
+
+(yq-rp5dnig43ng6uop7-TbM0p)=
+
+#### 白名单赛事决赛用机
+
+(yq-rp5dnig43ng6uop7-u942abf0b)=
+
+2026年8月1日至3日，30台AlohaMini作为首届全国青少年人工智能大赛（白名单赛事）全国决赛具身智能赛道比赛用机，团队现场提供官方技术支持。
+
+(yq-rp5dnig43ng6uop7-u61d8e71d)=
+
+在“智慧商超”任务中，学生通过遥操作与训练，让机器人完成避障、前往货架、抓取物品并送至指定收银区域等任务。团队已与赛事主办方签署为期三年的设备保修与服务保障协议。
+
+(yq-rp5dnig43ng6uop7-ube9bc1cf)=
+
+(yq-rp5dnig43ng6uop7-u6ae94aff)=
+
+![AlohaMini产品说明 · 图 11](../_static/yuque-assets/9aeaa29fefab578d9d3c.png)
+
+(yq-rp5dnig43ng6uop7-ub4e6276e)=
+
+![AlohaMini产品说明 · 图 12](../_static/yuque-assets/b70b144964472ace95ff.png)
+
+(yq-rp5dnig43ng6uop7-ubaaaf5c3)=
+
+![AlohaMini产品说明 · 图 13](../_static/yuque-assets/1f7899d4df49117fb7b7.png)
+
+(yq-rp5dnig43ng6uop7-u693f492e)=
+
+(yq-rp5dnig43ng6uop7-u3abd2dc0)=
+
+![AlohaMini产品说明 · 图 14](../_static/yuque-assets/bbdedb3699445aebbc46.png)
+
+(yq-rp5dnig43ng6uop7-udbbff8f1)=
+
+![AlohaMini产品说明 · 图 15](../_static/yuque-assets/770d18d3085692a217cf.png)
+
+(yq-rp5dnig43ng6uop7-V9SE7)=
+
+```{raw} html
+<div class="am-video-embed"><iframe src="https://player.bilibili.com/player.html?bvid=BV1QbMQ6XEEL&amp;page=1&amp;autoplay=0" title="AlohaMini产品说明 · Bilibili 视频 BV1QbMQ6XEEL" loading="eager" allow="fullscreen; picture-in-picture" allowfullscreen referrerpolicy="strict-origin-when-cross-origin"></iframe></div>
+```
+
+[前往 Bilibili 观看 ↗](https://www.bilibili.com/video/BV1QbMQ6XEEL/)
+
+(yq-rp5dnig43ng6uop7-9c3129d8)=
+
+#### 中小学具身智能实践教育
+
+(yq-rp5dnig43ng6uop7-uf49ae642)=
+
+AlohaMini走进宝应县望直港镇、金湖县银涂镇的中小学，开展AI创想营与具身智能体验课程。学生通过亲手操作、任务挑战和互动实践，了解机器人如何接收指令、感知环境并完成任务，建立对具身智能的直观认识。
+
+(yq-rp5dnig43ng6uop7-uebbce7fc)=
+
+(yq-rp5dnig43ng6uop7-uAAr5)=
+
+![AlohaMini产品说明 · 图 16](../_static/yuque-assets/28b34625640f09268760.jpeg)
+
+(yq-rp5dnig43ng6uop7-u633f5407)=
+
+![AlohaMini产品说明 · 图 17](../_static/yuque-assets/2b32667a08da8c4e9915.jpeg)
+
+(yq-rp5dnig43ng6uop7-68a1c2ba)=
+
+#### 高中社团竞赛培训课程
+
+(yq-rp5dnig43ng6uop7-u4d857c18)=
+
+已与北京市陈经纶中学达成合作，计划自2026年9月18日起，每周五开展具身智能社团课程，并已配备完整课程纲要与教师培训手册。
+
+(yq-rp5dnig43ng6uop7-u15c7391e)=
+
+(yq-rp5dnig43ng6uop7-bd30b107)=
+
+### 3、职业教育
+
+(yq-rp5dnig43ng6uop7-u025de78e)=
+
+合作院校包括：深圳职业技术大学、吉林科技职业技术学院、淄博职业技术大学
+
+(yq-rp5dnig43ng6uop7-u5059f9dc)=
+
+(yq-rp5dnig43ng6uop7-u745130fa)=
+
+![AlohaMini产品说明 · 图 18](../_static/yuque-assets/0b7744dabaa7862cd47f.png)
+
+(yq-rp5dnig43ng6uop7-u1614101c)=
+
+![AlohaMini产品说明 · 图 19](../_static/yuque-assets/75f26f0014c751fd3d0f.png)
+
+(yq-rp5dnig43ng6uop7-u374b893d)=
+
+![AlohaMini产品说明 · 图 20](../_static/yuque-assets/651091d710e7021c7204.png)
+
+(yq-rp5dnig43ng6uop7-uc6600ec5)=
+
+(yq-rp5dnig43ng6uop7-ua0940b8d)=
+
+(yq-rp5dnig43ng6uop7-fff81351)=
+
+## 三、社区互动
+
+(yq-rp5dnig43ng6uop7-remi-cadene)=
+
+### Remi Cadene
+
+(yq-rp5dnig43ng6uop7-u941c2578)=
+
+前特斯拉 Optimus 团队的首席科学家+Hugging Face LeRobot 框架的核心发起人与负责人 ，在 X（推特）上公开转发了 AlohaMini 的视频
+
+(yq-rp5dnig43ng6uop7-u38f06276)=
+
+(yq-rp5dnig43ng6uop7-u7bf1eacb)=
+
+![AlohaMini产品说明 · 图 21](../_static/yuque-assets/e7ac3b501afbae5674e3.png)
+
+(yq-rp5dnig43ng6uop7-lachy-groom)=
+
+### Lachy Groom
+
+(yq-rp5dnig43ng6uop7-u3f696c2d)=
+
+pi公司的联合创始人
+
+(yq-rp5dnig43ng6uop7-u8abcc033)=
+
+(yq-rp5dnig43ng6uop7-uc8e4acff)=
+
+![AlohaMini产品说明 · 图 22](../_static/yuque-assets/0e0237964b66eee02478.png)
+
+(yq-rp5dnig43ng6uop7-45b80b7c)=
+
+### LeRobot官方
+
+(yq-rp5dnig43ng6uop7-ud4f1b98b)=
+
+(yq-rp5dnig43ng6uop7-ubd2a7e8a)=
+
+![AlohaMini产品说明 · 图 23](../_static/yuque-assets/48114028e7c2f6f7b3a6.png)
+
+(yq-rp5dnig43ng6uop7-6b2abb3b)=
+
+### 创客在AlohaMini开源版本上改进
+
+(yq-rp5dnig43ng6uop7-ubbd791ac)=
+
+(yq-rp5dnig43ng6uop7-u7f33eee3)=
+
+![AlohaMini产品说明 · 图 24](../_static/yuque-assets/d6d76c2bbd23c2b9a0e2.png)
+
+(yq-rp5dnig43ng6uop7-u7bda7e7f)=
+
+![AlohaMini产品说明 · 图 25](../_static/yuque-assets/0c1754959fe7edd29d9e.png)
+
+(yq-rp5dnig43ng6uop7-u46b21399)=
+
+![AlohaMini产品说明 · 图 26](../_static/yuque-assets/b8d6909e5d6cfff5351a.png)
+
+(yq-rp5dnig43ng6uop7-h7BYj)=
+
+![AlohaMini产品说明 · 图 27](../_static/yuque-assets/705a48d869e549f89d2c.jpeg)
+
+(yq-rp5dnig43ng6uop7-u6da9110b)=
+
+(yq-rp5dnig43ng6uop7-985c14b3)=
+
+## 四、联系我们
+
+(yq-rp5dnig43ng6uop7-u3b2cff83)=
+
+如果您希望采购整套设备，欢迎添加微信来进一步了解AlohaMini成品机的详情与支持服务。
+
+- GitHub: [https://github.com/liyiteng/AlohaMini](https://github.com/liyiteng/AlohaMini)
+
+- 微信: alohamini2077
+
+- 地址：北京市北京经济技术开发区（通州）经海五路 3 号院 15 号楼 3 层 303 室
+
+- 购买链接：[https://item.taobao.com/item.htm?abbucket=11&id=1065716055984&mi_id=0000nnHoQcE4mmo1NxzZosD-RrwsPsIYvq5SNaBk67-Ezrw&ns=1&skuId=6115946961658&spm=a21n57.1.hoverItem.7&utparam=%7B%22aplus_abtest%22%3A%22d6b76167734b86a3482b9d7ab243ae29%22%7D&xxc=taobaoSearch](https://item.taobao.com/item.htm?abbucket=11&id=1065716055984&mi_id=0000nnHoQcE4mmo1NxzZosD-RrwsPsIYvq5SNaBk67-Ezrw&ns=1&skuId=6115946961658&spm=a21n57.1.hoverItem.7&utparam=%7B%22aplus_abtest%22%3A%22d6b76167734b86a3482b9d7ab243ae29%22%7D&xxc=taobaoSearch)

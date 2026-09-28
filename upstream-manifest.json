@@ -1,0 +1,1984 @@
+{
+  "date": "2026-09-28",
+  "sources": [
+    {
+      "kind": "hardware",
+      "repository": "liyiteng/AlohaMini",
+      "revision": "17c6a98d79881a45ab869c1f392ed89c0723a298",
+      "path": "AlohaMini1/README.md",
+      "page": "upstream/hardware--alohamini1-readme.md",
+      "category": "alohamini",
+      "sha256": "ea80a85d65a2e34b4edc4c233bcf6d05f0f5732d6723d334c9f406369ea9a800",
+      "assets": [
+        {
+          "path": "AlohaMini1/docs/media/alohamini_git.png",
+          "status": "local"
+        }
+      ],
+      "title": "AlohaMini"
+    },
+    {
+      "kind": "hardware",
+      "repository": "liyiteng/AlohaMini",
+      "revision": "17c6a98d79881a45ab869c1f392ed89c0723a298",
+      "path": "AlohaMini1/docs/BOM.md",
+      "page": "upstream/hardware--alohamini1-docs-bom.md",
+      "category": "alohamini",
+      "sha256": "996d4a5e004702acee25a8d37775ee795f83290ef97e71f0f01b4a1ef52a33e2",
+      "assets": [
+        {
+          "path": "AlohaMini1/docs/media/assembled.jpg",
+          "status": "local"
+        }
+      ],
+      "title": "Bill of Materials"
+    },
+    {
+      "kind": "hardware",
+      "repository": "liyiteng/AlohaMini",
+      "revision": "17c6a98d79881a45ab869c1f392ed89c0723a298",
+      "path": "AlohaMini1/docs/hardware_assembly.md",
+      "page": "upstream/hardware--alohamini1-docs-hardware_assembly.md",
+      "category": "alohamini",
+      "sha256": "c2cbf7ed05b029dd745494bd10bc2442054f690921afab281a811a352f0c7c6e",
+      "assets": [
+        {
+          "path": "AlohaMini1/docs/media/assembly/1.jpg",
+          "status": "local"
+        },
+        {
+          "path": "AlohaMini1/docs/media/assembly/2.jpg",
+          "status": "local"
+        },
+        {
+          "path": "AlohaMini1/docs/media/assembly/4.jpg",
+          "status": "local"
+        },
+        {
+          "path": "AlohaMini1/docs/media/assembly/5.jpg",
+          "status": "local"
+        },
+        {
+          "path": "AlohaMini1/docs/media/assembly/6.jpg",
+          "status": "local"
+        },
+        {
+          "path": "AlohaMini1/docs/media/assembly/8.jpg",
+          "status": "local"
+        },
+        {
+          "path": "AlohaMini1/docs/media/assembly/9.jpg",
+          "status": "local"
+        },
+        {
+          "path": "AlohaMini1/docs/media/assembly/10.jpg",
+          "status": "local"
+        },
+        {
+          "path": "AlohaMini1/docs/media/assembly/11.jpg",
+          "status": "local"
+        },
+        {
+          "path": "AlohaMini1/docs/media/assembly/12.jpg",
+          "status": "local"
+        },
+        {
+          "path": "AlohaMini1/docs/media/assembly/13.jpg",
+          "status": "local"
+        },
+        {
+          "path": "AlohaMini1/docs/media/assembly/14.jpg",
+          "status": "local"
+        },
+        {
+          "path": "AlohaMini1/docs/media/assembly/15.jpg",
+          "status": "local"
+        },
+        {
+          "path": "AlohaMini1/docs/media/assembly/16.jpg",
+          "status": "local"
+        },
+        {
+          "path": "AlohaMini1/docs/media/assembly/17.jpg",
+          "status": "local"
+        },
+        {
+          "path": "AlohaMini1/docs/media/assembly/18.jpg",
+          "status": "local"
+        },
+        {
+          "path": "AlohaMini1/docs/media/assembly/19.jpg",
+          "status": "local"
+        },
+        {
+          "path": "AlohaMini1/docs/media/assembly/20.jpg",
+          "status": "local"
+        },
+        {
+          "path": "AlohaMini1/docs/media/assembly/21.jpg",
+          "status": "local"
+        },
+        {
+          "path": "AlohaMini1/docs/media/assembly/22.jpg",
+          "status": "local"
+        },
+        {
+          "path": "AlohaMini1/docs/media/assembly/24.jpg",
+          "status": "local"
+        },
+        {
+          "path": "AlohaMini1/docs/media/assembly/25.jpg",
+          "status": "local"
+        },
+        {
+          "path": "AlohaMini1/docs/media/assembly/26.jpg",
+          "status": "local"
+        },
+        {
+          "path": "AlohaMini1/docs/media/assembly/27.jpg",
+          "status": "local"
+        },
+        {
+          "path": "AlohaMini1/docs/media/assembly/28.jpg",
+          "status": "local"
+        },
+        {
+          "path": "AlohaMini1/docs/media/assembly/29.jpg",
+          "status": "local"
+        },
+        {
+          "path": "AlohaMini1/docs/media/assembly/30.jpg",
+          "status": "local"
+        },
+        {
+          "path": "AlohaMini1/docs/media/assembly/31.jpg",
+          "status": "local"
+        },
+        {
+          "path": "AlohaMini1/docs/media/assembly/32.jpg",
+          "status": "local"
+        },
+        {
+          "path": "AlohaMini1/docs/media/assembly/34.jpg",
+          "status": "local"
+        },
+        {
+          "path": "AlohaMini1/docs/media/assembly/35.jpg",
+          "status": "local"
+        },
+        {
+          "path": "AlohaMini1/docs/media/assembly/33.jpg",
+          "status": "local"
+        },
+        {
+          "path": "AlohaMini1/docs/media/assembly/37.jpg",
+          "status": "local"
+        },
+        {
+          "path": "AlohaMini1/docs/media/assembly/38.jpg",
+          "status": "local"
+        },
+        {
+          "path": "AlohaMini1/docs/media/assembly/39.jpg",
+          "status": "local"
+        },
+        {
+          "path": "AlohaMini1/docs/media/assembly/40.jpg",
+          "status": "local"
+        },
+        {
+          "path": "AlohaMini1/docs/media/assembly/41.jpg",
+          "status": "local"
+        },
+        {
+          "path": "AlohaMini1/docs/media/assembly/42.jpg",
+          "status": "local"
+        },
+        {
+          "path": "AlohaMini1/docs/media/assembly/43.jpg",
+          "status": "local"
+        },
+        {
+          "path": "AlohaMini1/docs/media/assembled2.png",
+          "status": "local"
+        }
+      ],
+      "title": "Assembly"
+    },
+    {
+      "kind": "hardware",
+      "repository": "liyiteng/AlohaMini",
+      "revision": "17c6a98d79881a45ab869c1f392ed89c0723a298",
+      "path": "AlohaMini1/docs/software_setup.md",
+      "page": "upstream/hardware--alohamini1-docs-software_setup.md",
+      "category": "alohamini",
+      "sha256": "447ca813fdb26be9e3819d8c0f51378654adffa560d08df61c7b3476f8ad2b16",
+      "assets": [],
+      "title": "software_setup"
+    },
+    {
+      "kind": "hardware",
+      "repository": "liyiteng/AlohaMini",
+      "revision": "17c6a98d79881a45ab869c1f392ed89c0723a298",
+      "path": "AlohaMini1/hardware/arms/README.md",
+      "page": "upstream/hardware--alohamini1-hardware-arms-readme.md",
+      "category": "alohamini",
+      "sha256": "614396af03a19a011f9393a62da2530dd89cdc96dd0b7f6332c6575149b1b330",
+      "assets": [],
+      "title": "项目说明"
+    },
+    {
+      "kind": "hardware",
+      "repository": "liyiteng/AlohaMini",
+      "revision": "17c6a98d79881a45ab869c1f392ed89c0723a298",
+      "path": "AlohaMini1/simulation/README.md",
+      "page": "upstream/hardware--alohamini1-simulation-readme.md",
+      "category": "alohamini",
+      "sha256": "77f9afa048a0cc775d6a3c75391d5003d1358cb661a63986f749f6ff5574f1aa",
+      "assets": [
+        {
+          "path": "AlohaMini1/simulation/picture/P2.png",
+          "status": "local"
+        }
+      ],
+      "title": "AlohaMini-Simulation"
+    },
+    {
+      "kind": "hardware",
+      "repository": "liyiteng/AlohaMini",
+      "revision": "17c6a98d79881a45ab869c1f392ed89c0723a298",
+      "path": "AlohaMini2/docs/BOM.md",
+      "page": "upstream/hardware--alohamini2-docs-bom.md",
+      "category": "alohamini",
+      "sha256": "80eddaab35649fc27c2793dce5b4459a6ebc8c67d3866f294f4d976f6df879f2",
+      "assets": [],
+      "title": "Bill of Materials — AlohaMini2"
+    },
+    {
+      "kind": "hardware",
+      "repository": "liyiteng/AlohaMini",
+      "revision": "17c6a98d79881a45ab869c1f392ed89c0723a298",
+      "path": "AlohaMini2/docs/assembly_guide.md",
+      "page": "upstream/hardware--alohamini2-docs-assembly_guide.md",
+      "category": "alohamini",
+      "sha256": "36e022a22f36cb86b4d899347db113bd43ad95fadef8aff8590c8776ffd9b472",
+      "assets": [
+        {
+          "path": "AlohaMini2/docs/media/assembly/chassis-kit.jpg",
+          "status": "local"
+        },
+        {
+          "path": "AlohaMini2/docs/media/assembly/chassis-epoxy-surfaces.jpg",
+          "status": "local"
+        },
+        {
+          "path": "AlohaMini2/docs/media/assembly/chassis-locking-wedge.jpg",
+          "status": "local"
+        },
+        {
+          "path": "AlohaMini2/docs/media/assembly/chassis-frame-joiner.jpg",
+          "status": "local"
+        },
+        {
+          "path": "AlohaMini2/docs/media/assembly/chassis-joined-frame.jpg",
+          "status": "local"
+        },
+        {
+          "path": "AlohaMini2/docs/media/assembly/wheel-servos.jpg",
+          "status": "local"
+        },
+        {
+          "path": "AlohaMini2/docs/media/assembly/wheel-servo-id-layout.jpg",
+          "status": "local"
+        },
+        {
+          "path": "AlohaMini2/docs/media/assembly/wheel-servo-cable-routing.jpg",
+          "status": "local"
+        },
+        {
+          "path": "AlohaMini2/docs/media/assembly/wheel-connectors-and-screws.jpg",
+          "status": "local"
+        },
+        {
+          "path": "AlohaMini2/docs/media/assembly/wheel-connector-on-servo-disc.jpg",
+          "status": "local"
+        },
+        {
+          "path": "AlohaMini2/docs/media/assembly/wheel-connector-tightening.jpg",
+          "status": "local"
+        },
+        {
+          "path": "AlohaMini2/docs/media/assembly/omni-wheel-hardware.jpg",
+          "status": "local"
+        },
+        {
+          "path": "AlohaMini2/docs/media/assembly/omni-wheel-axle-install.jpg",
+          "status": "local"
+        },
+        {
+          "path": "AlohaMini2/docs/media/assembly/omni-wheel-cover-installed.jpg",
+          "status": "local"
+        },
+        {
+          "path": "AlohaMini2/docs/media/assembly/chassis-drive-test.jpg",
+          "status": "local"
+        },
+        {
+          "path": "AlohaMini2/docs/media/assembly/lift-tower-parts.jpg",
+          "status": "local"
+        },
+        {
+          "path": "AlohaMini2/docs/media/assembly/lift-tower-assembled.jpg",
+          "status": "local"
+        },
+        {
+          "path": "AlohaMini2/docs/media/assembly/tower-in-chassis-orientation.jpg",
+          "status": "local"
+        },
+        {
+          "path": "AlohaMini2/docs/media/assembly/tower-base-locking.jpg",
+          "status": "local"
+        },
+        {
+          "path": "AlohaMini2/docs/media/assembly/tower-cable-center-hole.jpg",
+          "status": "local"
+        },
+        {
+          "path": "AlohaMini2/docs/media/assembly/tower-cable-side-channels.jpg",
+          "status": "local"
+        },
+        {
+          "path": "AlohaMini2/docs/media/assembly/shoulder-bearing-kit.jpg",
+          "status": "local"
+        },
+        {
+          "path": "AlohaMini2/docs/media/assembly/shoulder-bearing-install.jpg",
+          "status": "local"
+        },
+        {
+          "path": "AlohaMini2/docs/media/assembly/lift-gear-hardware.jpg",
+          "status": "local"
+        },
+        {
+          "path": "AlohaMini2/docs/media/assembly/lift-gear-on-servo.jpg",
+          "status": "local"
+        },
+        {
+          "path": "AlohaMini2/docs/media/assembly/lift-axis-shaft.jpg",
+          "status": "local"
+        },
+        {
+          "path": "AlohaMini2/docs/media/assembly/shoulder-t-frame.jpg",
+          "status": "local"
+        },
+        {
+          "path": "AlohaMini2/docs/media/assembly/shoulder-block-on-tower.jpg",
+          "status": "local"
+        },
+        {
+          "path": "AlohaMini2/docs/media/assembly/top-camera-parts.jpg",
+          "status": "local"
+        },
+        {
+          "path": "AlohaMini2/docs/media/assembly/top-camera-back-cover.jpg",
+          "status": "local"
+        },
+        {
+          "path": "AlohaMini2/docs/media/assembly/top-camera-mount-installed.jpg",
+          "status": "local"
+        },
+        {
+          "path": "AlohaMini2/docs/media/assembly/chest-camera-parts.jpg",
+          "status": "local"
+        },
+        {
+          "path": "AlohaMini2/docs/media/assembly/chest-camera-back-cover.jpg",
+          "status": "local"
+        },
+        {
+          "path": "AlohaMini2/docs/media/assembly/chest-camera-installed.jpg",
+          "status": "local"
+        },
+        {
+          "path": "AlohaMini2/docs/media/assembly/follower-arms-mounted.jpg",
+          "status": "local"
+        },
+        {
+          "path": "AlohaMini2/docs/media/assembly/follower-arm-fasteners.jpg",
+          "status": "local"
+        },
+        {
+          "path": "AlohaMini2/docs/media/assembly/tower-cable-port.jpg",
+          "status": "local"
+        },
+        {
+          "path": "AlohaMini2/docs/media/assembly/arm-camera-cables-routed.jpg",
+          "status": "local"
+        },
+        {
+          "path": "AlohaMini2/docs/media/assembly/left-cable-bundle.jpg",
+          "status": "local"
+        },
+        {
+          "path": "AlohaMini2/docs/media/assembly/right-cable-bundle.jpg",
+          "status": "local"
+        },
+        {
+          "path": "AlohaMini2/docs/media/assembly/cable-sleeves-installed.jpg",
+          "status": "local"
+        },
+        {
+          "path": "AlohaMini2/docs/media/assembly/display-bracket-parts.jpg",
+          "status": "local"
+        },
+        {
+          "path": "AlohaMini2/docs/media/assembly/display-mounted.jpg",
+          "status": "local"
+        },
+        {
+          "path": "AlohaMini2/docs/media/assembly/compute-power-rear-bay.jpg",
+          "status": "local"
+        },
+        {
+          "path": "AlohaMini2/docs/media/assembly/power-wiring.jpg",
+          "status": "local"
+        }
+      ],
+      "title": "AlohaMini2 Assembly Guide"
+    },
+    {
+      "kind": "hardware",
+      "repository": "liyiteng/AlohaMini",
+      "revision": "17c6a98d79881a45ab869c1f392ed89c0723a298",
+      "path": "AlohaMini2/docs/print_guide.md",
+      "page": "upstream/hardware--alohamini2-docs-print_guide.md",
+      "category": "alohamini",
+      "sha256": "064b93bb19dd4c72d3c83de93359c03ce52537677ccd1cd71f0f1672ef4360f0",
+      "assets": [
+        {
+          "path": "AlohaMini2/docs/media/printing/bambu-studio-plate-layout.jpg",
+          "status": "local"
+        }
+      ],
+      "title": "AlohaMini2 Print Guide"
+    },
+    {
+      "kind": "hardware",
+      "repository": "liyiteng/AlohaMini",
+      "revision": "17c6a98d79881a45ab869c1f392ed89c0723a298",
+      "path": "AlohaMini2/hardware/am_arm200/README.md",
+      "page": "upstream/hardware--alohamini2-hardware-am_arm200-readme.md",
+      "category": "alohamini",
+      "sha256": "8f8893dc36885c4ab51af9ee6015d22bd219ac52e017d1a10a341c0e72ed1b4d",
+      "assets": [],
+      "title": "AM-ARM200"
+    },
+    {
+      "kind": "hardware",
+      "repository": "liyiteng/AlohaMini",
+      "revision": "17c6a98d79881a45ab869c1f392ed89c0723a298",
+      "path": "README.md",
+      "page": "upstream/hardware--readme.md",
+      "category": "alohamini",
+      "sha256": "f7163abb6b84d6233ea84dff3b1f9d0b08ed9d37997d2c681dd1dbe55a59e2a3",
+      "assets": [
+        {
+          "path": "AlohaMini1/docs/media/alohamini_git.png",
+          "status": "local"
+        }
+      ],
+      "title": "AlohaMini2"
+    },
+    {
+      "kind": "hardware",
+      "repository": "liyiteng/AlohaMini",
+      "revision": "17c6a98d79881a45ab869c1f392ed89c0723a298",
+      "path": "examples/pi0.5_openpi/README.md",
+      "page": "upstream/hardware--examples-pi0-5_openpi-readme.md",
+      "category": "alohamini",
+      "sha256": "a3740c656bab0d232e17b216197f1deebae6a3512c1926e8cb03ad1ab54c96d2",
+      "assets": [
+        {
+          "path": "examples/pi0.5_openpi/video/deploy.gif",
+          "status": "remote-large"
+        }
+      ],
+      "title": "Pi-0.5 for Alohamini"
+    },
+    {
+      "kind": "hardware",
+      "repository": "liyiteng/AlohaMini",
+      "revision": "17c6a98d79881a45ab869c1f392ed89c0723a298",
+      "path": "software/README.md",
+      "page": "upstream/hardware--software-readme.md",
+      "category": "alohamini",
+      "sha256": "63495834607190c69ca2fe3cca46b5e0fa3fafe21479d4954e4da638707f8555",
+      "assets": [],
+      "title": "Software (LeRobot Integration)"
+    },
+    {
+      "kind": "software",
+      "repository": "liyiteng/lerobot_alohamini",
+      "revision": "7843e5888366eaa553630e2f9d5539505a62dddf",
+      "path": "AGENT_GUIDE.md",
+      "page": "upstream/software--agent_guide.md",
+      "category": "environment",
+      "sha256": "e72f32ff614f41c97c1cfc3bdff7468cb1d9cf05f37f0b568ba3904f73653bb8",
+      "assets": [],
+      "title": "AGENT_GUIDE.md — LeRobot Helper for AI Agents & Users"
+    },
+    {
+      "kind": "software",
+      "repository": "liyiteng/lerobot_alohamini",
+      "revision": "7843e5888366eaa553630e2f9d5539505a62dddf",
+      "path": "CONTRIBUTING.md",
+      "page": "upstream/software--contributing.md",
+      "category": "development",
+      "sha256": "5e9626053d840766002aad227c92c0c01ab50877f47feb459932c30f3f4e78ee",
+      "assets": [],
+      "title": "How to contribute to 🤗 LeRobot"
+    },
+    {
+      "kind": "software",
+      "repository": "liyiteng/lerobot_alohamini",
+      "revision": "7843e5888366eaa553630e2f9d5539505a62dddf",
+      "path": "README.md",
+      "page": "upstream/software--readme.md",
+      "category": "environment",
+      "sha256": "ba1e37f484f9542ae7ccf06698e2ff66fc23725aa8dfc7f328c33f9c3101df07",
+      "assets": [],
+      "title": "lerobot_alohamini"
+    },
+    {
+      "kind": "software",
+      "repository": "liyiteng/lerobot_alohamini",
+      "revision": "7843e5888366eaa553630e2f9d5539505a62dddf",
+      "path": "alohamini_sim/README.md",
+      "page": "upstream/software--alohamini_sim-readme.md",
+      "category": "simulation",
+      "sha256": "cb2bd87d52c8e7cf8e0e8cbb0f07922d552813099f9592f4bc5af692ce1f8494",
+      "assets": [],
+      "title": "alohamini_sim"
+    },
+    {
+      "kind": "software",
+      "repository": "liyiteng/lerobot_alohamini",
+      "revision": "7843e5888366eaa553630e2f9d5539505a62dddf",
+      "path": "alohamini_sim/data_engine/data_gen/intern_engine/skills/library/README.md",
+      "page": "upstream/software--alohamini_sim-data_engine-data_gen-intern_engine-skills-library-readme.md",
+      "category": "simulation",
+      "sha256": "842a70cf74872c571cacbbf53f1cf24ee7bf3c3d806b8ee13d37d52e46353f4a",
+      "assets": [],
+      "title": "Skill Library (ASPIRE-style)"
+    },
+    {
+      "kind": "software",
+      "repository": "liyiteng/lerobot_alohamini",
+      "revision": "7843e5888366eaa553630e2f9d5539505a62dddf",
+      "path": "alohamini_sim/video2sim/README.md",
+      "page": "upstream/software--alohamini_sim-video2sim-readme.md",
+      "category": "simulation",
+      "sha256": "16fe2d1bca522f28bca8d9eb345d3be00e2a753cb20f0e38bfdbcec9194c3718",
+      "assets": [],
+      "title": "video2sim"
+    },
+    {
+      "kind": "software",
+      "repository": "liyiteng/lerobot_alohamini",
+      "revision": "7843e5888366eaa553630e2f9d5539505a62dddf",
+      "path": "docker/README.md",
+      "page": "upstream/software--docker-readme.md",
+      "category": "environment",
+      "sha256": "dc37e4c8e72490d0e1244149181e9cfe50b2d148fa384f2311b439690fd78e7b",
+      "assets": [],
+      "title": "Docker"
+    },
+    {
+      "kind": "software",
+      "repository": "liyiteng/lerobot_alohamini",
+      "revision": "7843e5888366eaa553630e2f9d5539505a62dddf",
+      "path": "docs/README.md",
+      "page": "upstream/software--docs-readme.md",
+      "category": "environment",
+      "sha256": "165d87151d472890158ded4a228e3d21bebfe0bcd73adfff646d1fa58b020f36",
+      "assets": [],
+      "title": "Generating the documentation"
+    },
+    {
+      "kind": "software",
+      "repository": "liyiteng/lerobot_alohamini",
+      "revision": "7843e5888366eaa553630e2f9d5539505a62dddf",
+      "path": "docs/alohamini/alohamini.md",
+      "page": "upstream/software--docs-alohamini-alohamini.md",
+      "category": "alohamini",
+      "sha256": "91745fe4efb00a64a6ee701111861469608e9a65eb0dd5b8834a75b27b3dd13f",
+      "assets": [
+        {
+          "path": "examples/alohamini/media/mid_position_so100.png",
+          "status": "local"
+        }
+      ],
+      "title": "AlohaMini — Full Workflow"
+    },
+    {
+      "kind": "software",
+      "repository": "liyiteng/lerobot_alohamini",
+      "revision": "7843e5888366eaa553630e2f9d5539505a62dddf",
+      "path": "docs/alohamini/am-arm200.md",
+      "page": "upstream/software--docs-alohamini-am-arm200.md",
+      "category": "alohamini",
+      "sha256": "b5e071c2f77c0d49a677ef0aa80330b7b7dec459845d619d6fad692330e94105",
+      "assets": [],
+      "title": "AM-ARM200 — Full Workflow"
+    },
+    {
+      "kind": "software",
+      "repository": "liyiteng/lerobot_alohamini",
+      "revision": "7843e5888366eaa553630e2f9d5539505a62dddf",
+      "path": "docs/alohamini/commands.md",
+      "page": "upstream/software--docs-alohamini-commands.md",
+      "category": "alohamini",
+      "sha256": "ac4766d7516c47b66e700eae35e0d737c7bd54427b09bf6c8f97694f092924bb",
+      "assets": [],
+      "title": "AlohaMini Command Cheat Sheet"
+    },
+    {
+      "kind": "software",
+      "repository": "liyiteng/lerobot_alohamini",
+      "revision": "7843e5888366eaa553630e2f9d5539505a62dddf",
+      "path": "docs/alohamini/install.md",
+      "page": "upstream/software--docs-alohamini-install.md",
+      "category": "alohamini",
+      "sha256": "7e8ccd6948126970f7694bc68827a7b83d910542a35eeaac5e60a1ac26fc970b",
+      "assets": [],
+      "title": "Installation & Configuration"
+    },
+    {
+      "kind": "software",
+      "repository": "liyiteng/lerobot_alohamini",
+      "revision": "7843e5888366eaa553630e2f9d5539505a62dddf",
+      "path": "docs/alohamini/profiles.md",
+      "page": "upstream/software--docs-alohamini-profiles.md",
+      "category": "alohamini",
+      "sha256": "988772b41e5b61a1fd31aac873d73c543e87097cb3f80cdada531d0f9bb93c23",
+      "assets": [],
+      "title": "Hardware Profile Reference"
+    },
+    {
+      "kind": "software",
+      "repository": "liyiteng/lerobot_alohamini",
+      "revision": "7843e5888366eaa553630e2f9d5539505a62dddf",
+      "path": "docs/source/act.mdx",
+      "page": "upstream/software--docs-source-act.md",
+      "category": "policies",
+      "sha256": "eeaad8232d0a0f07061a5872b54161161f6065dbcb148bf6dd7d76adb3b660b8",
+      "assets": [],
+      "title": "ACT (Action Chunking with Transformers)"
+    },
+    {
+      "kind": "software",
+      "repository": "liyiteng/lerobot_alohamini",
+      "revision": "7843e5888366eaa553630e2f9d5539505a62dddf",
+      "path": "docs/source/action_representations.mdx",
+      "page": "upstream/software--docs-source-action_representations.md",
+      "category": "data",
+      "sha256": "f31504b60bf44d1db117da75061638f69b503c8ccea21e24dd9d27daf8696a4c",
+      "assets": [],
+      "title": "Action Representations"
+    },
+    {
+      "kind": "software",
+      "repository": "liyiteng/lerobot_alohamini",
+      "revision": "7843e5888366eaa553630e2f9d5539505a62dddf",
+      "path": "docs/source/adding_benchmarks.mdx",
+      "page": "upstream/software--docs-source-adding_benchmarks.md",
+      "category": "development",
+      "sha256": "eb64291c86e679994a355c38232f1de6f1a04cdfdd581cdd71fc344801d2374e",
+      "assets": [],
+      "title": "Adding a New Benchmark"
+    },
+    {
+      "kind": "software",
+      "repository": "liyiteng/lerobot_alohamini",
+      "revision": "7843e5888366eaa553630e2f9d5539505a62dddf",
+      "path": "docs/source/annotation_pipeline.mdx",
+      "page": "upstream/software--docs-source-annotation_pipeline.md",
+      "category": "data",
+      "sha256": "89e652e781f43570b91d8e190c264c80f9bba058d3f34cacbe394f39dc74d826",
+      "assets": [],
+      "title": "Annotation Pipeline"
+    },
+    {
+      "kind": "software",
+      "repository": "liyiteng/lerobot_alohamini",
+      "revision": "7843e5888366eaa553630e2f9d5539505a62dddf",
+      "path": "docs/source/async.mdx",
+      "page": "upstream/software--docs-source-async.md",
+      "category": "environment",
+      "sha256": "b0350d0de245c077bfccd6b296d08b44c5f0505cad19de595964d21f49183105",
+      "assets": [],
+      "title": "Asynchronous Inference"
+    },
+    {
+      "kind": "software",
+      "repository": "liyiteng/lerobot_alohamini",
+      "revision": "7843e5888366eaa553630e2f9d5539505a62dddf",
+      "path": "docs/source/backwardcomp.mdx",
+      "page": "upstream/software--docs-source-backwardcomp.md",
+      "category": "development",
+      "sha256": "4c7aa1c7cc11175002d865403f1936ad71f66caf501389d8ef4237b8475339b0",
+      "assets": [],
+      "title": "Backward compatibility"
+    },
+    {
+      "kind": "software",
+      "repository": "liyiteng/lerobot_alohamini",
+      "revision": "7843e5888366eaa553630e2f9d5539505a62dddf",
+      "path": "docs/source/bring_your_own_policies.mdx",
+      "page": "upstream/software--docs-source-bring_your_own_policies.md",
+      "category": "development",
+      "sha256": "7cde14d82b38277760229dd743c76c3069b9be554f5a303b9c4cd5a57349e6cf",
+      "assets": [],
+      "title": "Adding a Policy"
+    },
+    {
+      "kind": "software",
+      "repository": "liyiteng/lerobot_alohamini",
+      "revision": "7843e5888366eaa553630e2f9d5539505a62dddf",
+      "path": "docs/source/cameras.mdx",
+      "page": "upstream/software--docs-source-cameras.md",
+      "category": "hardware",
+      "sha256": "40829f4543d3319cd456e93ce6a8f5476c7c9aa57a6ff6c9052cd13d5530b4dd",
+      "assets": [],
+      "title": "Cameras"
+    },
+    {
+      "kind": "software",
+      "repository": "liyiteng/lerobot_alohamini",
+      "revision": "7843e5888366eaa553630e2f9d5539505a62dddf",
+      "path": "docs/source/cheat-sheet.mdx",
+      "page": "upstream/software--docs-source-cheat-sheet.md",
+      "category": "environment",
+      "sha256": "26f66a7db089690154cd834081e35700f140acef5a8b0f9ae740b5f5bf1bfb75",
+      "assets": [],
+      "title": "Cheat sheet"
+    },
+    {
+      "kind": "software",
+      "repository": "liyiteng/lerobot_alohamini",
+      "revision": "7843e5888366eaa553630e2f9d5539505a62dddf",
+      "path": "docs/source/damiao.mdx",
+      "page": "upstream/software--docs-source-damiao.md",
+      "category": "hardware",
+      "sha256": "41bc34bd914227f4e56db15b7607fa6bd4126cbe2fb2581ccc1ed5840f36a4ba",
+      "assets": [],
+      "title": "Damiao Motors and CAN Bus"
+    },
+    {
+      "kind": "software",
+      "repository": "liyiteng/lerobot_alohamini",
+      "revision": "7843e5888366eaa553630e2f9d5539505a62dddf",
+      "path": "docs/source/debug_processor_pipeline.mdx",
+      "page": "upstream/software--docs-source-debug_processor_pipeline.md",
+      "category": "development",
+      "sha256": "215853ef14049d9965bd368aade4bd45e1fbdb73b79d67eedbe54ca9f531ac42",
+      "assets": [],
+      "title": "Debug Your Processor Pipeline"
+    },
+    {
+      "kind": "software",
+      "repository": "liyiteng/lerobot_alohamini",
+      "revision": "7843e5888366eaa553630e2f9d5539505a62dddf",
+      "path": "docs/source/earthrover_mini_plus.mdx",
+      "page": "upstream/software--docs-source-earthrover_mini_plus.md",
+      "category": "hardware",
+      "sha256": "0042fd029955537d08c26f314c97cb60d3890b5cfbcb9e96b7144b5266f55578",
+      "assets": [],
+      "title": "EarthRover Mini Plus"
+    },
+    {
+      "kind": "software",
+      "repository": "liyiteng/lerobot_alohamini",
+      "revision": "7843e5888366eaa553630e2f9d5539505a62dddf",
+      "path": "docs/source/env_processor.mdx",
+      "page": "upstream/software--docs-source-env_processor.md",
+      "category": "development",
+      "sha256": "19fddb0ffbe912721e7b61174b3f3545c02dbc0417d5e04cb66955b9ea79760f",
+      "assets": [],
+      "title": "Environment Processors"
+    },
+    {
+      "kind": "software",
+      "repository": "liyiteng/lerobot_alohamini",
+      "revision": "7843e5888366eaa553630e2f9d5539505a62dddf",
+      "path": "docs/source/envhub.mdx",
+      "page": "upstream/software--docs-source-envhub.md",
+      "category": "simulation",
+      "sha256": "c911b58d336f74832290b0a5f3ae3d2d95a72e1338e03ec142880ccdaf19c63a",
+      "assets": [],
+      "title": "Loading Environments from the Hub"
+    },
+    {
+      "kind": "software",
+      "repository": "liyiteng/lerobot_alohamini",
+      "revision": "7843e5888366eaa553630e2f9d5539505a62dddf",
+      "path": "docs/source/envhub_isaaclab_arena.mdx",
+      "page": "upstream/software--docs-source-envhub_isaaclab_arena.md",
+      "category": "simulation",
+      "sha256": "8422b99d1bf669cf2bdf329dbeb7ec5b06727ec6b2d1ebc809cf7c7bab66a514",
+      "assets": [],
+      "title": "NVIDIA IsaacLab Arena & LeRobot"
+    },
+    {
+      "kind": "software",
+      "repository": "liyiteng/lerobot_alohamini",
+      "revision": "7843e5888366eaa553630e2f9d5539505a62dddf",
+      "path": "docs/source/envhub_leisaac.mdx",
+      "page": "upstream/software--docs-source-envhub_leisaac.md",
+      "category": "simulation",
+      "sha256": "869b37dd4b51e46b942c23d13b79aa663d09c2706f35a1c80869ff0e3b5bb05e",
+      "assets": [],
+      "title": "LeIsaac × LeRobot EnvHub"
+    },
+    {
+      "kind": "software",
+      "repository": "liyiteng/lerobot_alohamini",
+      "revision": "7843e5888366eaa553630e2f9d5539505a62dddf",
+      "path": "docs/source/eo1.mdx",
+      "page": "upstream/software--docs-source-eo1.md",
+      "category": "policies",
+      "sha256": "c45967c5b037684b9930ae5931249b03f1ea9b5ce9ece3a5eb4250952b54379c",
+      "assets": [],
+      "title": "EO-1"
+    },
+    {
+      "kind": "software",
+      "repository": "liyiteng/lerobot_alohamini",
+      "revision": "7843e5888366eaa553630e2f9d5539505a62dddf",
+      "path": "docs/source/evo1.mdx",
+      "page": "upstream/software--docs-source-evo1.md",
+      "category": "policies",
+      "sha256": "177136ff2ecd1963575e98ae4ce3120cc632534f996ae72f4c832ab4379fce9c",
+      "assets": [],
+      "title": "EVO1"
+    },
+    {
+      "kind": "software",
+      "repository": "liyiteng/lerobot_alohamini",
+      "revision": "7843e5888366eaa553630e2f9d5539505a62dddf",
+      "path": "docs/source/fastwam.mdx",
+      "page": "upstream/software--docs-source-fastwam.md",
+      "category": "policies",
+      "sha256": "4d478d4640e6625270f83edf1604fa27a5698872149b1abd93e47862c8369b62",
+      "assets": [],
+      "title": "FastWAM"
+    },
+    {
+      "kind": "software",
+      "repository": "liyiteng/lerobot_alohamini",
+      "revision": "7843e5888366eaa553630e2f9d5539505a62dddf",
+      "path": "docs/source/feetech.mdx",
+      "page": "upstream/software--docs-source-feetech.md",
+      "category": "hardware",
+      "sha256": "008c5dd8da849a4bcc1eeda962c368a3185889271605b4344854bb2c6dd7fa73",
+      "assets": [],
+      "title": "Feetech Motor Firmware Update"
+    },
+    {
+      "kind": "software",
+      "repository": "liyiteng/lerobot_alohamini",
+      "revision": "7843e5888366eaa553630e2f9d5539505a62dddf",
+      "path": "docs/source/groot.mdx",
+      "page": "upstream/software--docs-source-groot.md",
+      "category": "policies",
+      "sha256": "738af2de1cb3c47c017a6b9801e08ddf220cd3d1e1fba087ae9a2e2bcebd68bb",
+      "assets": [],
+      "title": "GR00T Policy"
+    },
+    {
+      "kind": "software",
+      "repository": "liyiteng/lerobot_alohamini",
+      "revision": "7843e5888366eaa553630e2f9d5539505a62dddf",
+      "path": "docs/source/hardware_guide.mdx",
+      "page": "upstream/software--docs-source-hardware_guide.md",
+      "category": "hardware",
+      "sha256": "05aaea1fbba9d9b3ac355baec184e81c509ed9003c6ab9e7866a0b008a233944",
+      "assets": [],
+      "title": "Compute HW Guide for LeRobot Training"
+    },
+    {
+      "kind": "software",
+      "repository": "liyiteng/lerobot_alohamini",
+      "revision": "7843e5888366eaa553630e2f9d5539505a62dddf",
+      "path": "docs/source/hil_data_collection.mdx",
+      "page": "upstream/software--docs-source-hil_data_collection.md",
+      "category": "environment",
+      "sha256": "cba989557cfe001eef16ce65ceb75481abfd99186968fc044a6dd240164344da",
+      "assets": [],
+      "title": "Human-In-the-Loop Data Collection"
+    },
+    {
+      "kind": "software",
+      "repository": "liyiteng/lerobot_alohamini",
+      "revision": "7843e5888366eaa553630e2f9d5539505a62dddf",
+      "path": "docs/source/hilserl.mdx",
+      "page": "upstream/software--docs-source-hilserl.md",
+      "category": "environment",
+      "sha256": "8beb5abb948264b0ebb15c715b9befb3176862a7738025d54209b0a1461e6a65",
+      "assets": [],
+      "title": "HIL-SERL Real Robot Training Workflow Guide"
+    },
+    {
+      "kind": "software",
+      "repository": "liyiteng/lerobot_alohamini",
+      "revision": "7843e5888366eaa553630e2f9d5539505a62dddf",
+      "path": "docs/source/hilserl_sim.mdx",
+      "page": "upstream/software--docs-source-hilserl_sim.md",
+      "category": "simulation",
+      "sha256": "ddb524e8edc12c8ad03722fe982438c7d69cf5c06ec95b5a497d3943c540f524",
+      "assets": [],
+      "title": "Train RL in Simulation"
+    },
+    {
+      "kind": "software",
+      "repository": "liyiteng/lerobot_alohamini",
+      "revision": "7843e5888366eaa553630e2f9d5539505a62dddf",
+      "path": "docs/source/hope_jr.mdx",
+      "page": "upstream/software--docs-source-hope_jr.md",
+      "category": "hardware",
+      "sha256": "800df8a12b2e41eb2823b99a71be688cdd7f50007cf0389905ab45b94050f92c",
+      "assets": [],
+      "title": "HopeJR"
+    },
+    {
+      "kind": "software",
+      "repository": "liyiteng/lerobot_alohamini",
+      "revision": "7843e5888366eaa553630e2f9d5539505a62dddf",
+      "path": "docs/source/il_robots.mdx",
+      "page": "upstream/software--docs-source-il_robots.md",
+      "category": "environment",
+      "sha256": "cfcfb6e0757ee8a6714970f3b6aa8620c1515215260e96b9ab5a77932d11d30b",
+      "assets": [],
+      "title": "Imitation Learning on Real-World Robots"
+    },
+    {
+      "kind": "software",
+      "repository": "liyiteng/lerobot_alohamini",
+      "revision": "7843e5888366eaa553630e2f9d5539505a62dddf",
+      "path": "docs/source/implement_your_own_processor.mdx",
+      "page": "upstream/software--docs-source-implement_your_own_processor.md",
+      "category": "development",
+      "sha256": "80c271fe17c2393b3983f5999c86a98d31818b429966623bc80fb13819cd686c",
+      "assets": [],
+      "title": "Implement your own Robot Processor"
+    },
+    {
+      "kind": "software",
+      "repository": "liyiteng/lerobot_alohamini",
+      "revision": "7843e5888366eaa553630e2f9d5539505a62dddf",
+      "path": "docs/source/index.mdx",
+      "page": "upstream/software--docs-source-index.md",
+      "category": "environment",
+      "sha256": "b4eddaec15c99ee8dbbda451e1be982354e568481c45a0f73423af825899d014",
+      "assets": [],
+      "title": "LeRobot"
+    },
+    {
+      "kind": "software",
+      "repository": "liyiteng/lerobot_alohamini",
+      "revision": "7843e5888366eaa553630e2f9d5539505a62dddf",
+      "path": "docs/source/inference.mdx",
+      "page": "upstream/software--docs-source-inference.md",
+      "category": "environment",
+      "sha256": "07ad6af8a8cd2b4ff4ee6ab09d59ea9d9678e7f2058932703cd0446a5cf492cb",
+      "assets": [],
+      "title": "Policy Deployment (lerobot-rollout)"
+    },
+    {
+      "kind": "software",
+      "repository": "liyiteng/lerobot_alohamini",
+      "revision": "7843e5888366eaa553630e2f9d5539505a62dddf",
+      "path": "docs/source/installation.mdx",
+      "page": "upstream/software--docs-source-installation.md",
+      "category": "environment",
+      "sha256": "63d3b1ada253462e681b7421d1ce97945818fa067891bdb6bc33a5935e483f58",
+      "assets": [],
+      "title": "Installation"
+    },
+    {
+      "kind": "software",
+      "repository": "liyiteng/lerobot_alohamini",
+      "revision": "7843e5888366eaa553630e2f9d5539505a62dddf",
+      "path": "docs/source/integrate_hardware.mdx",
+      "page": "upstream/software--docs-source-integrate_hardware.md",
+      "category": "development",
+      "sha256": "00227719951e400f88d0fa5b2e5842a174b2bac3bc6b5718587a3b168a10fabd",
+      "assets": [],
+      "title": "Bring Your Own Hardware"
+    },
+    {
+      "kind": "software",
+      "repository": "liyiteng/lerobot_alohamini",
+      "revision": "7843e5888366eaa553630e2f9d5539505a62dddf",
+      "path": "docs/source/introduction_processors.mdx",
+      "page": "upstream/software--docs-source-introduction_processors.md",
+      "category": "development",
+      "sha256": "c57e56ff81be50314ff9bdfe3859f60d4ca2eee84988cbdcbc4ba6b7cefad433",
+      "assets": [],
+      "title": "Introduction to Processors"
+    },
+    {
+      "kind": "software",
+      "repository": "liyiteng/lerobot_alohamini",
+      "revision": "7843e5888366eaa553630e2f9d5539505a62dddf",
+      "path": "docs/source/isaac_teleop.mdx",
+      "page": "upstream/software--docs-source-isaac_teleop.md",
+      "category": "hardware",
+      "sha256": "fdfb91336c6877b3cafca02fb7ba345431129e47a87c01721e3bdd22b0b76aaf",
+      "assets": [],
+      "title": "Isaac Teleop"
+    },
+    {
+      "kind": "software",
+      "repository": "liyiteng/lerobot_alohamini",
+      "revision": "7843e5888366eaa553630e2f9d5539505a62dddf",
+      "path": "docs/source/koch.mdx",
+      "page": "upstream/software--docs-source-koch.md",
+      "category": "hardware",
+      "sha256": "b5e0c2b1c5c3cc249fa2f36f519eb0ec44762995df8f39592f7d44714bdf8ba3",
+      "assets": [],
+      "title": "Koch v1.1"
+    },
+    {
+      "kind": "software",
+      "repository": "liyiteng/lerobot_alohamini",
+      "revision": "7843e5888366eaa553630e2f9d5539505a62dddf",
+      "path": "docs/source/language_and_recipes.mdx",
+      "page": "upstream/software--docs-source-language_and_recipes.md",
+      "category": "data",
+      "sha256": "2622c5314dee95d41c6226fe6be2bdfee75466ce5fa4181f140365a70df35bdf",
+      "assets": [],
+      "title": "Language columns and recipes"
+    },
+    {
+      "kind": "software",
+      "repository": "liyiteng/lerobot_alohamini",
+      "revision": "7843e5888366eaa553630e2f9d5539505a62dddf",
+      "path": "docs/source/lekiwi.mdx",
+      "page": "upstream/software--docs-source-lekiwi.md",
+      "category": "hardware",
+      "sha256": "ce2df7822ecd6710c860fbca3a6cc65bd94a464a71817211b929b6ef8c0fcb06",
+      "assets": [],
+      "title": "LeKiwi"
+    },
+    {
+      "kind": "software",
+      "repository": "liyiteng/lerobot_alohamini",
+      "revision": "7843e5888366eaa553630e2f9d5539505a62dddf",
+      "path": "docs/source/lelab.mdx",
+      "page": "upstream/software--docs-source-lelab.md",
+      "category": "environment",
+      "sha256": "4c1016a580a781c66b1473f75b4fc62ee99472af600346f71599cad3a23dbdbf",
+      "assets": [],
+      "title": "LeLab - LeRobot Guide"
+    },
+    {
+      "kind": "software",
+      "repository": "liyiteng/lerobot_alohamini",
+      "revision": "7843e5888366eaa553630e2f9d5539505a62dddf",
+      "path": "docs/source/lerobot-dataset-v3.mdx",
+      "page": "upstream/software--docs-source-lerobot-dataset-v3.md",
+      "category": "data",
+      "sha256": "781abe49e68f72101dedcafa3f2598b9d607283ea2e83168b3f38ab5dffd0faa",
+      "assets": [],
+      "title": "LeRobotDataset v3.0"
+    },
+    {
+      "kind": "software",
+      "repository": "liyiteng/lerobot_alohamini",
+      "revision": "7843e5888366eaa553630e2f9d5539505a62dddf",
+      "path": "docs/source/libero.mdx",
+      "page": "upstream/software--docs-source-libero.md",
+      "category": "simulation",
+      "sha256": "213ffc87e36f98f8ee43cc080d1553e6cafd09247615e12c4969dbf2d5bf990a",
+      "assets": [],
+      "title": "LIBERO"
+    },
+    {
+      "kind": "software",
+      "repository": "liyiteng/lerobot_alohamini",
+      "revision": "7843e5888366eaa553630e2f9d5539505a62dddf",
+      "path": "docs/source/libero_plus.mdx",
+      "page": "upstream/software--docs-source-libero_plus.md",
+      "category": "simulation",
+      "sha256": "434b64a2cb252eb1830706a010c5e2e2c13f9bbca7e6eccc74f4008a01e13e75",
+      "assets": [],
+      "title": "LIBERO-plus"
+    },
+    {
+      "kind": "software",
+      "repository": "liyiteng/lerobot_alohamini",
+      "revision": "7843e5888366eaa553630e2f9d5539505a62dddf",
+      "path": "docs/source/lingbot_va.mdx",
+      "page": "upstream/software--docs-source-lingbot_va.md",
+      "category": "policies",
+      "sha256": "ad3218945c90b80470d11d2ab936ffca03a6259af0234cb2e60fec3c686056fb",
+      "assets": [],
+      "title": "LingBot-VA"
+    },
+    {
+      "kind": "software",
+      "repository": "liyiteng/lerobot_alohamini",
+      "revision": "7843e5888366eaa553630e2f9d5539505a62dddf",
+      "path": "docs/source/metaworld.mdx",
+      "page": "upstream/software--docs-source-metaworld.md",
+      "category": "simulation",
+      "sha256": "983514eb0d27beaa2921422312cb2b82e5ad7e8f25f598475321124b4ec84b6e",
+      "assets": [],
+      "title": "Meta-World"
+    },
+    {
+      "kind": "software",
+      "repository": "liyiteng/lerobot_alohamini",
+      "revision": "7843e5888366eaa553630e2f9d5539505a62dddf",
+      "path": "docs/source/molmoact2.mdx",
+      "page": "upstream/software--docs-source-molmoact2.md",
+      "category": "policies",
+      "sha256": "39f4abce7b6b7dad01acdaacf00da58424aeb5ce818168ef0a25e59d7077bd48",
+      "assets": [],
+      "title": "MolmoAct2 Policy"
+    },
+    {
+      "kind": "software",
+      "repository": "liyiteng/lerobot_alohamini",
+      "revision": "7843e5888366eaa553630e2f9d5539505a62dddf",
+      "path": "docs/source/multi_gpu_training.mdx",
+      "page": "upstream/software--docs-source-multi_gpu_training.md",
+      "category": "environment",
+      "sha256": "219e24304e2746f3eea596ec70e886c85a6155a8139a3f575660783579dbfbd7",
+      "assets": [],
+      "title": "Multi-GPU Training"
+    },
+    {
+      "kind": "software",
+      "repository": "liyiteng/lerobot_alohamini",
+      "revision": "7843e5888366eaa553630e2f9d5539505a62dddf",
+      "path": "docs/source/multi_task_dit.mdx",
+      "page": "upstream/software--docs-source-multi_task_dit.md",
+      "category": "policies",
+      "sha256": "62bb2d1820c415d5b457fe3e5ddaf1444af2d7fcb7a82e96420e38e81ca587a2",
+      "assets": [],
+      "title": "Multitask DiT Policy"
+    },
+    {
+      "kind": "software",
+      "repository": "liyiteng/lerobot_alohamini",
+      "revision": "7843e5888366eaa553630e2f9d5539505a62dddf",
+      "path": "docs/source/notebooks.mdx",
+      "page": "upstream/software--docs-source-notebooks.md",
+      "category": "environment",
+      "sha256": "190d157d986e3a9827e547dfcc8dc0e2f28c2f791759d3ef9d4e36d6f8a75767",
+      "assets": [],
+      "title": "🤗 LeRobot Notebooks"
+    },
+    {
+      "kind": "software",
+      "repository": "liyiteng/lerobot_alohamini",
+      "revision": "7843e5888366eaa553630e2f9d5539505a62dddf",
+      "path": "docs/source/omx.mdx",
+      "page": "upstream/software--docs-source-omx.md",
+      "category": "hardware",
+      "sha256": "cdcc7dcb33e9e47d71c485b94c87f4fa21117b72e42f29f8b0de4c4d98ae3099",
+      "assets": [],
+      "title": "omx"
+    },
+    {
+      "kind": "software",
+      "repository": "liyiteng/lerobot_alohamini",
+      "revision": "7843e5888366eaa553630e2f9d5539505a62dddf",
+      "path": "docs/source/openarm.mdx",
+      "page": "upstream/software--docs-source-openarm.md",
+      "category": "hardware",
+      "sha256": "4efa66a15baf736fef56506da2d880d0faabbac0ed55d3558b15a64592c47c07",
+      "assets": [],
+      "title": "OpenArm"
+    },
+    {
+      "kind": "software",
+      "repository": "liyiteng/lerobot_alohamini",
+      "revision": "7843e5888366eaa553630e2f9d5539505a62dddf",
+      "path": "docs/source/peft_training.mdx",
+      "page": "upstream/software--docs-source-peft_training.md",
+      "category": "environment",
+      "sha256": "8967c56a1864f4ea73e57d792b641c6ac5956409ba84051f221cf0ac4b55c6a4",
+      "assets": [],
+      "title": "Parameter efficient fine-tuning with 🤗 PEFT"
+    },
+    {
+      "kind": "software",
+      "repository": "liyiteng/lerobot_alohamini",
+      "revision": "7843e5888366eaa553630e2f9d5539505a62dddf",
+      "path": "docs/source/phone_teleop.mdx",
+      "page": "upstream/software--docs-source-phone_teleop.md",
+      "category": "hardware",
+      "sha256": "260f436c2a893304d989ae7108144fb75c5748a910d035ab8775d21191caa1bb",
+      "assets": [],
+      "title": "Phone"
+    },
+    {
+      "kind": "software",
+      "repository": "liyiteng/lerobot_alohamini",
+      "revision": "7843e5888366eaa553630e2f9d5539505a62dddf",
+      "path": "docs/source/pi0.mdx",
+      "page": "upstream/software--docs-source-pi0.md",
+      "category": "policies",
+      "sha256": "efca039236eea79b93f3b58a545e3c5ebf6e450d35f9c9dfb0f794f58c5664a6",
+      "assets": [],
+      "title": "π₀ (Pi0)"
+    },
+    {
+      "kind": "software",
+      "repository": "liyiteng/lerobot_alohamini",
+      "revision": "7843e5888366eaa553630e2f9d5539505a62dddf",
+      "path": "docs/source/pi05.mdx",
+      "page": "upstream/software--docs-source-pi05.md",
+      "category": "policies",
+      "sha256": "f69ffff2a23d17290868361442b0fbdc3ad55cb739c766eb22b20a151a891b59",
+      "assets": [],
+      "title": "π₀.₅ (Pi05) Policy"
+    },
+    {
+      "kind": "software",
+      "repository": "liyiteng/lerobot_alohamini",
+      "revision": "7843e5888366eaa553630e2f9d5539505a62dddf",
+      "path": "docs/source/pi0fast.mdx",
+      "page": "upstream/software--docs-source-pi0fast.md",
+      "category": "policies",
+      "sha256": "67e1115bafcc1ddaea7490b39809d772cfae5f0fbe7f3c20bb0a945a078300d5",
+      "assets": [],
+      "title": "π₀-FAST (Pi0-FAST)"
+    },
+    {
+      "kind": "software",
+      "repository": "liyiteng/lerobot_alohamini",
+      "revision": "7843e5888366eaa553630e2f9d5539505a62dddf",
+      "path": "docs/source/policy_act_README.md",
+      "page": "upstream/software--docs-source-policy_act_readme.md",
+      "category": "policies",
+      "sha256": "146d6951776b64e59dc001ea3b0a899c69d3556dab58ae890f6cf2c34764e0d2",
+      "assets": [],
+      "title": "policy_act_README"
+    },
+    {
+      "kind": "software",
+      "repository": "liyiteng/lerobot_alohamini",
+      "revision": "7843e5888366eaa553630e2f9d5539505a62dddf",
+      "path": "docs/source/policy_diffusion_README.md",
+      "page": "upstream/software--docs-source-policy_diffusion_readme.md",
+      "category": "policies",
+      "sha256": "0cae7913f1322708cd024ebc0bd07f4736ca2ba3bf52cdcc3a90999f76116b5e",
+      "assets": [],
+      "title": "policy_diffusion_README"
+    },
+    {
+      "kind": "software",
+      "repository": "liyiteng/lerobot_alohamini",
+      "revision": "7843e5888366eaa553630e2f9d5539505a62dddf",
+      "path": "docs/source/policy_evo1_README.md",
+      "page": "upstream/software--docs-source-policy_evo1_readme.md",
+      "category": "policies",
+      "sha256": "6ca7edefc9d3220d242c420b0e2cf3e02037693bbd6b3b5953964b99c33ba545",
+      "assets": [],
+      "title": "EVO1"
+    },
+    {
+      "kind": "software",
+      "repository": "liyiteng/lerobot_alohamini",
+      "revision": "7843e5888366eaa553630e2f9d5539505a62dddf",
+      "path": "docs/source/policy_fastwam_README.md",
+      "page": "upstream/software--docs-source-policy_fastwam_readme.md",
+      "category": "policies",
+      "sha256": "7f53630119fed88f25541827b98f267f4cba43af1bc1224076936b81f9ed9017",
+      "assets": [],
+      "title": "policy_fastwam_README"
+    },
+    {
+      "kind": "software",
+      "repository": "liyiteng/lerobot_alohamini",
+      "revision": "7843e5888366eaa553630e2f9d5539505a62dddf",
+      "path": "docs/source/policy_groot_README.md",
+      "page": "upstream/software--docs-source-policy_groot_readme.md",
+      "category": "policies",
+      "sha256": "10b51776cdaa7449099398723af38480fdf4f4cc8568336e39233f3f5c04b37f",
+      "assets": [],
+      "title": "Resolve a local checkpoint (GR00T-N1.7-LIBERO / libero_10)"
+    },
+    {
+      "kind": "software",
+      "repository": "liyiteng/lerobot_alohamini",
+      "revision": "7843e5888366eaa553630e2f9d5539505a62dddf",
+      "path": "docs/source/policy_molmoact2_README.md",
+      "page": "upstream/software--docs-source-policy_molmoact2_readme.md",
+      "category": "policies",
+      "sha256": "80bba3dfb3ff92322d46100810c4b1ec0f61895853047e3f285a61178f0d36d3",
+      "assets": [],
+      "title": "MolmoAct2"
+    },
+    {
+      "kind": "software",
+      "repository": "liyiteng/lerobot_alohamini",
+      "revision": "7843e5888366eaa553630e2f9d5539505a62dddf",
+      "path": "docs/source/policy_multi_task_dit_README.md",
+      "page": "upstream/software--docs-source-policy_multi_task_dit_readme.md",
+      "category": "policies",
+      "sha256": "cd410977ac83ccb43e363f97aae8a86363295a565f6e67c5f4b609c213cdfcc5",
+      "assets": [],
+      "title": "Multitask DiT Policy"
+    },
+    {
+      "kind": "software",
+      "repository": "liyiteng/lerobot_alohamini",
+      "revision": "7843e5888366eaa553630e2f9d5539505a62dddf",
+      "path": "docs/source/policy_pi05_README.md",
+      "page": "upstream/software--docs-source-policy_pi05_readme.md",
+      "category": "policies",
+      "sha256": "b049a73d6fc826357d051b1ae5f98affa85dc03ae06ca94400084af069dc4e5c",
+      "assets": [],
+      "title": "π₀.₅ (pi05)"
+    },
+    {
+      "kind": "software",
+      "repository": "liyiteng/lerobot_alohamini",
+      "revision": "7843e5888366eaa553630e2f9d5539505a62dddf",
+      "path": "docs/source/policy_pi0_README.md",
+      "page": "upstream/software--docs-source-policy_pi0_readme.md",
+      "category": "policies",
+      "sha256": "425032c8bb3fed096eda45e032d6ded6a3d8bd431d19d8bacc8b00d479aa487e",
+      "assets": [],
+      "title": "π₀ (pi0)"
+    },
+    {
+      "kind": "software",
+      "repository": "liyiteng/lerobot_alohamini",
+      "revision": "7843e5888366eaa553630e2f9d5539505a62dddf",
+      "path": "docs/source/policy_rtc_README.md",
+      "page": "upstream/software--docs-source-policy_rtc_readme.md",
+      "category": "policies",
+      "sha256": "5a00a77a749a9bf9d0b6d2bd2f21005f159cbdb136db042165223fc0d1311a18",
+      "assets": [],
+      "title": "Real-Time Chunking (RTC)"
+    },
+    {
+      "kind": "software",
+      "repository": "liyiteng/lerobot_alohamini",
+      "revision": "7843e5888366eaa553630e2f9d5539505a62dddf",
+      "path": "docs/source/policy_sarm_README.md",
+      "page": "upstream/software--docs-source-policy_sarm_readme.md",
+      "category": "policies",
+      "sha256": "052d6d7e045bdad8aa2f575ed774da388a4032a6ac85ade7154a23df733e0ef5",
+      "assets": [],
+      "title": "policy_sarm_README"
+    },
+    {
+      "kind": "software",
+      "repository": "liyiteng/lerobot_alohamini",
+      "revision": "7843e5888366eaa553630e2f9d5539505a62dddf",
+      "path": "docs/source/policy_smolvla_README.md",
+      "page": "upstream/software--docs-source-policy_smolvla_readme.md",
+      "category": "policies",
+      "sha256": "518995d5cb706f7e70e8aa606b71c53279f6d6cf6ed8a988c15bb903cc5af16c",
+      "assets": [],
+      "title": "policy_smolvla_README"
+    },
+    {
+      "kind": "software",
+      "repository": "liyiteng/lerobot_alohamini",
+      "revision": "7843e5888366eaa553630e2f9d5539505a62dddf",
+      "path": "docs/source/policy_tdmpc_README.md",
+      "page": "upstream/software--docs-source-policy_tdmpc_readme.md",
+      "category": "policies",
+      "sha256": "6227f422719d11a585ba36fc8a724421d3005cbb34350029e3dc491518b8b388",
+      "assets": [],
+      "title": "policy_tdmpc_README"
+    },
+    {
+      "kind": "software",
+      "repository": "liyiteng/lerobot_alohamini",
+      "revision": "7843e5888366eaa553630e2f9d5539505a62dddf",
+      "path": "docs/source/policy_vla_jepa_README.md",
+      "page": "upstream/software--docs-source-policy_vla_jepa_readme.md",
+      "category": "policies",
+      "sha256": "f017d5e99bc369b76256a18b5e190005b119f0e37fa8917d9a0c47c7b641ebc5",
+      "assets": [],
+      "title": "VLA-JEPA"
+    },
+    {
+      "kind": "software",
+      "repository": "liyiteng/lerobot_alohamini",
+      "revision": "7843e5888366eaa553630e2f9d5539505a62dddf",
+      "path": "docs/source/policy_vqbet_README.md",
+      "page": "upstream/software--docs-source-policy_vqbet_readme.md",
+      "category": "policies",
+      "sha256": "b80931a074f1bebf79b33bcac668edf999cc657c3665937e697da4e263ce3837",
+      "assets": [],
+      "title": "policy_vqbet_README"
+    },
+    {
+      "kind": "software",
+      "repository": "liyiteng/lerobot_alohamini",
+      "revision": "7843e5888366eaa553630e2f9d5539505a62dddf",
+      "path": "docs/source/policy_walloss_README.md",
+      "page": "upstream/software--docs-source-policy_walloss_readme.md",
+      "category": "policies",
+      "sha256": "84b9278b4d4c70b3c2600f618244dd3c04dec48a2a86d972c30e9c5e438ffe83",
+      "assets": [],
+      "title": "WALL-OSS"
+    },
+    {
+      "kind": "software",
+      "repository": "liyiteng/lerobot_alohamini",
+      "revision": "7843e5888366eaa553630e2f9d5539505a62dddf",
+      "path": "docs/source/porting_datasets_v3.mdx",
+      "page": "upstream/software--docs-source-porting_datasets_v3.md",
+      "category": "data",
+      "sha256": "71881ec7c77737a25cce16175d77642e720a9ff7f7b9faa3e2f3246cab1c0b76",
+      "assets": [],
+      "title": "Porting Large Datasets to LeRobot Dataset v3.0"
+    },
+    {
+      "kind": "software",
+      "repository": "liyiteng/lerobot_alohamini",
+      "revision": "7843e5888366eaa553630e2f9d5539505a62dddf",
+      "path": "docs/source/processors_robots_teleop.mdx",
+      "page": "upstream/software--docs-source-processors_robots_teleop.md",
+      "category": "development",
+      "sha256": "0ddf9acfc9a24ac33399992c5e6dae8be07dba2f3d385032267eab35c0abac06",
+      "assets": [],
+      "title": "Processors for Robots and Teleoperators"
+    },
+    {
+      "kind": "software",
+      "repository": "liyiteng/lerobot_alohamini",
+      "revision": "7843e5888366eaa553630e2f9d5539505a62dddf",
+      "path": "docs/source/reachy2.mdx",
+      "page": "upstream/software--docs-source-reachy2.md",
+      "category": "hardware",
+      "sha256": "557c0c40cf02391c77e3cb5bd879e4c6a1999c8704dfbc81b4a0d70c2d0e4c06",
+      "assets": [],
+      "title": "Reachy 2"
+    },
+    {
+      "kind": "software",
+      "repository": "liyiteng/lerobot_alohamini",
+      "revision": "7843e5888366eaa553630e2f9d5539505a62dddf",
+      "path": "docs/source/rebot_b601.mdx",
+      "page": "upstream/software--docs-source-rebot_b601.md",
+      "category": "hardware",
+      "sha256": "d92626ad5b51f7731ca7b888dfbc86cbeb4ca6e498c9112367e376b18adbdc53",
+      "assets": [],
+      "title": "reBot B601-DM"
+    },
+    {
+      "kind": "software",
+      "repository": "liyiteng/lerobot_alohamini",
+      "revision": "7843e5888366eaa553630e2f9d5539505a62dddf",
+      "path": "docs/source/rename_map.mdx",
+      "page": "upstream/software--docs-source-rename_map.md",
+      "category": "data",
+      "sha256": "884e64437ef2c7beacd3a25ebf69d2e34efeb68f38bff17e713a949d7033239b",
+      "assets": [],
+      "title": "Rename Map and Empty Cameras"
+    },
+    {
+      "kind": "software",
+      "repository": "liyiteng/lerobot_alohamini",
+      "revision": "7843e5888366eaa553630e2f9d5539505a62dddf",
+      "path": "docs/source/robocasa.mdx",
+      "page": "upstream/software--docs-source-robocasa.md",
+      "category": "simulation",
+      "sha256": "83f1a9a9fd47ac9fb893a6e993cf683bd35c412df2af369bee5e7ef9a32f62fb",
+      "assets": [],
+      "title": "RoboCasa365"
+    },
+    {
+      "kind": "software",
+      "repository": "liyiteng/lerobot_alohamini",
+      "revision": "7843e5888366eaa553630e2f9d5539505a62dddf",
+      "path": "docs/source/robocerebra.mdx",
+      "page": "upstream/software--docs-source-robocerebra.md",
+      "category": "hardware",
+      "sha256": "8cec4cd6649fa74e88435684d5baca89b73f7a837cd58a94fe213333edb4de3b",
+      "assets": [],
+      "title": "RoboCerebra"
+    },
+    {
+      "kind": "software",
+      "repository": "liyiteng/lerobot_alohamini",
+      "revision": "7843e5888366eaa553630e2f9d5539505a62dddf",
+      "path": "docs/source/robometer.mdx",
+      "page": "upstream/software--docs-source-robometer.md",
+      "category": "environment",
+      "sha256": "18eefd9c87eb0de1913e9a73d7b3c1cb8554d3842aaced77c53c4b288b325319",
+      "assets": [],
+      "title": "ROBOMETER"
+    },
+    {
+      "kind": "software",
+      "repository": "liyiteng/lerobot_alohamini",
+      "revision": "7843e5888366eaa553630e2f9d5539505a62dddf",
+      "path": "docs/source/robomme.mdx",
+      "page": "upstream/software--docs-source-robomme.md",
+      "category": "simulation",
+      "sha256": "d2c0acc15065bad7c74109a67281e97498ab15aded10a102318f072e82f336e2",
+      "assets": [],
+      "title": "RoboMME"
+    },
+    {
+      "kind": "software",
+      "repository": "liyiteng/lerobot_alohamini",
+      "revision": "7843e5888366eaa553630e2f9d5539505a62dddf",
+      "path": "docs/source/robotwin.mdx",
+      "page": "upstream/software--docs-source-robotwin.md",
+      "category": "simulation",
+      "sha256": "ae24c72fefaf26c3cc0cd5e9a96f12724f6c6043b68eb97e09476e553c403152",
+      "assets": [],
+      "title": "RoboTwin 2.0"
+    },
+    {
+      "kind": "software",
+      "repository": "liyiteng/lerobot_alohamini",
+      "revision": "7843e5888366eaa553630e2f9d5539505a62dddf",
+      "path": "docs/source/rtc.mdx",
+      "page": "upstream/software--docs-source-rtc.md",
+      "category": "policies",
+      "sha256": "a661df1f608e20f1d66721595d047d907f9a68e419acf7fcab19244050ba89d5",
+      "assets": [],
+      "title": "Real-Time Chunking (RTC)"
+    },
+    {
+      "kind": "software",
+      "repository": "liyiteng/lerobot_alohamini",
+      "revision": "7843e5888366eaa553630e2f9d5539505a62dddf",
+      "path": "docs/source/sarm.mdx",
+      "page": "upstream/software--docs-source-sarm.md",
+      "category": "policies",
+      "sha256": "f0ce517e28c6ab1fba0fff4c355be29ef21b68ef242042cc73ac8be14d28dd30",
+      "assets": [],
+      "title": "SARM: Stage-Aware Reward Modeling"
+    },
+    {
+      "kind": "software",
+      "repository": "liyiteng/lerobot_alohamini",
+      "revision": "7843e5888366eaa553630e2f9d5539505a62dddf",
+      "path": "docs/source/smolvla.mdx",
+      "page": "upstream/software--docs-source-smolvla.md",
+      "category": "policies",
+      "sha256": "d3b70a3cfe4c07f64a89b30b79bbcba7ac72235ed17ecca360582ed60556c6b8",
+      "assets": [],
+      "title": "SmolVLA"
+    },
+    {
+      "kind": "software",
+      "repository": "liyiteng/lerobot_alohamini",
+      "revision": "7843e5888366eaa553630e2f9d5539505a62dddf",
+      "path": "docs/source/so100.mdx",
+      "page": "upstream/software--docs-source-so100.md",
+      "category": "hardware",
+      "sha256": "f25586ff96ba4af49184ce62e9a6861307ef03cde132b777e45da77b72e234c2",
+      "assets": [],
+      "title": "SO-100"
+    },
+    {
+      "kind": "software",
+      "repository": "liyiteng/lerobot_alohamini",
+      "revision": "7843e5888366eaa553630e2f9d5539505a62dddf",
+      "path": "docs/source/so101.mdx",
+      "page": "upstream/software--docs-source-so101.md",
+      "category": "hardware",
+      "sha256": "0d84a63647e64cc65edc622ed1c781e7c5b99e36b8e7502a40fcb65fa16c1e53",
+      "assets": [],
+      "title": "SO-101"
+    },
+    {
+      "kind": "software",
+      "repository": "liyiteng/lerobot_alohamini",
+      "revision": "7843e5888366eaa553630e2f9d5539505a62dddf",
+      "path": "docs/source/streaming_video_encoding.mdx",
+      "page": "upstream/software--docs-source-streaming_video_encoding.md",
+      "category": "data",
+      "sha256": "a0d9b939a9ef10928042e730021def6d054ee6e16e6970b1e524e3228f98f619",
+      "assets": [],
+      "title": "Streaming Video Encoding Guide"
+    },
+    {
+      "kind": "software",
+      "repository": "liyiteng/lerobot_alohamini",
+      "revision": "7843e5888366eaa553630e2f9d5539505a62dddf",
+      "path": "docs/source/tools.mdx",
+      "page": "upstream/software--docs-source-tools.md",
+      "category": "environment",
+      "sha256": "e05b7e2a65f1d430d24d6ca13ec8c2ebcb14f3f6714c7be8b70ba17917d50b42",
+      "assets": [],
+      "title": "Tools"
+    },
+    {
+      "kind": "software",
+      "repository": "liyiteng/lerobot_alohamini",
+      "revision": "7843e5888366eaa553630e2f9d5539505a62dddf",
+      "path": "docs/source/topreward.mdx",
+      "page": "upstream/software--docs-source-topreward.md",
+      "category": "environment",
+      "sha256": "61f18cbc9b1eae265d10848ab51be5c0437f82b38a5a6d5488cd1b3ddbd18715",
+      "assets": [],
+      "title": "TOPReward"
+    },
+    {
+      "kind": "software",
+      "repository": "liyiteng/lerobot_alohamini",
+      "revision": "7843e5888366eaa553630e2f9d5539505a62dddf",
+      "path": "docs/source/torch_accelerators.mdx",
+      "page": "upstream/software--docs-source-torch_accelerators.md",
+      "category": "environment",
+      "sha256": "9133eeeb5d28d43b8600065e9d5f13eb43945ed0c77f6c52bd99d6a56c4f8923",
+      "assets": [],
+      "title": "PyTorch accelerators"
+    },
+    {
+      "kind": "software",
+      "repository": "liyiteng/lerobot_alohamini",
+      "revision": "7843e5888366eaa553630e2f9d5539505a62dddf",
+      "path": "docs/source/unitree_g1.mdx",
+      "page": "upstream/software--docs-source-unitree_g1.md",
+      "category": "hardware",
+      "sha256": "5c40cada20e3583c73ae3bc56021110f7afe417b580563486066b08b72144322",
+      "assets": [],
+      "title": "Unitree G1"
+    },
+    {
+      "kind": "software",
+      "repository": "liyiteng/lerobot_alohamini",
+      "revision": "7843e5888366eaa553630e2f9d5539505a62dddf",
+      "path": "docs/source/using_dataset_tools.mdx",
+      "page": "upstream/software--docs-source-using_dataset_tools.md",
+      "category": "data",
+      "sha256": "cc168a2cca70eb93ec100ebb2ee888be20f8fd655a30eabe71dd9b9ee06dc764",
+      "assets": [],
+      "title": "Using Dataset Tools"
+    },
+    {
+      "kind": "software",
+      "repository": "liyiteng/lerobot_alohamini",
+      "revision": "7843e5888366eaa553630e2f9d5539505a62dddf",
+      "path": "docs/source/video_encoding_parameters.mdx",
+      "page": "upstream/software--docs-source-video_encoding_parameters.md",
+      "category": "data",
+      "sha256": "2bed22dbe1b0ca5411759d243234618eac8b7e77a4f40a1532af877230bcb962",
+      "assets": [],
+      "title": "Video encoding parameters"
+    },
+    {
+      "kind": "software",
+      "repository": "liyiteng/lerobot_alohamini",
+      "revision": "7843e5888366eaa553630e2f9d5539505a62dddf",
+      "path": "docs/source/vla_jepa.mdx",
+      "page": "upstream/software--docs-source-vla_jepa.md",
+      "category": "policies",
+      "sha256": "03b7c6acafd75774e9b10a29723e749c673df5fd41b8b672b8f24f174d3062b3",
+      "assets": [],
+      "title": "VLA-JEPA"
+    },
+    {
+      "kind": "software",
+      "repository": "liyiteng/lerobot_alohamini",
+      "revision": "7843e5888366eaa553630e2f9d5539505a62dddf",
+      "path": "docs/source/vlabench.mdx",
+      "page": "upstream/software--docs-source-vlabench.md",
+      "category": "simulation",
+      "sha256": "e0441e52fea0b43e4cb6115faf29ece92f92419484f8856ee665bd38e1c46937",
+      "assets": [],
+      "title": "VLABench"
+    },
+    {
+      "kind": "software",
+      "repository": "liyiteng/lerobot_alohamini",
+      "revision": "7843e5888366eaa553630e2f9d5539505a62dddf",
+      "path": "docs/source/walloss.mdx",
+      "page": "upstream/software--docs-source-walloss.md",
+      "category": "policies",
+      "sha256": "211a84a836c5bc19d006b10cceaeb5d11aa754e457ad045045a57226b6f2b147",
+      "assets": [],
+      "title": "WALL-OSS"
+    },
+    {
+      "kind": "software",
+      "repository": "liyiteng/lerobot_alohamini",
+      "revision": "7843e5888366eaa553630e2f9d5539505a62dddf",
+      "path": "docs/source/xvla.mdx",
+      "page": "upstream/software--docs-source-xvla.md",
+      "category": "policies",
+      "sha256": "2338270b7bc41686216f646aecce78d9dc32790f6a1954ecc757706431cb1cd3",
+      "assets": [],
+      "title": "X-VLA: The First Soft-Prompted Robot Foundation Model for Any Robot, Any Task"
+    },
+    {
+      "kind": "software",
+      "repository": "liyiteng/lerobot_alohamini",
+      "revision": "7843e5888366eaa553630e2f9d5539505a62dddf",
+      "path": "examples/debug/README.md",
+      "page": "upstream/software--examples-debug-readme.md",
+      "category": "alohamini",
+      "sha256": "4c2c5095440e024af2b8683a0de180b7de90a63916844605ff99b17e0e5619e0",
+      "assets": [],
+      "title": "项目说明"
+    },
+    {
+      "kind": "software",
+      "repository": "liyiteng/lerobot_alohamini",
+      "revision": "7843e5888366eaa553630e2f9d5539505a62dddf",
+      "path": "examples/isaac_teleop_to_so101/README.md",
+      "page": "upstream/software--examples-isaac_teleop_to_so101-readme.md",
+      "category": "hardware",
+      "sha256": "fd4644c8086d6d07946d6c6454bb876d7cf06f6ed6fc85e7c28b262708fdafc4",
+      "assets": [],
+      "title": "Isaac Teleop → SO-101"
+    },
+    {
+      "kind": "software",
+      "repository": "liyiteng/lerobot_alohamini",
+      "revision": "7843e5888366eaa553630e2f9d5539505a62dddf",
+      "path": "examples/omx/README.md",
+      "page": "upstream/software--examples-omx-readme.md",
+      "category": "hardware",
+      "sha256": "b0b6abec80b13423229df50f3cb8008fd7b59ce522afa0238c1798b442902396",
+      "assets": [],
+      "title": "OMX Follower — Cube Pick And Place Example"
+    },
+    {
+      "kind": "software",
+      "repository": "liyiteng/lerobot_alohamini",
+      "revision": "7843e5888366eaa553630e2f9d5539505a62dddf",
+      "path": "src/lerobot/policies/am_act/README.md",
+      "page": "upstream/software--src-lerobot-policies-am_act-readme.md",
+      "category": "policies",
+      "sha256": "aeed29aac2260293ba1430ecf0c367d5a3e17f81c379acc1cc21f10631cf5840",
+      "assets": [],
+      "title": "AM-ACT"
+    },
+    {
+      "kind": "software",
+      "repository": "liyiteng/lerobot_alohamini",
+      "revision": "7843e5888366eaa553630e2f9d5539505a62dddf",
+      "path": "src/lerobot/policies/fastwam/wan/README.md",
+      "page": "upstream/software--src-lerobot-policies-fastwam-wan-readme.md",
+      "category": "policies",
+      "sha256": "3e2f4349d0fd70277cc452d6fdeeb66425ed8538bd78c0629168bab6225d9d50",
+      "assets": [],
+      "title": "FastWAM `wan` package"
+    }
+  ],
+  "aliases": [
+    {
+      "kind": "software",
+      "path": "docs/source/contributing.md",
+      "target": "CONTRIBUTING.md",
+      "page": "upstream/software--contributing.md"
+    },
+    {
+      "kind": "software",
+      "path": "src/lerobot/policies/act/README.md",
+      "target": "docs/source/policy_act_README.md",
+      "page": "upstream/software--docs-source-policy_act_readme.md"
+    },
+    {
+      "kind": "software",
+      "path": "src/lerobot/policies/diffusion/README.md",
+      "target": "docs/source/policy_diffusion_README.md",
+      "page": "upstream/software--docs-source-policy_diffusion_readme.md"
+    },
+    {
+      "kind": "software",
+      "path": "src/lerobot/policies/eo1/README.md",
+      "target": "docs/source/eo1.mdx",
+      "page": "upstream/software--docs-source-eo1.md"
+    },
+    {
+      "kind": "software",
+      "path": "src/lerobot/policies/evo1/README.md",
+      "target": "docs/source/policy_evo1_README.md",
+      "page": "upstream/software--docs-source-policy_evo1_readme.md"
+    },
+    {
+      "kind": "software",
+      "path": "src/lerobot/policies/fastwam/README.md",
+      "target": "docs/source/policy_fastwam_README.md",
+      "page": "upstream/software--docs-source-policy_fastwam_readme.md"
+    },
+    {
+      "kind": "software",
+      "path": "src/lerobot/policies/groot/README.md",
+      "target": "docs/source/policy_groot_README.md",
+      "page": "upstream/software--docs-source-policy_groot_readme.md"
+    },
+    {
+      "kind": "software",
+      "path": "src/lerobot/policies/lingbot_va/README.md",
+      "target": "docs/source/lingbot_va.mdx",
+      "page": "upstream/software--docs-source-lingbot_va.md"
+    },
+    {
+      "kind": "software",
+      "path": "src/lerobot/policies/molmoact2/README.md",
+      "target": "docs/source/molmoact2.mdx",
+      "page": "upstream/software--docs-source-molmoact2.md"
+    },
+    {
+      "kind": "software",
+      "path": "src/lerobot/policies/multi_task_dit/README.md",
+      "target": "docs/source/policy_multi_task_dit_README.md",
+      "page": "upstream/software--docs-source-policy_multi_task_dit_readme.md"
+    },
+    {
+      "kind": "software",
+      "path": "src/lerobot/policies/pi0/README.md",
+      "target": "docs/source/policy_pi0_README.md",
+      "page": "upstream/software--docs-source-policy_pi0_readme.md"
+    },
+    {
+      "kind": "software",
+      "path": "src/lerobot/policies/pi05/README.md",
+      "target": "docs/source/policy_pi05_README.md",
+      "page": "upstream/software--docs-source-policy_pi05_readme.md"
+    },
+    {
+      "kind": "software",
+      "path": "src/lerobot/policies/rtc/README.md",
+      "target": "docs/source/policy_rtc_README.md",
+      "page": "upstream/software--docs-source-policy_rtc_readme.md"
+    },
+    {
+      "kind": "software",
+      "path": "src/lerobot/policies/smolvla/README.md",
+      "target": "docs/source/policy_smolvla_README.md",
+      "page": "upstream/software--docs-source-policy_smolvla_readme.md"
+    },
+    {
+      "kind": "software",
+      "path": "src/lerobot/policies/tdmpc/README.md",
+      "target": "docs/source/policy_tdmpc_README.md",
+      "page": "upstream/software--docs-source-policy_tdmpc_readme.md"
+    },
+    {
+      "kind": "software",
+      "path": "src/lerobot/policies/vla_jepa/README.md",
+      "target": "docs/source/policy_vla_jepa_README.md",
+      "page": "upstream/software--docs-source-policy_vla_jepa_readme.md"
+    },
+    {
+      "kind": "software",
+      "path": "src/lerobot/policies/vqbet/README.md",
+      "target": "docs/source/policy_vqbet_README.md",
+      "page": "upstream/software--docs-source-policy_vqbet_readme.md"
+    },
+    {
+      "kind": "software",
+      "path": "src/lerobot/policies/wall_x/README.md",
+      "target": "docs/source/policy_walloss_README.md",
+      "page": "upstream/software--docs-source-policy_walloss_readme.md"
+    },
+    {
+      "kind": "software",
+      "path": "src/lerobot/robots/earthrover_mini_plus/earthrover_mini_plus.mdx",
+      "target": "docs/source/earthrover_mini_plus.mdx",
+      "page": "upstream/software--docs-source-earthrover_mini_plus.md"
+    },
+    {
+      "kind": "software",
+      "path": "src/lerobot/robots/hope_jr/hope_jr.mdx",
+      "target": "docs/source/hope_jr.mdx",
+      "page": "upstream/software--docs-source-hope_jr.md"
+    },
+    {
+      "kind": "software",
+      "path": "src/lerobot/robots/koch_follower/koch.mdx",
+      "target": "docs/source/koch.mdx",
+      "page": "upstream/software--docs-source-koch.md"
+    },
+    {
+      "kind": "software",
+      "path": "src/lerobot/robots/lekiwi/lekiwi.mdx",
+      "target": "docs/source/lekiwi.mdx",
+      "page": "upstream/software--docs-source-lekiwi.md"
+    },
+    {
+      "kind": "software",
+      "path": "src/lerobot/robots/so_follower/so100.md",
+      "target": "docs/source/so100.mdx",
+      "page": "upstream/software--docs-source-so100.md"
+    },
+    {
+      "kind": "software",
+      "path": "src/lerobot/robots/so_follower/so101.md",
+      "target": "docs/source/so101.mdx",
+      "page": "upstream/software--docs-source-so101.md"
+    },
+    {
+      "kind": "software",
+      "path": "src/lerobot/teleoperators/so_leader/so100.md",
+      "target": "docs/source/so100.mdx",
+      "page": "upstream/software--docs-source-so100.md"
+    },
+    {
+      "kind": "software",
+      "path": "src/lerobot/teleoperators/so_leader/so101.md",
+      "target": "docs/source/so101.mdx",
+      "page": "upstream/software--docs-source-so101.md"
+    }
+  ],
+  "excluded": [
+    {
+      "repository": "liyiteng/lerobot_alohamini",
+      "path": ".github/PULL_REQUEST_TEMPLATE.md",
+      "reason": "仓库治理、代理指令或模板，不属于教程"
+    },
+    {
+      "repository": "liyiteng/lerobot_alohamini",
+      "path": "AGENTS.md",
+      "reason": "仓库治理、代理指令或模板，不属于教程"
+    },
+    {
+      "repository": "liyiteng/lerobot_alohamini",
+      "path": "AI_POLICY.md",
+      "reason": "仓库治理、代理指令或模板，不属于教程"
+    },
+    {
+      "repository": "liyiteng/lerobot_alohamini",
+      "path": "CLAUDE.md",
+      "reason": "仓库治理、代理指令或模板，不属于教程"
+    },
+    {
+      "repository": "liyiteng/lerobot_alohamini",
+      "path": "CODE_OF_CONDUCT.md",
+      "reason": "仓库治理、代理指令或模板，不属于教程"
+    },
+    {
+      "repository": "liyiteng/lerobot_alohamini",
+      "path": "SECURITY.md",
+      "reason": "仓库治理、代理指令或模板，不属于教程"
+    },
+    {
+      "repository": "liyiteng/lerobot_alohamini",
+      "path": "src/lerobot/datasets/card_template.md",
+      "reason": "仓库治理、代理指令或模板，不属于教程"
+    },
+    {
+      "repository": "liyiteng/lerobot_alohamini",
+      "path": "src/lerobot/templates/lerobot_modelcard_template.md",
+      "reason": "仓库治理、代理指令或模板，不属于教程"
+    },
+    {
+      "repository": "liyiteng/lerobot_alohamini",
+      "path": "src/lerobot/templates/lerobot_rewardmodel_modelcard_template.md",
+      "reason": "仓库治理、代理指令或模板，不属于教程"
+    }
+  ]
+}

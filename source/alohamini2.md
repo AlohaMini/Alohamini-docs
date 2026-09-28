@@ -1,5 +1,7 @@
 # AlohaMini 2 入门教程
 
+收到已组装整机时，先看 [2 / 2 Pro 开箱图解](unboxing.md)；供电和接线正常后继续本页。
+
 本页适用于 **AlohaMini 2 + AM-ARM200 系列双主臂 + Linux PC + 树莓派 5**。按顺序完成设备配置、校准、遥操作和第一条数据录制。
 
 **当前机型：`alohamini2`** · 切换到 [AlohaMini 2 Pro 教程](alohamini2pro.md) · [返回机型选择](quickstart.md)

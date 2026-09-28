@@ -1,0 +1,27 @@
+{
+  "s7UyE": {
+    "gaps": 0,
+    "language": "bash",
+    "text": "ls /dev/ttyACM*\n# 预期输出：ls: cannot access '/dev/ttyACM*': No such file or directory"
+  },
+  "nigvy": {
+    "gaps": 0,
+    "language": "bash",
+    "text": "ls /dev/ttyACM*\n# 例如输出：/dev/ttyACM0\n# → 记录：Leader Arm = /dev/ttyACM0"
+  },
+  "PCBqk": {
+    "gaps": 0,
+    "language": "bash",
+    "text": "ls /dev/ttyACM*\n# 例如输出：/dev/ttyACM0  /dev/ttyACM1\n# → 新增的 /dev/ttyACM1 就是新插入的机械臂的"
+  },
+  "hc1Dh": {
+    "gaps": 0,
+    "language": "plain",
+    "text": "~/.cache/huggingface/lerobot/calibration/"
+  },
+  "kEzMU": {
+    "gaps": 0,
+    "language": "plain",
+    "text": "~/.cache/huggingface/lerobot/calibration/teleop/so101_leader/leader_arm_0218.json\n~/.cache/huggingface/lerobot/calibration/robots/so101_follower/follower_arm_0218.json"
+  }
+}

@@ -1,0 +1,127 @@
+# AlohaMini 2 / 2 Pro 开箱指南
+
+[官方使用手册](../official-manual.md) · [语雀来源](https://alohamini.yuque.com/lq44as/tiv9xs/dhberyv5btq9hhv1) · 2026-09-28 整理
+
+```{note}
+本页保留语雀产品与教学资料的正文。参数、价格、赛事与课程安排按原文收录日期理解；实际套件配置以交付资料为准。
+```
+
+(yq-dhberyv5btq9hhv1-uf5dabc36)=
+
+感谢订购AlohaMini。
+
+(yq-dhberyv5btq9hhv1-u6a573778)=
+
+AlohaMini是一套用于算法教学与复现的双臂可升降机器人，打包发货时尽量没有拆线，硬件上只需要连好电池开机即可。
+
+(yq-dhberyv5btq9hhv1-u853e957d)=
+
+(yq-dhberyv5btq9hhv1-1df7dbbd)=
+
+## 硬件安装
+
+(yq-dhberyv5btq9hhv1-ce199d35)=
+
+### 机器人端：
+
+(yq-dhberyv5btq9hhv1-u8c3b000d)=
+
+1、找到箱子中的充电器和电池，2块12V锂电及充电器，2块5V锂电及充电器，12V锂电充电时充电器会红灯常量，充满后绿灯常亮。5V充满后电池上会亮4个白灯。
+
+(yq-dhberyv5btq9hhv1-u60a22799)=
+
+(yq-dhberyv5btq9hhv1-u07705a22)=
+
+```{raw} html
+<div class="yq-rotated-image" style="aspect-ratio:1707/1280"><img src="../_static/yuque-assets/7db0816e0f3650cca772.jpeg" alt="AlohaMini 2 / 2 Pro 开箱指南 · 图 1" style="width:74.9854%;transform:translate(-50%,-50%) rotate(270deg)"></div>
+```
+
+(yq-dhberyv5btq9hhv1-ua8892051)=
+
+(yq-dhberyv5btq9hhv1-u197eaef3)=
+
+2、将一块12V电池放入机器人底部仓位，连接好图上的DC线接口，为Follower Arms及升降底盘供电
+
+(yq-dhberyv5btq9hhv1-u2e9d873e)=
+
+(yq-dhberyv5btq9hhv1-ub634a949)=
+
+![AlohaMini 2 / 2 Pro 开箱指南 · 图 2](../_static/yuque-assets/ff635586511091d98504.jpeg)
+
+(yq-dhberyv5btq9hhv1-u7db13cef)=
+
+3、将电源板插入卡槽，使用PD 5V5A插口与树莓派相连
+
+(yq-dhberyv5btq9hhv1-u7bc549cf)=
+
+(yq-dhberyv5btq9hhv1-u211461a9)=
+
+![AlohaMini 2 / 2 Pro 开箱指南 · 图 3](../_static/yuque-assets/9b3ffee1eb7bff8f0442.jpeg)
+
+(yq-dhberyv5btq9hhv1-ufddea5ac)=
+
+(yq-dhberyv5btq9hhv1-uf3021dc4)=
+
+![AlohaMini 2 / 2 Pro 开箱指南 · 图 4](../_static/yuque-assets/3c48272706dd58d09e1f.jpeg)
+
+(yq-dhberyv5btq9hhv1-u58d1153a)=
+
+4、将另一块 12V 电池放入底仓，为电源板供电。
+
+(yq-dhberyv5btq9hhv1-uf88cce31)=
+
+(yq-dhberyv5btq9hhv1-u227ecb5d)=
+
+![AlohaMini 2 / 2 Pro 开箱指南 · 图 5](../_static/yuque-assets/8b6b7a675f693f292f8b.png)
+
+(yq-dhberyv5btq9hhv1-u80a2ae89)=
+
+4、成功后，树莓派屏幕会亮起，屏幕是触屏的，可以连接一个5G频段的wifi，记录下当前树莓派的IP地址，如：192.168.50.88
+
+(yq-dhberyv5btq9hhv1-u88249dd7)=
+
+（如果不方便操作，也可以蓝牙连接键盘和鼠标。）
+
+(yq-dhberyv5btq9hhv1-ua2c2dc82)=
+
+(yq-dhberyv5btq9hhv1-3fc02fce)=
+
+### 遥操端：
+
+(yq-dhberyv5btq9hhv1-u0e589181)=
+
+将5V电源连接到DC线，给两个机械臂供电，下面的两种方式都行：
+
+(yq-dhberyv5btq9hhv1-ub080bd30)=
+
+(yq-dhberyv5btq9hhv1-uc3a0c312)=
+
+```{raw} html
+<div class="yq-rotated-image" style="aspect-ratio:1707/1280"><img src="../_static/yuque-assets/f9d82b0b03617ae3cf67.jpeg" alt="AlohaMini 2 / 2 Pro 开箱指南 · 图 6" style="width:74.9854%;transform:translate(-50%,-50%) rotate(270deg)"></div>
+```
+
+(yq-dhberyv5btq9hhv1-u90a66c26)=
+
+(yq-dhberyv5btq9hhv1-u4cde75e8)=
+
+![AlohaMini 2 / 2 Pro 开箱指南 · 图 7](../_static/yuque-assets/3b37f35214e5fb1c9d28.jpeg)
+
+(yq-dhberyv5btq9hhv1-u74abb6c6)=
+
+然后将2个机械臂的USB-C口连接PC电脑
+
+(yq-dhberyv5btq9hhv1-ue76b7978)=
+
+(yq-dhberyv5btq9hhv1-u823879ea)=
+
+(yq-dhberyv5btq9hhv1-812f6a22)=
+
+## 软件安装与调试
+
+(yq-dhberyv5btq9hhv1-u0cc139a3)=
+
+(yq-dhberyv5btq9hhv1-u80107a5d)=
+
+如果您有一定lerobot开发经验，可以通过接下来的《[AlohaMini Pro 快速入门指南](pro-quickstart.md)》迅速开启摇操。如果您完全没有接触过lerobot，请参考《[AlohaMini_新手教程](developer-manual.md)》
+
+(yq-dhberyv5btq9hhv1-uf62692cd)=
