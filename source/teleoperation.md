@@ -1,25 +1,49 @@
 # 遥操作
 
+适用型号：**AlohaMini 2 / 2 Pro**。标注型号的两组示例请选择一组执行。完整入门流程：[2 教程](alohamini2.md) · [2 Pro 教程](alohamini2pro.md)。
+
 本章完成 PC 主臂驱动机器人从臂、键盘控制底盘与升降的整机流程。前提是 [安装](software.md)、[配置](configuration.md) 和 [校准](calibration.md) 已完成。
 
 ## 1. 在 Pi 启动 Host
 
-二代机器人：
+按实际机型启动：
+
+**AlohaMini 2**
 
 ```bash
 python -m lerobot.robots.alohamini.alohamini_host --robot_model alohamini2
 ```
 
-一代改为 `alohamini1`，Pro 改为 `alohamini2pro`。保持该终端运行，检查启动日志中的端口、校准与相机信息；出现设备错误时先解决，再启动客户端。
+**AlohaMini 2 Pro**
+
+```bash
+python -m lerobot.robots.alohamini.alohamini_host --robot_model alohamini2pro
+```
+
+一代使用 `alohamini1`，详见 [一代说明](legacy.md)。保持该终端运行，检查启动日志中的端口、校准与相机信息；出现设备错误时先解决，再启动客户端。
 
 ## 2. 在 PC 启动双臂遥操作
 
-二代与 AM 主臂示例：
+按实际机型与 AM 主臂配置启动：
+
+**AlohaMini 2**
 
 ```bash
 python examples/alohamini/teleoperate_bi.py \
   --robot.remote_ip <Pi_IP> \
   --robot.robot_model alohamini2 \
+  --teleop.id am_leader_bi \
+  --teleop.arm_profile am-leader-6dof \
+  --fps 50 \
+  --camera-fps 30
+```
+
+**AlohaMini 2 Pro**
+
+```bash
+python examples/alohamini/teleoperate_bi.py \
+  --robot.remote_ip <Pi_IP> \
+  --robot.robot_model alohamini2pro \
   --teleop.id am_leader_bi \
   --teleop.arm_profile am-leader-6dof \
   --fps 50 \
@@ -35,7 +59,7 @@ python examples/alohamini/teleoperate_bi.py \
 | `fps` | 控制命令与状态循环目标频率 |
 | `camera-fps` | 相机观测请求频率，应不大于控制频率 |
 
-Pro 只需将整机型号换为 `alohamini2pro`，AM 主臂 profile 保持不变。一代使用 `alohamini1`、`so101_leader_bi` 和 `so-arm-5dof`。
+两款 AM 主臂 profile 相同；整机型号必须与 Pi Host 一致。一代使用 `alohamini1`、`so101_leader_bi` 和 `so-arm-5dof`。
 
 ## 3. 先检查机械臂
 
@@ -64,10 +88,24 @@ Pro 只需将整机型号换为 `alohamini2pro`，AM 主臂 profile 保持不变
 
 若画面或运动不稳定，可以先降低控制和相机请求频率，以区分 CPU、USB、网络或配置问题：
 
+**AlohaMini 2**
+
 ```bash
 python examples/alohamini/teleoperate_bi.py \
   --robot.remote_ip <Pi_IP> \
   --robot.robot_model alohamini2 \
+  --teleop.id am_leader_bi \
+  --teleop.arm_profile am-leader-6dof \
+  --fps 10 \
+  --camera-fps 10
+```
+
+**AlohaMini 2 Pro**
+
+```bash
+python examples/alohamini/teleoperate_bi.py \
+  --robot.remote_ip <Pi_IP> \
+  --robot.robot_model alohamini2pro \
   --teleop.id am_leader_bi \
   --teleop.arm_profile am-leader-6dof \
   --fps 10 \
@@ -80,18 +118,39 @@ python examples/alohamini/teleoperate_bi.py \
 
 项目提供跳过机械臂的入口。Pi：
 
+**AlohaMini 2**
+
 ```bash
 python -m lerobot.robots.alohamini.alohamini_host \
   --robot_model alohamini2 \
   --no_follower
 ```
 
+**AlohaMini 2 Pro**
+
+```bash
+python -m lerobot.robots.alohamini.alohamini_host \
+  --robot_model alohamini2pro \
+  --no_follower
+```
+
 PC：
+
+**AlohaMini 2**
 
 ```bash
 python examples/alohamini/teleoperate_bi.py \
   --robot.remote_ip <Pi_IP> \
   --robot.robot_model alohamini2 \
+  --no_leader
+```
+
+**AlohaMini 2 Pro**
+
+```bash
+python examples/alohamini/teleoperate_bi.py \
+  --robot.remote_ip <Pi_IP> \
+  --robot.robot_model alohamini2pro \
   --no_leader
 ```
 

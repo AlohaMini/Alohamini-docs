@@ -24,7 +24,7 @@ AlohaMini 2 在一代的双臂移动架构上升级了机械臂、升降机构�
 | AlohaMini 2 | STS-3215 等标准舵机 | 3D 打印底盘 | 自行搭建与研发 |
 | AlohaMini 2 Pro | STS-3250 工业级舵机方案 | 金属强化底盘 | 更高强度的实验室使用 |
 
-这里的打印和组装指南针对标准 AlohaMini 2。Pro 的配置应以对应硬件说明为准。
+分别进入 [AlohaMini 2 入门教程](alohamini2.md) 或 [AlohaMini 2 Pro 入门教程](alohamini2pro.md)。打印与组装指南针对标准 2；Pro 已确认的配置与缺少的装配资料见 [2 Pro 硬件说明](hardware-pro.md)。
 
 ## 获取设计资源
 

@@ -1,5 +1,7 @@
 # 命令参考
 
+适用型号：**AlohaMini 2 / 2 Pro**。标注型号的两组示例请选择一组执行。完整入门流程：[2 教程](alohamini2.md) · [2 Pro 教程](alohamini2pro.md)。
+
 本页用于已经完成教程后的快速查阅。完整步骤、参数解释和预期结果请进入对应章节。除另行注明，命令都在 `lerobot_alohamini` 根目录、激活环境后执行。
 
 ## 占位符约定
@@ -29,8 +31,16 @@ ls -l /dev/am_arm_*
 
 Pi：
 
+**AlohaMini 2**
+
 ```bash
 python -m lerobot.robots.alohamini.alohamini_calibrate --robot_model alohamini2
+```
+
+**AlohaMini 2 Pro**
+
+```bash
+python -m lerobot.robots.alohamini.alohamini_calibrate --robot_model alohamini2pro
 ```
 
 PC：
@@ -47,16 +57,38 @@ python examples/alohamini/calibrate_bi.py \
 
 Pi：
 
+**AlohaMini 2**
+
 ```bash
 python -m lerobot.robots.alohamini.alohamini_host --robot_model alohamini2
 ```
 
+**AlohaMini 2 Pro**
+
+```bash
+python -m lerobot.robots.alohamini.alohamini_host --robot_model alohamini2pro
+```
+
 PC：
+
+**AlohaMini 2**
 
 ```bash
 python examples/alohamini/teleoperate_bi.py \
   --robot.remote_ip <Pi_IP> \
   --robot.robot_model alohamini2 \
+  --teleop.id am_leader_bi \
+  --teleop.arm_profile am-leader-6dof \
+  --fps 50 \
+  --camera-fps 30
+```
+
+**AlohaMini 2 Pro**
+
+```bash
+python examples/alohamini/teleoperate_bi.py \
+  --robot.remote_ip <Pi_IP> \
+  --robot.robot_model alohamini2pro \
   --teleop.id am_leader_bi \
   --teleop.arm_profile am-leader-6dof \
   --fps 50 \

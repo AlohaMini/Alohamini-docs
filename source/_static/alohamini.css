@@ -78,3 +78,11 @@ a:focus-visible, button:focus-visible { outline: 2px solid var(--am-accent); out
 .bd-article figcaption { color: var(--pst-color-text-muted); font-size: .84rem; line-height: 1.6; }
 .bd-article td code { overflow-wrap: anywhere; white-space: normal; }
 .bd-article .reference.internal code { overflow-wrap: anywhere; }
+
+/* Model entry points use the same documentation typography and theme tokens. */
+.am-models { gap: 1rem; }
+.am-models .am-path { border: 1px solid var(--am-line); border-radius: 6px; padding: 1.2rem; }
+.am-models .am-path:hover { border-color: var(--am-accent); background: var(--am-selected); }
+.am-model-label { display: block; color: var(--pst-color-text-muted); font-size: .8rem; margin-bottom: .7rem; }
+.am-models strong { font-size: 1.3rem; }
+.am-model-entry { display: block; margin-top: 1rem; font-size: .88rem; font-weight: 600; }

@@ -23,6 +23,17 @@
 <div class="am-actions"><a class="am-button primary" href="quickstart.html">快速开始 <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a><a class="am-text-link" href="specifications.html">查看机型与参数</a></div>
 ```
 
+## 选择你的机型
+
+两款分别提供入门教程，按实物型号完成硬件核对与软件配置。
+
+```{raw} html
+<div class="am-paths am-models" aria-label="按机器人型号选择教程">
+<a class="am-path" href="alohamini2.html"><span class="am-model-label">标准版 · 自行搭建</span><strong>AlohaMini 2 <span aria-hidden="true">↗</span></strong><p>3D 打印底盘 · STS3215 轮舵机<br>从物料与组装，到校准、遥操作和首条数据。</p><span class="am-model-entry">进入 2 教程 →</span></a>
+<a class="am-path" href="alohamini2pro.html"><span class="am-model-label">Pro · 金属强化底盘</span><strong>AlohaMini 2 Pro <span aria-hidden="true">↗</span></strong><p>HD 从臂配置 · STS3250 轮舵机<br>核对 Pro 硬件，按专属命令完成软件入门。</p><span class="am-model-entry">进入 2 Pro 教程 →</span></a>
+</div>
+```
+
 ## 认识 AlohaMini 2
 
 双臂协作、全向移动和电动升降，集成在一台可自行搭建的机器人上。硬件 CAD、打印文件与软件源码公开，软件基于 LeRobot。
@@ -47,7 +58,7 @@
 
 ## 官方教程路线
 
-从结构件到第一条任务数据，每一阶段都有独立教程、操作命令与完成检查。初次搭建建议按顺序阅读；已有机器人可以直接进入软件配置。
+先进入 [AlohaMini 2](alohamini2.md) 或 [2 Pro](alohamini2pro.md) 教程。下面的专题解释每一步的具体操作；物料、打印和图文组装覆盖标准 2，Pro 先看 [硬件说明](hardware-pro.md)。
 
 | 阶段 | 教程 | 完成后的结果 |
 |---|---|---|
@@ -95,6 +106,16 @@ AlohaMini 由 **Li Yiteng** 与 **Wu Zhiyong** 创建。欢迎分享你的组装
 
 quickstart
 specifications
+```
+
+```{toctree}
+:hidden:
+:maxdepth: 2
+:caption: 分型号教程
+
+alohamini2
+alohamini2pro
+hardware-pro
 ```
 
 ```{toctree}

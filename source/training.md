@@ -1,5 +1,7 @@
 # 策略训练
 
+适用型号：**AlohaMini 2 / 2 Pro**。标注型号的两组示例请选择一组执行。完整入门流程：[2 教程](alohamini2.md) · [2 Pro 教程](alohamini2pro.md)。
+
 本章以项目提供的 **ACT** 训练入口为起点。训练读取已保存的数据集，不需要机器人 Host 或主臂持续在线。
 
 ## 1. 训练前核对
@@ -20,6 +22,8 @@ python -c "import torch; print(torch.cuda.is_available())"
 
 以下示例读取前一章的数据集，模型输出到独立目录，关闭 W&B 和模型上传：
 
+**AlohaMini 2**
+
 ```bash
 lerobot-train \
   --dataset.repo_id=$HF_USER/am2_pick_place \
@@ -32,10 +36,32 @@ lerobot-train \
   --dataset.video_backend=pyav
 ```
 
+**AlohaMini 2 Pro**
+
+```bash
+lerobot-train \
+  --dataset.repo_id=$HF_USER/am2pro_pick_place \
+  --policy.type=act \
+  --output_dir=outputs/train/act_am2pro_pick_place \
+  --job_name=act_am2pro_pick_place \
+  --policy.device=cuda \
+  --policy.push_to_hub=false \
+  --wandb.enable=false \
+  --dataset.video_backend=pyav
+```
+
 如果录制时指定了本地数据目录，增加：
+
+**AlohaMini 2**
 
 ```text
 --dataset.root=/absolute/path/to/am2_pick_place
+```
+
+**AlohaMini 2 Pro**
+
+```text
+--dataset.root=/absolute/path/to/am2pro_pick_place
 ```
 
 使用自定义路径时不要误把 `repo_id` 改成本地目录；这两个字段负责不同用途。
@@ -54,14 +80,27 @@ lerobot-train \
 | `wandb.enable=false` | 关闭 W&B 日志集成 | 不影响本地训练输出 |
 | `dataset.video_backend=pyav` | 使用 PyAV 视频解码 | 解码报错先检查数据视频与依赖 |
 
+训练命令读取数据集特征，无需增加 `robot.robot_model` 参数。两款示例分别读取对应数据，使用独立模型目录；18 维接口相同不代表策略可以直接跨机型部署。
+
 本示例沿用策略的训练预设，不额外给出未经本任务验证的学习率、步数或成功率。需要调整训练超参数时，以当前训练入口和策略配置为准，并记录改动。
 
 ## 4. 找到可评估的检查点
 
 项目示例采用以下路径结构：
 
+**AlohaMini 2**
+
 ```text
 outputs/train/act_am2_pick_place/
+└── checkpoints/
+    └── 020000/
+        └── pretrained_model/
+```
+
+**AlohaMini 2 Pro**
+
+```text
+outputs/train/act_am2pro_pick_place/
 └── checkpoints/
     └── 020000/
         └── pretrained_model/

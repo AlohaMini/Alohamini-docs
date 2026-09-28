@@ -1,5 +1,7 @@
 # 真机评估
 
+适用型号：**AlohaMini 2 / 2 Pro**。标注型号的两组示例请选择一组执行。完整入门流程：[2 教程](alohamini2.md) · [2 Pro 教程](alohamini2pro.md)。
+
 评估脚本读取策略检查点，根据当前观测生成动作，并保存评估数据。**本章命令会控制真实机器人。** 先确认遥操作正常，再用匹配的数据、模型与机型评估。
 
 ## 1. 评估前准备
@@ -13,6 +15,8 @@
 
 ## 2. ACT 同步评估
 
+**AlohaMini 2**
+
 ```bash
 python examples/alohamini/evaluate_bi.py \
   --eval.n_episodes 3 \
@@ -25,6 +29,24 @@ python examples/alohamini/evaluate_bi.py \
   --robot.remote_ip <Pi_IP> \
   --robot.id my_alohamini \
   --robot.robot_model alohamini2 \
+  --inference.type sync \
+  --interpolation_multiplier 3
+```
+
+**AlohaMini 2 Pro**
+
+```bash
+python examples/alohamini/evaluate_bi.py \
+  --eval.n_episodes 3 \
+  --fps 20 \
+  --eval.episode_time_s 45 \
+  --dataset.single_task "Pick up the object and place it in the tray" \
+  --policy.path outputs/train/act_am2pro_pick_place/checkpoints/020000/pretrained_model \
+  --dataset.repo_id $HF_USER/eval_act_am2pro_run01 \
+  --dataset.push_to_hub=false \
+  --robot.remote_ip <Pi_IP> \
+  --robot.id my_alohamini \
+  --robot.robot_model alohamini2pro \
   --inference.type sync \
   --interpolation_multiplier 3
 ```

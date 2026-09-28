@@ -1,5 +1,7 @@
 # 数据采集与检查
 
+适用型号：**AlohaMini 2 / 2 Pro**。标注型号的两组示例请选择一组执行。完整入门流程：[2 教程](alohamini2.md) · [2 Pro 教程](alohamini2pro.md)。
+
 通过主臂示教，将相机图像、机器人状态与动作记录为数据集。先录制一条短测试并回看，再扩大到正式演示，能更早发现相机映射、任务描述或保存路径错误。
 
 ## 采集前准备
@@ -21,6 +23,8 @@ export HF_USER="your-hf-username"
 
 以下二代示例采集 1 条、每条 10 秒、10 FPS 的测试数据，仅保存到本地：
 
+**AlohaMini 2**
+
 ```bash
 python examples/alohamini/record_bi.py \
   --dataset.repo_id $HF_USER/am2_smoke_test \
@@ -32,6 +36,23 @@ python examples/alohamini/record_bi.py \
   --dataset.push_to_hub=false \
   --robot.remote_ip <Pi_IP> \
   --robot.robot_model alohamini2 \
+  --teleop.id am_leader_bi \
+  --teleop.arm_profile am-leader-6dof
+```
+
+**AlohaMini 2 Pro**
+
+```bash
+python examples/alohamini/record_bi.py \
+  --dataset.repo_id $HF_USER/am2pro_smoke_test \
+  --dataset.num_episodes 1 \
+  --dataset.fps 10 \
+  --dataset.episode_time_s 10 \
+  --dataset.reset_time_s 3 \
+  --dataset.single_task "Pick up the object and place it in the tray" \
+  --dataset.push_to_hub=false \
+  --robot.remote_ip <Pi_IP> \
+  --robot.robot_model alohamini2pro \
   --teleop.id am_leader_bi \
   --teleop.arm_profile am-leader-6dof
 ```
@@ -60,6 +81,8 @@ python examples/alohamini/record_bi.py \
 
 确认短测试正常后，以 30 FPS、45 秒录制一条完整演示：
 
+**AlohaMini 2**
+
 ```bash
 python examples/alohamini/record_bi.py \
   --dataset.repo_id $HF_USER/am2_pick_place \
@@ -75,16 +98,41 @@ python examples/alohamini/record_bi.py \
   --teleop.arm_profile am-leader-6dof
 ```
 
+**AlohaMini 2 Pro**
+
+```bash
+python examples/alohamini/record_bi.py \
+  --dataset.repo_id $HF_USER/am2pro_pick_place \
+  --dataset.num_episodes 1 \
+  --dataset.fps 30 \
+  --dataset.episode_time_s 45 \
+  --dataset.reset_time_s 8 \
+  --dataset.single_task "Pick up the object and place it in the tray" \
+  --dataset.push_to_hub=false \
+  --robot.remote_ip <Pi_IP> \
+  --robot.robot_model alohamini2pro \
+  --teleop.id am_leader_bi \
+  --teleop.arm_profile am-leader-6dof
+```
+
 可按任务计划增大 `num_episodes`。本指南不设定一个保证训练成功的演示数量；先通过回看与小规模训练判断数据是否覆盖任务，再增加演示更容易定位改进方向。
 
-Pro 将 `robot.robot_model` 改为 `alohamini2pro`。一代还需改用 SO 主臂 profile，并使用独立数据集名称，避免混入不同维度的数据。
+两款示例使用独立数据集名称；名称不会自动设置机型，仍需核对 `robot.robot_model`。一代还需改用 SO 主臂 profile，并使用独立数据集名称，避免混入不同维度的数据。
 
 ## 4. 自定义目录与续录
 
 需要固定本地位置时，在首次录制命令中增加：
 
+**AlohaMini 2**
+
 ```text
 --dataset.root /absolute/path/to/am2_pick_place
+```
+
+**AlohaMini 2 Pro**
+
+```text
+--dataset.root /absolute/path/to/am2pro_pick_place
 ```
 
 续录时保留相同的 `repo_id`、`root`、机型、相机特征与采样配置，并在完整录制命令末尾增加：
@@ -104,6 +152,8 @@ Pro 将 `robot.robot_model` 改为 `alohamini2pro`。一代还需改用 SO 主�
 
 多频录制使用相同的主要参数，只需更换入口，例如：
 
+**AlohaMini 2**
+
 ```bash
 python examples/alohamini/record_bi_multirate.py \
   --dataset.repo_id $HF_USER/am2_multirate_test \
@@ -119,15 +169,43 @@ python examples/alohamini/record_bi_multirate.py \
   --teleop.arm_profile am-leader-6dof
 ```
 
+**AlohaMini 2 Pro**
+
+```bash
+python examples/alohamini/record_bi_multirate.py \
+  --dataset.repo_id $HF_USER/am2pro_multirate_test \
+  --dataset.num_episodes 1 \
+  --dataset.fps 30 \
+  --dataset.episode_time_s 45 \
+  --dataset.reset_time_s 8 \
+  --dataset.single_task "Pick up the object and place it in the tray" \
+  --dataset.push_to_hub=false \
+  --robot.remote_ip <Pi_IP> \
+  --robot.robot_model alohamini2pro \
+  --teleop.id am_leader_bi \
+  --teleop.arm_profile am-leader-6dof
+```
+
 该录制器按目标帧数收集数据，所以实际相机若只有 29.5 Hz，墙钟录制时长可能略长于 30 FPS 对应的标称时间。当前文档列出的中止条件包括：相机停滞、多相机时间差超过 50 ms、状态对齐误差超过 100 ms，或新鲜帧率低于目标的 90%。遇到中止应检查日志中的具体原因，不用重复旧图像来凑帧数。
 
 ## 6. 回看数据集
 
 默认数据位置下，查看第 0 条 episode：
 
+**AlohaMini 2**
+
 ```bash
 lerobot-dataset-viz \
   --repo-id $HF_USER/am2_pick_place \
+  --episode-index 0 \
+  --display-compressed-images
+```
+
+**AlohaMini 2 Pro**
+
+```bash
+lerobot-dataset-viz \
+  --repo-id $HF_USER/am2pro_pick_place \
   --episode-index 0 \
   --display-compressed-images
 ```
@@ -151,12 +229,24 @@ lerobot-dataset-viz \
 
 **回放会驱动真实机器人。** 先检查动作轨迹、初始位置与周围空间，启动匹配机型的 Host，再在 PC 上运行：
 
+**AlohaMini 2**
+
 ```bash
 python examples/alohamini/replay_bi.py \
   --dataset.repo_id $HF_USER/am2_pick_place \
   --dataset.episode 0 \
   --robot.remote_ip <Pi_IP> \
   --robot.robot_model alohamini2
+```
+
+**AlohaMini 2 Pro**
+
+```bash
+python examples/alohamini/replay_bi.py \
+  --dataset.repo_id $HF_USER/am2pro_pick_place \
+  --dataset.episode 0 \
+  --robot.remote_ip <Pi_IP> \
+  --robot.robot_model alohamini2pro
 ```
 
 使用自定义录制目录时，补上同一 `--dataset.root /absolute/path/to/am2_pick_place`。若只是检查数据内容，使用上一节的可视化即可。

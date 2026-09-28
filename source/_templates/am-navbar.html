@@ -1,6 +1,6 @@
 <nav class="am-navbar" aria-label="主导航">
-  <a href="{{ pathto('quickstart') }}" {% if pagename == 'quickstart' %}class="active"{% endif %}>快速开始</a>
-  <a href="{{ pathto('assembly') }}" {% if pagename in ['assembly', 'printing', 'bom'] %}class="active"{% endif %}>硬件</a>
+  <a href="{{ pathto('quickstart') }}" {% if pagename in ['quickstart', 'alohamini2', 'alohamini2pro'] %}class="active"{% endif %}>快速开始</a>
+  <a href="{{ pathto('assembly') }}" {% if pagename in ['assembly', 'printing', 'bom', 'hardware-pro'] %}class="active"{% endif %}>硬件</a>
   <a href="{{ pathto('software') }}" {% if pagename in ['software', 'configuration', 'calibration', 'teleoperation', 'learning', 'training', 'evaluation', 'single-arm', 'pi05', 'runtime', 'commands', 'troubleshooting'] %}class="active"{% endif %}>软件</a>
   <a href="{{ pathto('simulation') }}" {% if pagename == 'simulation' %}class="active"{% endif %}>仿真</a>
   <a href="{{ pathto('community') }}" {% if pagename == 'community' %}class="active"{% endif %}>社区</a>

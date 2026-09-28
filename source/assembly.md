@@ -1,4 +1,6 @@
-# 硬件组装
+# AlohaMini 2 硬件组装
+
+**适用型号：标准 AlohaMini 2。** Pro 用户请先阅读 [2 Pro 硬件说明](hardware-pro.md)；本页的物料数量、打印件和装配照片对应标准版。
 
 本指南完整介绍 **AlohaMini 2 / Mobile Base 2** 的机身装配。主臂和从臂需要先按 [AM-ARM200 组装指南](https://github.com/liyiteng/AM-ARM/tree/main/am-arm200) 独立完成，再安装到操作台与机身。2 Pro 的金属底盘不属于本页装配范围。
 
