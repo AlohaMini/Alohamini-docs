@@ -37,9 +37,13 @@ jobs:
 
       - name: Build documentation
         run: >-
-          python -m sphinx -W --keep-going -b html
-          -D html_baseurl=https://alohamini.github.io/Alohamini-docs/
-          source build/html
+          python tools/build_docs.py
+          --base-url https://alohamini.github.io/Alohamini-docs/
+
+      - name: Verify documentation
+        run: |
+          python tools/verify_docs.py
+          python tools/verify_languages.py
 
       - name: Upload Pages artifact
         if: github.event_name != 'pull_request'

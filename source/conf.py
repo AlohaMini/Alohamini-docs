@@ -1,16 +1,21 @@
+from pathlib import Path
+import sys
+sys.path.insert(0, str(Path(__file__).parent / "_ext"))
+
 project = "AlohaMini"
 author = "Li Yiteng & Wu Zhiyong"
 copyright = "2026, AlohaMini Contributors"
 language = "zh_CN"
-extensions = ["myst_parser", "sphinx_copybutton"]
+extensions = ["myst_parser", "sphinx_copybutton", "am_languages"]
 myst_enable_extensions = ["colon_fence", "deflist"]
 myst_heading_anchors = 3
 templates_path = ["_templates"]
-exclude_patterns = []
+exclude_patterns = ["_ext"]
 html_theme = "pydata_sphinx_theme"
 html_title = "AlohaMini 文档"
 html_static_path = ["_static"]
 html_css_files = ["alohamini.css"]
+html_js_files = ["language-switcher.js"]
 html_favicon = "_static/favicon.svg"
 html_show_sourcelink = False
 html_copy_source = False
@@ -21,7 +26,7 @@ html_theme_options = {
     "navbar_start": ["am-brand.html"],
     "navbar_center": ["am-navbar.html"],
     "navbar_end": ["theme-switcher", "navbar-icon-links"],
-    "navbar_persistent": ["search-button-field"],
+    "navbar_persistent": ["am-language-switcher.html", "search-button-field"],
     "navbar_align": "content",
     "icon_links": [{"name": "GitHub", "url": "https://github.com/liyiteng/AlohaMini", "icon": "fa-brands fa-github"}],
     "primary_sidebar_end": ["am-sidebar-footer.html"],

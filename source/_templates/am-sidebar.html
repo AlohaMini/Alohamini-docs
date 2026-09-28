@@ -1,4 +1,4 @@
-<nav class="am-docs-nav" aria-label="文档目录">
+<nav class="am-docs-nav" aria-label="{{ 'Documentation navigation' if am_english else '文档目录' }}">
 {% for title, pages in navigation_groups %}
   <div class="am-nav-group"><p class="am-nav-caption">{{ title }}</p><ul>
   {% for page, label, icon in pages %}
