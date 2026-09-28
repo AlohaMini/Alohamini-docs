@@ -57,9 +57,6 @@ Connect the 5V power supply to the DC line to power the two robotic arms. Both o
 
 Then connect the USB-C ports of the two robotic arms to the PC
 
-## Software installation and debugging
-
-If you have some experience in lerobot development, you can quickly start rocking through the following "[AlohaMini Pro Quick Start Guide](yuque/pro-quickstart.md)". If you have never come into contact with lerobot, please refer to "[AlohaMini_beginner tutorial](yuque/developer-manual.md)"
 
 ## What should you see after powering on?
 
@@ -70,12 +67,12 @@ If you have some experience in lerobot development, you can quickly start rockin
 
 When the screen does not light up or the camera fails to start, first check [Power supply and equipment troubleshooting](support.md). Do not use the startup motion program to determine whether the wiring is correct.
 
-## what to do next
+## Next step
 
-- **AlohaMini 2**: [Getting Started with Standard 2](alohamini2.md).
-- **AlohaMini 2 Pro**: [Get started with Pro](alohamini2pro.md); those with experience can refer to [Delivery quick start](yuque/pro-quickstart.md).
-- **'s first contact with LeRobot**: [Developer Manual](yuque/developer-manual.md) → [Software installation](software.md) → [Device configuration](configuration.md).
+Continue with your model’s guide. Wiring is now complete, so open step 2 to install the software:
 
-Factory calibration can only be reused if the device, configuration, calibration file, and robot ID all match. When reassembling joints, replacing parts, or encountering abnormalities, check according to the [Calibration Tutorial](calibration.md). You cannot skip the inspection simply by relying on "factory calibrated".
+```{raw} html
+<div class="am-resource-row"><a href="alohamini2.html#step-install">AlohaMini 2 →</a><a href="alohamini2pro.html#step-install">AlohaMini 2 Pro →</a></div>
+```
 
-Continue reading: [Complete unboxing illustration](yuque/unboxing.md).
+The same guide includes configuration, calibration, teleoperation and your first recording.

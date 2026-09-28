@@ -1,6 +1,6 @@
 # 遥操作
 
-适用型号：**AlohaMini 2 / 2 Pro**。标注型号的两组示例请选择一组执行。完整入门流程：[2 教程](alohamini2.md) · [2 Pro 教程](alohamini2pro.md)。
+适用型号：**AlohaMini 2 / 2 Pro**。只执行与你的机器人型号对应的示例。
 
 本章完成 PC 主臂驱动机器人从臂、键盘控制底盘与升降的整机流程。前提是 [安装](software.md)、[配置](configuration.md) 和 [校准](calibration.md) 已完成。
 

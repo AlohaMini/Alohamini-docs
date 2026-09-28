@@ -1,8 +1,6 @@
 # Data collection and inspection
 
-Read along with the screenshots: [Official Pro capture, re-recording and playback tutorial](yuque/pro-quickstart.md). The example IP, path and camera name need to be replaced with your own configuration.
-
-Applicable models: **AlohaMini 2 / 2 Pro**. Please select one of the two examples with model numbers to execute. Complete entry process: [2 Tutorials](alohamini2.md) · [2 Pro Tutorial](alohamini2pro.md).
+Applicable models: **AlohaMini 2 / 2 Pro**. Run only the example for your robot.
 
 Through leader arm teaching, camera images, robot status and actions are recorded as data sets. By recording a short test first and reviewing it before expanding it to a formal demonstration, errors in camera mapping, task description or save paths can be discovered earlier.
 

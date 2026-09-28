@@ -1,6 +1,6 @@
 # Teleoperation
 
-Applicable models: **AlohaMini 2 / 2 Pro**. Please select one of the two examples with model numbers to execute. Complete entry process: [2 Tutorials](alohamini2.md) · [2 Pro Tutorial](alohamini2pro.md).
+Applicable models: **AlohaMini 2 / 2 Pro**. Run only the example for your robot.
 
 This chapter completes the entire process of PC leader arm driving the robot follower arm and keyboard controlling the chassis and lifting. The premise is that [Installation](software.md), [Configuration](configuration.md) and [Calibration](calibration.md) have been completed.
 

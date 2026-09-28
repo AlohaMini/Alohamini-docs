@@ -1,9 +1,17 @@
 <nav class="am-docs-nav" aria-label="{{ 'Documentation navigation' if am_english else '文档目录' }}">
 {% for title, pages in navigation_groups %}
-  <div class="am-nav-group"><p class="am-nav-caption">{{ title }}</p><ul>
+  {% set group = namespace(active=false) %}
+  {% for page, label, icon in pages %}{% if pagename == page or (page == 'tutorial-library' and (pagename.startswith('upstream/') or pagename.startswith('library-'))) %}{% set group.active = true %}{% endif %}{% endfor %}
+  {% if loop.first %}
+  <div class="am-nav-group"><p class="am-nav-caption">{{ title }}</p>
+  {% else %}
+  <details class="am-nav-group am-nav-fold" {% if group.active %}open{% endif %}><summary>{{ title }}</summary>
+  {% endif %}
+  <ul>
   {% for page, label, icon in pages %}
-    <li><a href="{{ pathto(page) }}" {% if pagename == page or (page == 'official-manual' and pagename.startswith('yuque/')) or (page == 'tutorial-library' and (pagename.startswith('upstream/') or pagename.startswith('library-') or pagename == 'migration-status')) %}class="active" aria-current="page"{% endif %}><span>{{ label }}</span></a></li>
+    <li><a href="{{ pathto(page) }}" {% if pagename == page %}class="active" aria-current="page"{% endif %}>{{ label }}</a></li>
   {% endfor %}
-  </ul></div>
+  </ul>
+  {% if loop.first %}</div>{% else %}</details>{% endif %}
 {% endfor %}
 </nav>

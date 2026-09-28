@@ -1,8 +1,6 @@
 <nav class="am-navbar" aria-label="{{ 'Main navigation' if am_english else '主导航' }}">
-  <a href="{{ pathto('quickstart') }}" {% if pagename in ['quickstart', 'alohamini2', 'alohamini2pro'] %}class="active"{% endif %}>{{ 'Get started' if am_english else '快速开始' }}</a>
-  <a href="{{ pathto('assembly') }}" {% if pagename in ['assembly', 'printing', 'bom', 'hardware-pro'] %}class="active"{% endif %}>{{ 'Hardware' if am_english else '硬件' }}</a>
-  <a href="{{ pathto('software') }}" {% if pagename in ['software', 'configuration', 'calibration', 'teleoperation', 'learning', 'training', 'evaluation', 'single-arm', 'pi05', 'runtime', 'commands', 'troubleshooting'] %}class="active"{% endif %}>{{ 'Software' if am_english else '软件' }}</a>
-  <a href="{{ pathto('simulation') }}" {% if pagename == 'simulation' %}class="active"{% endif %}>{{ 'Simulation' if am_english else '仿真' }}</a>
-  <a href="{{ pathto('tutorial-library') }}" {% if pagename == 'tutorial-library' or pagename.startswith('upstream/') or pagename.startswith('library-') %}class="active"{% endif %}>{{ 'Library' if am_english else '资料库' }}</a>
-  <a href="{{ pathto('community') }}" {% if pagename == 'community' %}class="active"{% endif %}>{{ 'Community' if am_english else '社区' }}</a>
+  <a href="{{ pathto('quickstart') }}" {% if pagename in ['quickstart', 'official-manual', 'alohamini2', 'alohamini2pro'] %}class="active"{% endif %}>{{ 'Get started' if am_english else '开始使用' }}</a>
+  <a href="{{ pathto('assembly') }}" {% if pagename in ['assembly', 'printing', 'bom', 'hardware-pro'] %}class="active"{% endif %}>{{ 'Build' if am_english else '硬件搭建' }}</a>
+  <a href="{{ pathto('learning') }}" {% if pagename in ['learning', 'training', 'evaluation'] %}class="active"{% endif %}>{{ 'Data and training' if am_english else '数据与训练' }}</a>
+  <a href="{{ pathto('tutorial-library') }}" {% if pagename == 'tutorial-library' or pagename.startswith('upstream/') or pagename.startswith('library-') %}class="active"{% endif %}>{{ 'Reference' if am_english else '查阅资料' }}</a>
 </nav>

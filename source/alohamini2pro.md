@@ -1,86 +1,229 @@
-# AlohaMini 2 Pro 入门教程
+---
+html_theme.sidebar_secondary.remove: true
+---
 
-收到整机后先完成 [开箱图解](unboxing.md)。有 LeRobot 经验可另读 [Pro 交付快速入门](yuque/pro-quickstart.md)，其中保留端口绑定截图及采集、训练示例。
+# AlohaMini 2 Pro：首次使用
 
-本页适用于 **AlohaMini 2 Pro + AM-ARM200 系列双主臂 + Linux PC + 树莓派 5**。按顺序完成设备配置、校准、遥操作和第一条数据录制。
+**目标：让机器人跟随你的操作，并保存一条 10 秒的任务演示。**
 
-**当前机型：`alohamini2pro`** · 切换到 [AlohaMini 2 教程](alohamini2.md) · [返回机型选择](quickstart.md)
+准备好已组装的机器人、AM 双主臂、Linux PC 和树莓派 5。按下面六步完成，已经做好的步骤可以直接跳过。
 
-下列命令在 **软件仓库 `lerobot_alohamini` 的根目录**运行；先激活安装时创建的 Python 环境。将 `<Pi_IP>` 替换为树莓派的真实 IP，再执行命令。
+```{raw} html
+<nav class="am-step-route" aria-label="本页步骤"><a href="#step-prepare">1 接线与准备</a><a href="#step-install">2 安装软件</a><a href="#step-configure">3 配置设备</a><a href="#step-calibrate">4 校准机械臂</a><a href="#step-teleoperate">5 第一次遥操作</a><a href="#step-record">6 保存第一条演示</a></nav>
+```
 
-## 选择你的起点
+(step-prepare)=
 
-| 当前状态 | 从哪里开始 |
-|---|---|
-| 核对 Pro 硬件或准备搭建 | 先看 [2 Pro 硬件说明](hardware-pro.md)，确认实际套件与资料范围 |
-| 已有组装好的机器人 | 本页“安装与设备配置” |
-| 已能遥操作，准备训练 | [数据采集](learning.md) → [训练](training.md) → [评估](evaluation.md) |
-| 只有一套主从臂 | [AM-ARM200 单臂教程](single-arm.md) |
-| 已有一代机器人 | [一代说明](legacy.md)，再使用对应机型参数 |
-| 先查看模型与关节 | [仿真与模型可视化](simulation.md) |
+::::{admonition} 01 · 接线与准备
+:class: am-step
 
-## 你需要准备什么
+**先核对供电，再开机。** 接线时保持断电。下面的供电方式适用于对应交付套件；以随箱说明和设备标识为准。
 
-先按 [2 Pro 硬件说明](hardware-pro.md) 核对从臂和底盘。标准 2 的打印件、物料数量和组装照片不能直接作为 Pro 的装配清单。
+1. 机器人上的**从臂、底盘与升降**连接匹配的 **12 V** 电源。
+2. 树莓派通过电源板的 **PD 5 V / 5 A** 接口供电。**不能将 12 V 直接接入树莓派的 5 V 输入。**
+3. 操作台上的两只**主臂**使用匹配的 **5 V** 电源，再将各自的 USB-C 数据线连接 PC。
+4. 开机后，让 PC 和 Pi 连接同一可互通的局域网。在 Pi 上记录当前 IP，后文的 `<Pi_IP>` 都替换为这个地址。
 
-### 机器人端
+**分清两端：** Pi 控制机器人上的从臂、底盘、升降与相机；PC 连接你用手推动的主臂。后面的每组命令都会标明在哪一端执行。
 
-- 已正确装配的底盘、升降机构与双从臂。
-- 树莓派 5、存储卡、供电与散热。
-- 从臂总线控制板和数据线。
-- 已安装的相机及其连接线。
+:::{admonition} 需要对照接线照片？
+:class: am-extra
 
-### 操作端
+以下照片用于识别接口；不同批次的电池和线束可能不同。
 
-- 可运行项目软件的 Linux PC。
-- 两只已组装的主臂、控制板、数据线和匹配电源。
-- PC 与树莓派可互通的局域网。
-- 用于保存数据集的存储空间；训练另需与策略匹配的计算资源。
+**机器人电源接口**
 
-主臂在操作台由人手推动，从臂安装在机器人上执行动作。**Host 是机器人端服务，Client 是 PC 上的控制程序。** 后面的命令会明确标注在哪一端运行。
+![Power connection](_static/yuque-assets/ff635586511091d98504.jpeg)
 
-## 第一步：确认机型
+**电源板与树莓派接口**
 
-| 核对项 | AlohaMini 2 Pro 配置 |
-|---|---|
-| Pi 整机参数 `--robot_model` | `alohamini2pro` |
-| PC 整机参数 `--robot.robot_model` | `alohamini2pro` |
-| 从臂 profile（由机型选择） | `am-follower-6dof-hd` |
-| PC 主臂 `--teleop.arm_profile` | `am-leader-6dof` |
-| 主臂设备 ID 示例 | `am_leader_bi` |
-| 底盘轮舵机 | STS3250 × 3 |
-| 升降舵机 / 传动参数 | STS3095 / 131 mm/rev |
-| 整机 state/action 维度 | 18 |
+![Power board](_static/yuque-assets/9b3ffee1eb7bff8f0442.jpeg)
 
-两端显式选择同一个型号。主臂 profile 与从臂 profile 用途不同；校准、遥操作和录制中的主臂 ID 保持一致。`am_leader_bi` 是示例标识，若有多套主臂，请各用独立标识和对应校准文件。
+![Pi connection](_static/yuque-assets/3c48272706dd58d09e1f.jpeg)
 
-完整差异见 [机型与参数](specifications.md)。131 mm/rev 是软件传动参数，不是升降速度或总行程。
+**主臂供电**
 
-## 第二步：安装与设备配置
+![Leader-arm power](_static/yuque-assets/3b37f35214e5fb1c9d28.jpeg)
+:::
 
-在 **PC 和 Pi 两端**按 [软件安装](software.md) 完成环境。随后按 [设备配置](configuration.md) 建立端口映射并核对相机。
+检查机械臂、底盘和升降周围有足够空间，线束不会卷入运动部件。屏幕不亮时先检查电池、电源板接口和线缆，不要启动运动程序来测试供电。
 
-完成后应能确认：
+```{raw} html
+<p class="am-step-done">完成标志：Pi 已开机；两只主臂已连接 PC；你已记下 Pi 的 IP。</p><a class="am-next" href="#step-install">下一步：安装软件 →</a>
+```
+::::
 
-| 检查对象 | 结果 |
-|---|---|
-| PC 主臂 | 左右主臂设备名分别指向正确控制板 |
-| Pi 从臂 | 左右从臂总线分别可访问 |
-| 相机 | 每个启用名称对应正确画面；默认启用两路 |
-| 网络 | PC 可访问 Pi 的实际 IP |
-| 软件 | 两端版本兼容，项目环境已激活 |
+(step-install)=
 
-第一次连接时不要猜串口和相机索引，使用发现工具逐个记录。
+::::{admonition} 02 · 安装软件
+:class: am-step
 
-## 第三步：完成校准
+**PC 和 Pi 两端都需要安装。** 本教程使用 Linux、Python 3.12 和 Conda。已配置好环境时，直接运行本步末尾的检查命令。
 
-**Pi：机器人端校准**
+:::{admonition} 还没有安装 Conda？
+:class: am-extra
+
+在 **Linux x86_64 PC** 上：
+
+```bash
+mkdir -p ~/miniconda3
+wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh -O ~/miniconda3/miniconda.sh
+bash ~/miniconda3/miniconda.sh -b -u -p ~/miniconda3
+~/miniconda3/bin/conda init bash
+source ~/.bashrc
+```
+
+在 **64 位 ARM Linux 的 Pi** 上：
+
+```bash
+mkdir -p ~/miniforge3
+wget https://github.com/conda-forge/miniforge/releases/latest/download/Miniforge3-Linux-aarch64.sh -O ~/miniforge3/miniforge.sh
+bash ~/miniforge3/miniforge.sh -b -u -p ~/miniforge3
+~/miniforge3/bin/conda init bash
+source ~/.bashrc
+```
+
+这些初始化命令面向 Bash；其他 shell 使用对应初始化方式。不要将 PC 安装包用于 Pi。
+:::
+
+**在两端分别获取代码并安装环境：**
+
+```bash
+git clone https://github.com/liyiteng/lerobot_alohamini.git
+cd lerobot_alohamini
+conda create -y -n lerobot_alohamini python=3.12
+conda activate lerobot_alohamini
+pip install -e ".[all]"
+pip install pyzmq feetech-servo-sdk
+conda install -y ffmpeg=7.1.1 -c conda-forge
+```
+
+两端使用兼容的同版代码。安装报错时先保留错误信息并解决，不要跳过失败的依赖继续控制机器人。
+
+**为两端的控制板配置串口权限：**
+
+```bash
+sudo usermod -a -G dialout $USER
+```
+
+执行后重新登录，权限才会生效。重新打开终端时进入 `lerobot_alohamini` 仓库目录，并执行 `conda activate lerobot_alohamini`。本页后续命令都在这个目录和环境中运行。
+
+**检查两端环境：**
+
+```bash
+python --version
+python -c "import av, cv2, torch; print('av', av.__version__); print('cv2', cv2.__version__); print('torch', torch.__version__)"
+ffmpeg -version
+lerobot-find-cameras --help
+```
+
+```{raw} html
+<p class="am-step-done">完成标志：依赖导入成功，FFmpeg 和相机发现命令可用。Pi 不需要具备 CUDA。</p><a class="am-next" href="#step-configure">下一步：配置设备 →</a>
+```
+::::
+
+(step-configure)=
+
+::::{admonition} 03 · 配置设备
+:class: am-step
+
+**先固定左右端口，再确认相机。** 本教程后面的命令已经选定你的机型，不需要在多组型号命令之间做选择。
+
+`robot_model=alohamini2pro` · 主臂 `am-leader-6dof` · 从臂 `am-follower-6dof-hd`
+
+**1. 在对应机器上识别每块控制板**
+
+```bash
+lerobot-find-port
+ls /dev/ttyACM*
+ls /dev/serial/by-id/
+```
+
+按工具提示，每次只拔下一块板子的 USB，确认端口后接回。分别记录 PC 的左右主臂、Pi 的左右从臂。`ttyACM0` 只是示例，编号可能在重新插拔后变化。
+
+**2. 读取每块板子的序列号**
+
+```bash
+udevadm info --attribute-walk --name=/dev/ttyACM0 | awk -F'"' '/ATTRS{serial}/{print $2; exit}'
+```
+
+把命令中的端口换成刚识别的端口。若板子没有可区分的唯一序列号，这组规则不能唯一识别设备，应先解决映射，不能填入重复序列号。
+
+**3. 在两端分别编辑 `/etc/udev/rules.d/90-mydevice.rules`**
+
+Pi 填入从臂的真实序列号：
+
+```text
+SUBSYSTEM=="tty", ATTRS{serial}=="<follower_left_serial>", SYMLINK+="am_arm_follower_left"
+SUBSYSTEM=="tty", ATTRS{serial}=="<follower_right_serial>", SYMLINK+="am_arm_follower_right"
+```
+
+PC 填入主臂的真实序列号：
+
+```text
+SUBSYSTEM=="tty", ATTRS{serial}=="<leader_left_serial>", SYMLINK+="am_arm_leader_left"
+SUBSYSTEM=="tty", ATTRS{serial}=="<leader_right_serial>", SYMLINK+="am_arm_leader_right"
+```
+
+在两端重新加载，并核对别名指向正确的左右设备：
+
+```bash
+sudo udevadm control --reload-rules
+sudo udevadm trigger
+ls -l /dev/am_arm_*
+```
+
+Pi 应出现 `/dev/am_arm_follower_left`、`/dev/am_arm_follower_right`；PC 应出现 `/dev/am_arm_leader_left`、`/dev/am_arm_leader_right`。重新插拔后再核对一次。
+
+**4. 在 Pi 上识别相机**
+
+```bash
+lerobot-find-cameras
+v4l2-ctl --list-devices
+v4l2-ctl -d /dev/video0 --list-formats-ext
+```
+
+`v4l2-ctl` 由 `v4l-utils` 提供；缺少该命令时先安装对应系统软件包。逐个检查实际画面和支持格式。
+
+在 `src/lerobot/robots/alohamini/config_alohamini.py` 的 `alohamini_cameras_config()` 中设置实际路径。当前默认启用 `forward` 与 `wrist_right` 两路，640×480、30 FPS。下面展示其中一路：
+
+```python
+"forward": OpenCVCameraConfig(
+    index_or_path="/dev/video0",
+    fps=30,
+    width=640,
+    height=480,
+    rotation=Cv2Rotation.NO_ROTATION,
+),
+```
+
+`/dev/video0` 仅是示例，把每个启用条目改为对应相机的真实路径。机械臂别名规则不会自动创建相机别名。若现有配置使用 `head_top` 等其他名称，保留其实际名称并同步两端配置；后续数据与训练也必须使用相同名称。
+
+**5. 在 PC 上确认能访问 Pi**
+
+```bash
+ping <Pi_IP>
+```
+
+```{raw} html
+<p class="am-step-done">完成标志：左右端口固定；启用相机的路径和视角已核对；PC 能访问 Pi。</p><a class="am-next" href="#step-calibrate">下一步：校准 →</a>
+```
+::::
+
+(step-calibrate)=
+
+::::{admonition} 04 · 校准机械臂
+:class: am-step
+
+**先停止 Host、遥操作或调试程序，避免占用串口。** 给关节留出活动空间；校准时按提示缓慢移动，不能强行越过机械限位。
+
+**在 Pi 校准从臂：**
 
 ```bash
 python -m lerobot.robots.alohamini.alohamini_calibrate --robot_model alohamini2pro
 ```
 
-**PC：双主臂校准**
+**在 PC 校准两只主臂：**
 
 ```bash
 python examples/alohamini/calibrate_bi.py \
@@ -88,17 +231,35 @@ python examples/alohamini/calibrate_bi.py \
   --teleop.arm_profile am-leader-6dof
 ```
 
-按交互提示完成左右臂的范围记录。完整说明见 [校准教程](calibration.md)。校准完成后按原始流程对主从臂断电重启。
+按终端提示完成中位和关节范围记录。记录范围时，实际移动每个要求校准的关节，确认最小值与最大值确实变化；不要没有移动就保存。`teleop.id` 后续始终使用 `am_leader_bi`。
 
-## 第四步：第一次遥操作
+:::{admonition} 已经有校准文件，是否需要重做？
+:class: am-extra
 
-**Pi：启动 Host 并保持运行**
+同一机械臂、设备标识、profile 和结构未改变时，可按提示复用。拆装关节、更换部件、修改 profile 或出现方向／范围异常时，重新核查并校准。出厂已校准并不代表任意配置都能直接复用。
+:::
+
+校准完成后对主从臂断电重启，再进入下一步的小幅运动检查。
+
+```{raw} html
+<p class="am-step-done">完成标志：两端校准均已保存，设备 ID 与 profile 没有改变。</p><a class="am-next" href="#step-teleoperate">下一步：遥操作 →</a>
+```
+::::
+
+(step-teleoperate)=
+
+::::{admonition} 05 · 第一次遥操作
+:class: am-step
+
+**Pi：启动 Host，保持这个终端运行。**
 
 ```bash
 python -m lerobot.robots.alohamini.alohamini_host --robot_model alohamini2pro
 ```
 
-**PC：启动控制程序**
+先确认日志中没有串口、校准或相机错误，再在 PC 启动客户端。
+
+**PC：替换 `<Pi_IP>` 后启动控制程序。**
 
 ```bash
 python examples/alohamini/teleoperate_bi.py \
@@ -110,11 +271,32 @@ python examples/alohamini/teleoperate_bi.py \
   --camera-fps 30
 ```
 
-替换 `<Pi_IP>`。先单侧、小范围移动主臂，再检查夹爪，最后检查底盘与升降。整机按键：W/S 前后，Z/X 横移，A/D 旋转，U/J 升降。更多参数和控制权说明见 [遥操作](teleoperation.md)。
+先缓慢移动一侧主臂，确认对应从臂跟随，再检查另一侧和夹爪。确认左右和方向正确后，短暂测试底盘与升降。
 
-## 第五步：录制第一条数据
+| 按键 | 动作 |
+|---|---|
+| W / S | 前进 / 后退 |
+| Z / X | 左移 / 右移 |
+| A / D | 左转 / 右转 |
+| U / J | 升高 / 降低 |
+| T / G | 提高 / 降低速度档位 |
+| Ctrl+C | 在运行终端退出遥操作 |
 
-退出 PC 上的遥操作程序，保持 Pi Host 运行。先录制短测试：
+出现左右相反、方向异常或跳动时，立即退出，回查本页第三、四步的端口映射与校准。不要在异常状态下录制。
+
+```{raw} html
+<p class="am-step-done">完成标志：双臂、夹爪、底盘与升降响应正确；你能用 Ctrl+C 退出。</p><a class="am-next" href="#step-record">下一步：录制演示 →</a>
+```
+::::
+
+(step-record)=
+
+::::{admonition} 06 · 保存第一条演示
+:class: am-step
+
+**退出 PC 遥操作程序，保持 Pi Host 运行。** 一次只运行一个控制客户端。下面先录制一条 10 秒演示，验证整个采集流程。
+
+在 PC 上把 `HF_USER` 改为自己的 Hugging Face 用户名，将任务描述改成实际动作，再运行：
 
 ```bash
 export HF_USER="your-hf-username"
@@ -132,9 +314,7 @@ python examples/alohamini/record_bi.py \
   --teleop.arm_profile am-leader-6dof
 ```
 
-这是采集链路测试。先把 `HF_USER` 换成自己的命名空间，把任务描述改为本次实际动作；示例关闭自动上传。
-
-录制结束后查看第一条数据：
+示例关闭自动上传，先保存在本地。进入录制阶段后手动完成动作，结束后回看：
 
 ```bash
 lerobot-dataset-viz \
@@ -143,19 +323,11 @@ lerobot-dataset-viz \
   --display-compressed-images
 ```
 
-确认相机视角正确、动作完整、没有长时间画面冻结，再进入 [正式采集](learning.md)。
+检查每个相机视角是否正确、动作是否完整、画面是否有长时间冻结。这条短演示用于验证流程，不足以判断训练效果。
 
-## 如何判断入门完成
+通过后再进入 [正式数据采集](learning.md)，收集一致的任务演示。入门至此完成。
 
-- 能说明自己的机器人型号、主臂 profile 与左右端口。
-- 左右从臂与主臂对应，方向和夹爪运动正常。
-- 底盘与升降按预期响应，线缆没有干涉。
-- 每个启用相机视角正确。
-- 已保存一条数据，知道本地位置，并完成回看。
-
-正式实验先进入 [数据采集](learning.md)，使用页面中 **AlohaMini 2 Pro** 的正式录制示例；入门短测试仅用于检查链路，不能据此判断策略效果。建议数据集名称带上 `am2pro` 前缀，便于与其他机型区分。
-
-之后按 [训练](training.md) → [评估](evaluation.md) 完成策略闭环。某一步未通过时，优先查看 [调试与排错](troubleshooting.md)，不要带着设备映射或校准错误进入训练阶段。
-
-
-## 教程依据
+```{raw} html
+<p class="am-step-done">完成标志：已保存并回看第一条演示。</p>
+```
+::::

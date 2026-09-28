@@ -57,9 +57,6 @@ AlohaMini是一套用于算法教学与复现的双臂可升降机器人，打�
 
 然后将2个机械臂的USB-C口连接PC电脑
 
-## 软件安装与调试
-
-如果您有一定lerobot开发经验，可以通过接下来的《[AlohaMini Pro 快速入门指南](yuque/pro-quickstart.md)》迅速开启摇操。如果您完全没有接触过lerobot，请参考《[AlohaMini_新手教程](yuque/developer-manual.md)》
 
 ## 通电后应该看到什么
 
@@ -72,10 +69,10 @@ AlohaMini是一套用于算法教学与复现的双臂可升降机器人，打�
 
 ## 接下来做什么
 
-- **AlohaMini 2**：[按标准 2 入门](alohamini2.md)。
-- **AlohaMini 2 Pro**：[按 Pro 入门](alohamini2pro.md)；有经验可参考 [交付快速入门](yuque/pro-quickstart.md)。
-- **第一次接触 LeRobot**：[开发者手册](yuque/developer-manual.md) → [软件安装](software.md) → [设备配置](configuration.md)。
+接线完成后，进入对应型号教程的第二步安装软件：
 
-出厂校准仅在设备、配置、校准文件和机器人 ID 都匹配时可复用。重新装配关节、更换部件或遇到异常时，按 [校准教程](calibration.md) 核查，不能仅凭“出厂已校准”跳过检查。
+```{raw} html
+<div class="am-resource-row"><a href="alohamini2.html#step-install">AlohaMini 2 →</a><a href="alohamini2pro.html#step-install">AlohaMini 2 Pro →</a></div>
+```
 
-继续阅读：[完整开箱图解](yuque/unboxing.md)。
+后续配置、校准、遥操作和首次录制都在同一篇教程中完成。

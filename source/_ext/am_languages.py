@@ -62,6 +62,8 @@ def preserve_anchors(app, doctree):
 
 def page_context(app, pagename, templatename, context, doctree):
     english = app.config.language == 'en'
+    if pagename in {'index', 'quickstart', 'official-manual', 'alohamini2', 'alohamini2pro'}:
+        context['theme_show_prev_next'] = False
     root = '../' * pagename.count('/')
     context['am_other_language_url'] = root + ('../' if english else 'en/') + pagename + '.html'
     context['am_language_label'] = 'Language' if english else '语言'

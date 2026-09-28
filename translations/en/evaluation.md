@@ -1,6 +1,6 @@
 # Hardware evaluation
 
-Applicable models: **AlohaMini 2 / 2 Pro**. Please select one of the two examples with model numbers to execute. Complete entry process: [2 Tutorials](alohamini2.md) · [2 Pro Tutorial](alohamini2pro.md).
+Applicable models: **AlohaMini 2 / 2 Pro**. Run only the example for your robot.
 
 The evaluation script reads the policy checkpoint, generates actions based on current observations, and saves the evaluation data. **The commands in this chapter will control the real robot.** First confirm that teleoperation is normal, and then use matching data, models and models to evaluate.
 

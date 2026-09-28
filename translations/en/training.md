@@ -1,8 +1,6 @@
 # Policy training
 
-For other policies and advanced training methods, see the [Policies and training](policies.md), which includes configuration and usage instructions for each model.
-
-Applicable models: **AlohaMini 2 / 2 Pro**. Please select one of the two examples with model numbers to execute. Complete entry process: [2 Tutorials](alohamini2.md) · [2 Pro Tutorial](alohamini2pro.md).
+Applicable models: **AlohaMini 2 / 2 Pro**. Run only the example for your robot.
 
 This chapter takes the **ACT** training entrance provided by the project as a starting point. Training reads saved data sets and does not require the robot Host or leader arm to be continuously online.
 

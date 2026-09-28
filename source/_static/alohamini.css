@@ -105,3 +105,26 @@ a:focus-visible, button:focus-visible { outline: 2px solid var(--am-accent); out
 html[lang="en"] .am-navbar { gap: .85rem; }
 html[lang="en"] .am-navbar a { font-size: .9rem; }
 @media (min-width:960px) and (max-width:1199px) { html[lang="en"] .am-navbar { gap: .5rem; } .bd-header .search-button__default-text { display: none; } }
+
+/* A short navigation surface with details available on demand. */
+.am-nav-fold { margin-bottom: .65rem; border-top: 1px solid var(--am-line); }
+.am-nav-fold > summary { cursor: pointer; padding: .8rem .7rem; color: var(--pst-color-text-muted); font-size: .87rem; font-weight: 600; }
+.am-nav-fold[open] > summary { color: var(--am-accent); }
+.am-nav-fold ul { margin-bottom: .8rem; }
+.am-nav-fold summary:focus-visible, .am-reading-step > summary:focus-visible, .am-reading-extra > summary:focus-visible { outline: 2px solid var(--am-accent); outline-offset: 3px; }
+.am-step-route { display: flex; flex-wrap: wrap; gap: .4rem .8rem; padding: .5rem 0 1rem; margin-bottom: 1rem; }
+.am-step-route a { font-size: .85rem; text-decoration: none; padding: .3rem 0; }
+.am-reading-step { border: 1px solid var(--am-line); border-radius: 6px; margin: 0 0 .9rem; scroll-margin-top: 5.5rem; }
+.am-reading-step > summary { cursor: pointer; padding: 1.1rem 1.25rem; font-size: 1.06rem; font-weight: 600; color: var(--pst-color-text-base); }
+.am-reading-step[open] > summary { background: var(--am-selected); border-bottom: 1px solid var(--am-line); color: var(--am-accent); }
+.am-step-content { padding: .7rem 1.3rem 1.2rem; }
+.am-step-content > :last-child { margin-bottom: 0; }
+.am-reading-extra { border-left: 2px solid var(--am-line); margin: 1.2rem 0; }
+.am-reading-extra > summary { cursor: pointer; padding: .5rem .9rem; color: var(--am-accent); font-size: .9rem; }
+.am-reading-extra .am-step-content { padding: .5rem 1rem; }
+.am-step-content h2, .am-step-content h3 { margin-top: 1.7rem; }
+.am-step-content .am-next { display: inline-flex; align-items: center; padding: .55rem .9rem; margin-top: .8rem; border-radius: 4px; background: var(--am-accent); color: var(--pst-color-background); text-decoration: none; font-weight: 600; font-size: .9rem; }
+.am-step-content .am-step-done { border-top: 1px solid var(--am-line); margin-top: 1.5rem; padding-top: 1rem; font-size: .9rem; }
+.am-step-content img { max-height: 540px; object-fit: contain; }
+@media (min-width:960px) { .bd-main .bd-content .bd-article-container { max-width: 900px; } }
+@media (max-width:600px) { .am-step-content { padding: .5rem .8rem 1rem; } .am-reading-step > summary { padding: .9rem .8rem; } }
